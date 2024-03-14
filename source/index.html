@@ -4,28 +4,120 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фитнес центр SUPERGYM - это тренажерный зал 900 кв/м с самым современным оборудованием, несколько залов для групп, кардио-зона.">
     <title>SUPERGYM</title>
+    <link rel="icon" href="favicon32.ico">
+    <link rel="icon" type="image/png" href="img/favicon32.png">
+    <link rel="preload" href="./fonts/Alumni/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Alumni/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Roboto/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Roboto/Roboto-Condensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Roboto/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
+
+    <div class="hero" data-test="hero">
+      <header class="hero__header header">
+        <div class="header__logo logo">
+          <svg width="100" height="20">
+            <use href="/__spritemap#sprite-logo"></use>
+          </svg>
+        </div>
+        <a class="header__tel" href="tel:88005555555">8 800 555-55-55</a>
+      </header>
+      <div class="hero__content">
+        <div class="hero__desk">
+          <h1 class="visually-hidden">Все про самый большой фитнес центр за Уралом</h1>
+          <ul class="hero__list">
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
+          <h2 class="hero__title">Омск</h2>
+          <strong class="hero__caption">ФИТНЕС ЦЕНТР</strong>
+          <a class="hero__link" href="#price">
+            Купить абонемент
+          </a>
+        </div>
+        <div class="hero__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1336px)" srcset="./img/hero/hero-desktop@1x.webp 1x, ./img/hero/hero-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.webp 1x, ./img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
+            <source type="image/webp" srcset="./img/hero/hero-tablet@1x.webp 1x, ./img/hero/hero-tablet@2x.webp 2x" width="280" height="270">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/hero/hero-desktop@1x.jpeg 1x, ./img/hero/hero-desktop@2x.jpeg 2x" width="500" height="524">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.jpeg 1x, ./img/hero/hero-tablet@2x.jpeg 2x" width="324" height="390">
+            <img src="./img/hero/hero-tablet@1x.jpeg" srcset="./img/hero/hero-tablet@2x.jpeg 2x" width="280" height="270" alt="Фотография физкультурника.">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="about" data-test="about">
+        <div class="about__text">
+          <h2 class="about__title">Тренажерный зал</h2>
+          <span class="about__subtitle">Просторный зал площадью 900 кв/м</span>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <div class="about__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1336px)" srcset="./img/about/about-holl-desktop@1x.webp 1x, ./img/about/about-holl-desktop@2x.webp 2x" width="660" height="401">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/about-holl-tablet@1x.webp 1x, ./img/about/about-holl-tablet@2x.webp 2x" width="678" height="345">
+            <source type="image/webp" srcset="./img/about/about-holl-mobile@1x.webp 1x, ./img/about/about-holl-mobile@2x.webp 2x" width="320" height="312">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/about/about-holl-desktop@1x.jpeg 1x, ./img/about/about-holl-desktop@2x.jpeg 2x" width="660" height="401">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/about/about-holl-tablet@1x.jpeg 1x, ./img/about/about-holl-tablet@2x.jpeg 2x" width="678" height="345">
+            <img src="./img/about/about-holl-mobile@1x.jpg" srcset="./img/about/about-holl-mobile@2x.jpg 2x" width="320" height="312" alt="Фотография тренажерного зала.">
+          </picture>
+        </div>
+        <div class="about__wrapper-video">
+          <div class="about__video">
+            <button type="button">
+              <span>Воспризвести видео.</span>
+            </button>
+
+            <div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=tDcuMQh4i147NxS3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="about__picture">
+              <picture>
+                <source type="image/webp" media="(min-width: 1336px)" srcset="./img/about/about-video-desktop@1x.webp 1x, ./img/about/about-video-desktop@2x.webp 2x" width="364" height="228">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/about-video-tablet@1x.webp 1x, ./img/about/about-video-tablet@2x.webp 2x" width="265" height="167">
+                <source type="image/webp" srcset="./img/about/about-video-mobile@1x.webp 1x, ./img/about/about-video-mobile@2x.webp 2x" width="320" height="167">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/about/about-video-desktop@1x.jpeg 1x, ./img/about/about-video-desktop@2x.jpeg 2x" width="364" height="228">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/about/about-video-tablet@1x.jpeg 1x, ./img/about/about-video-tablet@2x.jpeg 2x" width="265" height="167">
+                <img src="./img/about/about-video-mobile@1x.jpg" srcset="./img/about/about-video-mobile@2x.jpg 2x" width="320" height="167" alt="Фотография тренажерного зала.">
+              </picture>
+            </div>
+
+        </div>
+        </div>
+      </div>
+      </section>
+      <div data-test="price" id="price">price</div>
+      <div data-test="games">games</div>
+      <div data-test="juri">juri</div>
+      <div data-test="features">features</div>
+      <div data-test="offers">offers</div>
+      <div data-test="faq">faq</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="form">form</div>
+  </main>
+  <footer>
+    <div data-test="footer">footer</div>
+  </footer>
+
+
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
+    <img src="/__spritemap#sprite-logo-view" width="300" height="150" alt="Это спрайт">
+    <svg class="example" width="300" height="150">
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>
 
