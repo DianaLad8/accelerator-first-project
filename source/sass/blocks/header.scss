@@ -21,6 +21,7 @@
   color: $color-base-white;
   background-color: $bg-trans;
   border: none;
+  transition: color 0.5s;
 
   @media (max-width: $desctop-width) {
     font-size: 24px;

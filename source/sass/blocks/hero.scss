@@ -1,7 +1,7 @@
 .hero {
   padding-bottom: 120px;
   color: $color-base-white;
-  background-image: $bg-color-grad;
+  background-image: $bg-fond-grad;
 
   @media (max-width: $desctop-width) {
     padding-bottom: 100px;
@@ -145,6 +145,7 @@
 
 .hero__picture {
   margin: 0;
+  background-color: $color-base-sapfire;
 
   @media (max-width: $tablet-width) {
     display: none;

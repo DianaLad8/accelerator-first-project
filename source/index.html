@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +14,7 @@
     <link rel="preload" href="./fonts/Roboto/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
-
   <body class="page-body">
-
     <div class="hero" data-test="hero">
       <header class="hero__header header">
         <div class="header__logo logo">
@@ -53,37 +50,40 @@
         </div>
       </div>
     </div>
+
     <main>
       <section class="about" data-test="about">
         <div class="about__text">
           <h2 class="about__title">Тренажерный зал</h2>
           <span class="about__subtitle">Просторный зал площадью 900 кв/м</span>
-          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
           </p>
           <p>
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
         <div class="about__picture">
           <picture>
-            <source type="image/webp" media="(min-width: 1336px)" srcset="./img/about/about-holl-desktop@1x.webp 1x, ./img/about/about-holl-desktop@2x.webp 2x" width="660" height="401">
+            <source type="image/webp" media="(min-width: 1336px)" srcset="./img/about/about-holl-desktop@1x.webp 1x, ./img/about/about-holl-desktop@2x.webp 2x" width="660" height="400">
             <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/about-holl-tablet@1x.webp 1x, ./img/about/about-holl-tablet@2x.webp 2x" width="678" height="345">
             <source type="image/webp" srcset="./img/about/about-holl-mobile@1x.webp 1x, ./img/about/about-holl-mobile@2x.webp 2x" width="320" height="312">
-            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/about/about-holl-desktop@1x.jpeg 1x, ./img/about/about-holl-desktop@2x.jpeg 2x" width="660" height="401">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/about/about-holl-desktop@1x.jpeg 1x, ./img/about/about-holl-desktop@2x.jpeg 2x" width="660" height="400">
             <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/about/about-holl-tablet@1x.jpeg 1x, ./img/about/about-holl-tablet@2x.jpeg 2x" width="678" height="345">
             <img src="./img/about/about-holl-mobile@1x.jpg" srcset="./img/about/about-holl-mobile@2x.jpg 2x" width="320" height="312" alt="Фотография тренажерного зала.">
           </picture>
         </div>
         <div class="about__wrapper-video">
-          <div class="about__video">
-            <button type="button">
-              <span>Воспризвести видео.</span>
+          <div class="about__video video">
+            <button class="video__play" type="button">
+              <span class="visually-hidden">Воспроизвести видео.</span>
+              <svg width="13" height="15" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-play"></use>
+              </svg>
             </button>
 
-            <div>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=tDcuMQh4i147NxS3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video__iframe" data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=tDcuMQh4i147NxS3" title="YouTube video player">
             </div>
-            <div class="about__picture">
+            <div class="video__picture-fond">
               <picture>
                 <source type="image/webp" media="(min-width: 1336px)" srcset="./img/about/about-video-desktop@1x.webp 1x, ./img/about/about-video-desktop@2x.webp 2x" width="364" height="228">
                 <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/about-video-tablet@1x.webp 1x, ./img/about/about-video-tablet@2x.webp 2x" width="265" height="167">
