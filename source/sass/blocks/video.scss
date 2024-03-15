@@ -5,13 +5,12 @@
   height: 230px;
 
   @media (max-width: $desctop-width) {
-    width: 265px;
-    min-height: 167px;
+    width: 270px;
+    height: 170px;
   }
 
   @media (max-width: $tablet-width) {
     width: 320px;
-    min-height: 167px;
   }
 }
 
