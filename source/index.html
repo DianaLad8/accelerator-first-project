@@ -15,18 +15,18 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body class="page-body">
-    <div class="hero" data-test="hero">
+    <section class="hero" data-test="hero">
       <header class="hero__header header">
         <div class="header__logo logo">
           <svg width="100" height="20">
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
         </div>
+        <h1 class="visually-hidden">Все про самый большой фитнес центр за Уралом</h1>
         <a class="header__tel" href="tel:88005555555">8 800 555-55-55</a>
       </header>
       <div class="hero__content">
         <div class="hero__desk">
-          <h1 class="visually-hidden">Все про самый большой фитнес центр за Уралом</h1>
           <ul class="hero__list">
             <li>Тренажёрный зал</li>
             <li>Групповые занятия</li>
@@ -42,14 +42,12 @@
           <picture>
             <source type="image/webp" media="(min-width: 1336px)" srcset="./img/hero/hero-desktop@1x.webp 1x, ./img/hero/hero-desktop@2x.webp 2x" width="500" height="524">
             <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.webp 1x, ./img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
-            <source type="image/webp" srcset="./img/hero/hero-tablet@1x.webp 1x, ./img/hero/hero-tablet@2x.webp 2x" width="280" height="270">
             <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/hero/hero-desktop@1x.jpeg 1x, ./img/hero/hero-desktop@2x.jpeg 2x" width="500" height="524">
-            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.jpeg 1x, ./img/hero/hero-tablet@2x.jpeg 2x" width="324" height="390">
-            <img src="./img/hero/hero-tablet@1x.jpeg" srcset="./img/hero/hero-tablet@2x.jpeg 2x" width="280" height="270" alt="Фотография физкультурника.">
+            <img src="./img/hero/hero-tablet@1x.jpeg" srcset="./img/hero/hero-tablet@2x.jpeg 2x" width="324" height="390" alt="Фотография физкультурника.">
           </picture>
         </div>
       </div>
-    </div>
+    </section>
 
     <main>
       <section class="about" data-test="about">
@@ -77,8 +75,7 @@
         </div>
         <div class="about__wrapper-video">
           <div class="about__video video">
-            <button class="video__play" type="button">
-              <span class="visually-hidden">Воспроизвести видео.</span>
+            <button class="video__play" type="button" aria-label="Воспроизвести видео.">
               <svg width="13" height="15" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-play"></use>
               </svg>
@@ -101,7 +98,85 @@
         </div>
       </div>
       </section>
-      <div data-test="price" id="price">price</div>
+
+      <section class="price" data-test="price" id="price">
+        <h2 class="price__title">Абонементы</h2>
+        <div class="price__buttons">
+          <button class="price__button active" type="button" data-tab="tab-1">1 месяц</button>
+          <button class="price__button" type="button" data-tab="tab-2">6 месяцев</button>
+          <button class="price__button" type="button" data-tab="tab-3">12 месяцев</button>
+        </div>
+        <ul class="price__list price-item">
+          <li class="price-item__item">
+            <h3 class="price-item__title">С тренером</h3>
+            <span class="price-item__timing">12 занятий</span>
+            <p class="price-item__value active" data-price="tab-1">
+              <span class="price-item__fond" role="presentation">5000</span>
+              <b class="price-item__number">5000</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <p class="price-item__value" data-price="tab-2">
+              <span class="price-item__fond" role="presentation">30000</span>
+              <b class="price-item__number">30000</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <p class="price-item__value" data-price="tab-3">
+              <span class="price-item__fond" role="presentation">60000</span>
+              <b class="price-item__number">60000</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <a class="price-item__link" href="#">Купить абонемент</a>
+          </li>
+          <li class="price-item__item">
+            <h3 class="price-item__title">Дневной</h3>
+            <span class="price-item__timing">с 8:00 до 17:00</span>
+            <p class="price-item__value active" data-price="tab-1">
+              <span class="price-item__fond" role="presentation">1700</span>
+              <b class="price-item__number">1700</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <p class="price-item__value " data-price="tab-2">
+              <span class="price-item__fond" role="presentation">10200</span>
+              <b class="price-item__number">10200</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <p class="price-item__value" data-price="tab-3">
+              <span class="price-item__fond" role="presentation">20400</span>
+              <b class="price-item__number">20400</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <a class="price-item__link" href="#">Купить абонемент</a>
+          </li>
+          <li class="price-item__item">
+            <h3 class="price-item__title">Полный день</h3>
+            <span class="price-item__timing">с 8:00 до 22:00</span>
+            <p class="price-item__value active" data-price="tab-1">
+              <span class="price-item__fond" role="presentation">2700</span>
+              <b class="price-item__number">2700</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <p class="price-item__value " data-price="tab-2">
+              <span class="price-item__fond" role="presentation">16200</span>
+              <b class="price-item__number">16200</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <p class="price-item__value" data-price="tab-3">
+              <span class="price-item__fond" role="presentation">32400</span>
+              <b class="price-item__number">32400</b>
+              <span class="price-item__rouble">&#8381;</span>
+            </p>
+            <a class="price-item__link" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+        <div class="price__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1336px)" srcset="./img/price/dumbbells-desctop@1x.webp 1x, ./img/price/dumbbells-desctop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/price/dumbbells-tablet@1x.webp 1x, ./img/price/dumbbells-tablet@2x.webp 2x" width="303" height="449">
+            <source type="image/png" media="(min-width: 1366px)" srcset="./img/price/dumbbells-desktop@1x.png 1x, ./img/price/dumbbells-desctop@2x.png 2x" width="500" height="524">
+            <img src="./img/price/dumbbells-tablet@1x.png" srcset="./img/price/dumbbells-tablet@2x.png 2x" width="303" height="449" alt="Фотография гантелей-блинов.">
+          </picture>
+        </div>
+      </section>
       <div data-test="games">games</div>
       <div data-test="juri">juri</div>
       <div data-test="features">features</div>

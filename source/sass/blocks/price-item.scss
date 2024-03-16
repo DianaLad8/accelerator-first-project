@@ -1,0 +1,139 @@
+.price-item__item {
+  margin: 0 auto;
+  padding: 65px;
+  width: 360px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 17px;
+  background-color: $color-base-white;
+  border: 7px solid $bg-trans;
+  box-sizing: border-box;
+
+  @media (max-width: $desctop-width) {
+    width: 380px;
+    height: 460px;
+    gap: 22px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    height: 414px;
+    gap: 18px;
+  }
+
+  &:focus-within,
+  &--hover {
+    border: 7px solid $btn-border-accent;
+    border-image: $bg-price-grad 30;
+  }
+}
+
+.price-item__title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 100%;
+
+  @media (max-width: $desctop-width) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 22px;
+  }
+}
+
+.price-item__value {
+  position: relative;
+  margin: 0;
+  width: 203px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &:not(.active) {
+    display: none;
+  }
+}
+
+.price-item__fond {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150%;
+  color: $price-shadow;
+  opacity: 0.5;
+  transform: translateX(-50%);
+
+  @media (max-width: $tablet-width) {
+    font-size: 80px;
+  }
+}
+
+.price-item__number {
+  margin-right: 14px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  color: $color-add;
+  z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    font-size: 48px;
+  }
+}
+
+.price-item__rouble {
+  margin-right: 10px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    font-size: 60px;
+  }
+}
+
+.price-item__link {
+  @include btn($color-base-sapfire, $bg-trans, $color-base-white, $bg-trans);
+
+  padding: 25px 0;
+  width: 195px;
+  background: $bg-trans;
+
+  @media (max-width: $desctop-width) {
+    width: 250px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 195px;
+  }
+
+  &:hover {
+    background: $bg-trans $bg-price-grad;
+    background-image: $bg-price-grad;
+    border-color: $bg-trans;
+    border-image: $bg-price-grad 30;
+  }
+
+  &:focus {
+    background-image: $bg-price-grad;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+    color: rgba($color-base-white, 0.7);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

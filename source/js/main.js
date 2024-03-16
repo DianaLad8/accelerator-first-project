@@ -5,3 +5,8 @@
 
 import {initVideo} from './video';
 initVideo();
+import './price';
+import {onButtonPriceHover, onBuutonTabClick} from './price';
+onButtonPriceHover();
+onBuutonTabClick();
+

@@ -1,0 +1,127 @@
+.price {
+  @include container;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $bg-primary;
+}
+
+.price__title {
+  @include title;
+
+  margin-bottom: 20px;
+
+  @media (max-width: $desctop-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.price__buttons {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba($tabs-border, 0.2);
+
+  @media (max-width: $desctop-width) {
+    width: 310px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+    width: 290px;
+  }
+}
+
+.price__buttons .active {
+  box-shadow: 0 2px 0 $btn-border-accent;
+  opacity: 1;
+}
+
+.price__button {
+  padding: 0;
+  padding-bottom: 14px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $color-base-sapfire;
+  background-color: $bg-trans;
+  border: none;
+  opacity: 0.5;
+
+  @media (max-width: $desctop-width) {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 18px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 0 $tabs-border;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 2px 0 $color-base-sapfire;
+    opacity: 1;
+  }
+
+  &:active {
+    box-shadow: 0 2px 0 $btn-border-accent;
+    opacity: 1;
+  }
+
+  &:disabled {
+    box-shadow: 0 2px 0 rgba($color-base-sapfire, 0.3);
+    opacity: 0.3;
+  }
+}
+
+.price__button.active {
+  &:focus {
+    box-shadow: 0 2px 0 $btn-border-accent;
+    opacity: 1;
+  }
+}
+
+.price__list {
+  @include list;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+
+  @media (max-width: $desctop-width) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.price__picture {
+  position: absolute;
+  width: 303px;
+  bottom: 0;
+  right: 0;
+
+  @media (max-width: $desctop-width) {
+    width: 325px;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
