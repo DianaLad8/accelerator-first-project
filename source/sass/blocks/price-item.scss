@@ -26,8 +26,8 @@
 
   &:focus-within,
   &--hover {
-    border: 7px solid $btn-border-accent;
-    border-image: $bg-price-grad 30;
+    border: 7px solid $bg-accent;
+    border-image: $bg-btn-grad 30;
   }
 }
 
@@ -102,38 +102,16 @@
 }
 
 .price-item__link {
-  @include btn($color-base-sapfire, $bg-trans, $color-base-white, $bg-trans);
+  @include btn-grad($color-base-sapfire);
 
-  padding: 25px 0;
   width: 195px;
-  background: $bg-trans;
 
   @media (max-width: $desctop-width) {
     width: 250px;
   }
 
   @media (max-width: $tablet-width) {
+    padding: 25px 0;
     width: 195px;
-  }
-
-  &:hover {
-    background: $bg-trans $bg-price-grad;
-    background-image: $bg-price-grad;
-    border-color: $bg-trans;
-    border-image: $bg-price-grad 30;
-  }
-
-  &:focus {
-    background-image: $bg-price-grad;
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 1;
-    color: rgba($color-base-white, 0.7);
-  }
-
-  &:disabled {
-    opacity: 0.3;
   }
 }

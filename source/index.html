@@ -17,12 +17,12 @@
   <body class="page-body">
     <section class="hero" data-test="hero">
       <header class="hero__header header">
+        <h1 class="visually-hidden">Все про самый большой фитнес центр за Уралом</h1>
         <div class="header__logo logo">
           <svg width="100" height="20">
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
         </div>
-        <h1 class="visually-hidden">Все про самый большой фитнес центр за Уралом</h1>
         <a class="header__tel" href="tel:88005555555">8 800 555-55-55</a>
       </header>
       <div class="hero__content">
@@ -177,7 +177,44 @@
           </picture>
         </div>
       </section>
-      <div data-test="games">games</div>
+      <section class="games"  data-test="games">
+        <h2 class="visually-hidden">Ежегодные соревнования в Фитнес-центре.</h2>
+        <div class="games__wrapper">
+          <div class="games__content">
+            <div class="games__adt">
+              <p class="games__slogan">Super
+                games
+              </p>
+              <div class="games__date">
+                <p class="games__time">
+                  <span class="games__term">Дата</span>
+                  <span class="games__when">
+                    <b class="games__number">7</b>Марта <br>2019
+                  </span>
+                </p>
+                <p class="games__time">
+                  <span class="games__term">Время</span>
+                  <span class="games__when"><b class="games__number">12:00</b></span>
+                </p>
+              </div>
+            </div>
+            <span class="games__subtitle">Ежегодные соревнования по CrossFit</span>
+            <a class="games__link" href="#">Заполнить заявку</a>
+          </div>
+          <div class="games__picture">
+            <picture>
+              <source type="image/webp" media="(min-width: 1336px)" srcset="./img/banner/banner-desktop@1x.webp 1x, ./img/banner/banner-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/banner/banner-tablet@1x.jpg 1x, ./img/banner/banner-tablet@2x.webp 2x" width="348" height="378">
+              <source type="image/webp" srcset="./img/banner/banner-mobile@1x.webp 1x, ./img/banner/banner-mobile@2x.webp 2x" width="290" height="290">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/banner/banner-desktop@1x.jpeg 1x, ./img/banner/banner-desktop@2x.jpeg 2x" width="660" height="500">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/banner/banner-tablet@1x.jpg 1x, ./img/banner/banner-tablet@2x.jpg 2x" width="378" height="348">
+              <img src="./img/banner/banner-mobile@1x.jpg" srcset="./img/banner/banner-mobile@2x.jpg 2x" width="290" height="290" alt="Фотография игры.">
+            </picture>
+          </div>
+        </div>
+
+
+      </section>
       <div data-test="juri">juri</div>
       <div data-test="features">features</div>
       <div data-test="offers">offers</div>

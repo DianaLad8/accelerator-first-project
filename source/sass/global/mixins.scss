@@ -29,8 +29,8 @@
   }
 }
 
-@mixin btn($color, $bg-color, $color-hover, $bg-hover) {
-  padding: 27px 56px;
+@mixin btn($color) {
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,33 +40,61 @@
   line-height: 100%;
   color: $color;
   text-transform: uppercase;
-  background-color: $bg-color;
+  background-color: $bg-trans;
   border: 2px solid $color;
   box-sizing: border-box;
   cursor: pointer;
-  transition: color, background-color 1s;
+  transition: color, background-color 0.3s;
+
+  @media (max-width: $tablet-width) {
+    padding: 22px 0;
+  }
 
   &:hover {
-    color: $color-hover;
-    background-color: $bg-hover;
-    border: 2px solid $color;
+    color: $color-add;
+    background-color: $color;
   }
 
   &:focus {
-    color: $color-hover;
-    border: 2px solid $btn-border-dark;
-    background-color: rgba($bg-hover, 0.8);
+    color: $color-add;
+    border: 2px solid $btn-focus;
+    background-color: rgba($color, 0.8);
     outline: none;
   }
 
   &:active {
-    color: rgba($color, 0.8);
-    background-color: $bg-hover;
-    border: 2px solid $bg-trans;
+    color: $color-base-sapfire;
+    background-color: $color;
+    border: 2px solid $color;
   }
 
   &:disabled {
     opacity: 0.5;
+  }
+}
+
+@mixin btn-grad($color) {
+  @include btn($color);
+
+  &:hover {
+    color: $color-base-white;
+    background: $bg-trans $bg-btn-grad;
+    border-image: $bg-btn-grad 30;
+  }
+
+  &:focus {
+    color: $color-base-white;
+    background-image: $bg-btn-grad;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+    color: rgba($color-base-white, 0.7);
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
