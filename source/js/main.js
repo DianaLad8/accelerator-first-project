@@ -9,4 +9,5 @@ import './price';
 import {onButtonPriceHover, onBuutonTabClick} from './price';
 onButtonPriceHover();
 onBuutonTabClick();
+import './juri';
 

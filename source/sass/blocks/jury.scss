@@ -1,0 +1,162 @@
+.juri {
+  @include container;
+
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+.juri__title {
+  @include title;
+
+  margin-bottom: 46px;
+  margin-left: 63px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.juri__slider {
+  background-color: #bfd4ee;
+
+
+  @media (max-width: $desctop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.juri__wrapper {
+  background-color: #c2e684;
+  padding-left: 63px;
+  padding-right: 63px;
+  max-width: 1292px;
+
+  @media (max-width: $desctop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.juri__slide {
+  position: relative;
+  background-color: #ee4898;
+  color: $color-base-white;
+
+
+  @media (max-width: $tablet-width) {
+    padding: 0 30px;
+    max-width: 290px;
+    height: 280px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .juri__hover,
+  &:focus .juri__hover {
+    display: block;
+  }
+
+  &:hover .juri__label,
+  &:focus .juri__label {
+    display: none;
+  }
+}
+
+.juri__hover {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 260px;
+  padding: 45px 40px 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 157%;
+  background-color: rgba($color-base-sapfire, 0.9);
+  box-shadow: 0 0 35px 0 rgba($juru-shadow, 0.17);
+
+  @media (max-width: $tablet-width) {
+    width: 227px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.juri__trainer {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.juri__subtitle {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  color: $color-juri-hover;
+}
+
+.juri__skills {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  text-align: start;
+}
+
+.juri__picture {
+  width: 260px;
+  height: 300px;
+
+  @media (max-width: $tablet-width) {
+    width: 227px;
+    height: 280px;
+  }
+}
+
+.juri__picture img {
+  width: 260px;
+  height: 300px;
+
+  @media (max-width: $tablet-width) {
+    width: 227px;
+    height: 280px;
+  }
+}
+
+.juri__label {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 100%;
+  transform: translateX(-50%);
+}
+
+.juri__button {
+  position: absolute;
+  left: -40px;
+  bottom: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
