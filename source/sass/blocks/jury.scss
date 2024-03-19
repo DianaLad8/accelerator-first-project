@@ -22,12 +22,18 @@
 }
 
 .juri__slider {
+  width: 1272px;
   background-color: #bfd4ee;
 
 
   @media (max-width: $desctop-width) {
+    width: 678px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
   }
 }
 
@@ -35,14 +41,16 @@
   background-color: #c2e684;
   padding-left: 63px;
   padding-right: 63px;
-  max-width: 1292px;
+  width: 1160px;
 
   @media (max-width: $desctop-width) {
+    width: 558px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   @media (max-width: $tablet-width) {
+    width: 290px;
     padding-left: 0;
     padding-right: 0;
   }

@@ -122,6 +122,7 @@
 
   &:focus {
     background-color: $price-shadow;
+    outline: none;
   }
 
   &:active {
