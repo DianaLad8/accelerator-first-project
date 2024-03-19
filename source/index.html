@@ -19,9 +19,8 @@
       <header class="hero__header header">
         <h1 class="visually-hidden">Все про самый большой фитнес центр за Уралом</h1>
         <div class="header__logo logo">
-          <svg width="100" height="20">
-            <use href="/__spritemap#sprite-logo"></use>
-          </svg>
+          <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Это спрайт">
+
         </div>
         <a class="header__tel" href="tel:88005555555">8 800 555-55-55</a>
       </header>
@@ -220,7 +219,37 @@
       <section class="juri" data-test="juri">
         <h2 class="juri__title">Жюри</h2>
         <div class="juri__slider swiper">
+          <div class="juri__button swiper-button-prev" tabindex="0">
+            <svg width="16" height="32" aria-hidden="true" focusable="false">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </div>
+          <div class="juri__button juri__button--next swiper-button-next" tabindex="0">
+            <svg width="16" height="32" aria-hidden="true" focusable="false">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </div>
           <div class="juri__wrapper swiper-wrapper">
+            <div class="juri__slide swiper-slide" tabindex="0">
+              <div class="juri__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/juri/card-3-desktop@1x.webp 1x, ./img/juri/card-3-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="./img/juri/card-3-mobile@1x.webp 1x, ./img/juri/card-3-mobile@2x.webp 2x" width="227" height="280">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/juri/card-3-desctop@1x.jpg 1x, ./img/juri/card-3-desktop@2x.jpg 2x" width="260" height="300">
+                  <img src="./img/juri/card-3-mobile@1x.jpg" srcset="./img/juri/card-3-mobile@2x.jpg 2x" width="227" height="280" alt="Фотография тренера.">
+                </picture>
+              </div>
+              <span class="juri__label">Александр Пашков</span>
+              <div class="juri__hover">
+                <h3 class="juri__trainer">Александр Пашков</h3>
+                <span class="juri__subtitle">CrossFit</span>
+                <ul class="juri__skills">
+                  <li class="juri__skill">Certified Level 3 Trainer</li>
+                  <li class="juri__skill">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__skill">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
             <div class="juri__slide swiper-slide" tabindex="0">
               <div class="juri__picture">
                 <picture>
@@ -383,8 +412,7 @@
             </div>
 
           </div>
-          <div class="juri__button swiper-button-prev"></div>
-          <div class="juri__button juri__button--next swiper-button-next"></div>
+
         </div>
       </section>
       <div data-test="features">features</div>
