@@ -11,10 +11,13 @@
   margin-bottom: 46px;
   margin-left: 63px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desctop-width) {
     margin-left: 0;
-    margin-bottom: 20px;
     text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -47,9 +50,10 @@
 
 .juri__slide {
   position: relative;
+  margin-left: 40px;
+  max-width: 260px;
   background-color: #ee4898;
   color: $color-base-white;
-
 
   @media (max-width: $tablet-width) {
     padding: 0 30px;
@@ -151,12 +155,20 @@
 }
 
 .juri__button {
-  position: absolute;
-  left: -40px;
-  bottom: 50%;
-  transform: translateY(-50%);
+  @include btn-circle;
+
+
+  &::after {
+    display: none;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;
   }
+}
+
+.juri__button svg {
+  width: 16px;
+  height: 32px;
+  z-index: 10;
 }

@@ -11,18 +11,19 @@ let jurySwiper = new Swiper('.swiper', {
   activeIndex: 0,
   loop: true,
   slidesPerView: 1,
-  initialSlide: 1,
+  initialSlide: 0,
 
   breakpoints: {
     320: {
+      initialSlide: 2,
       slidesPerView: 1,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 0,
     },
     1366: {
-      initialSlide: 6,
+      initialSlide: 0,
       slidesPerView: 4,
       spaceBetween: 40,
     },

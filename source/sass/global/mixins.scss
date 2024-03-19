@@ -98,6 +98,46 @@
   }
 }
 
+@mixin btn-circle {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $bg-trans;
+  border: 1px solid $bg-trans;
+
+  svg {
+    --color: #102654;
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    border-color: $color-base-sapfire;
+  }
+
+  &:focus {
+    background-color: $price-shadow;
+  }
+
+  &:active {
+    background-color: $color-base-sapfire;
+  }
+
+  &:active svg {
+    --color: #ffffff;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    background-color: $bg-trans;
+  }
+}
+
 @mixin list {
   margin: 0;
   padding: 0;
