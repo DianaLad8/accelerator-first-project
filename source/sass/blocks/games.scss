@@ -1,7 +1,7 @@
 .games {
   @include container;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -14,12 +14,12 @@
   width: 1160px;
   background-color: $bg-accent;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 678px;
     grid-template-columns: auto 378px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 290px;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -33,13 +33,13 @@
   width: 500px;
   color: $color-base-white;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     padding: 40px;
     width: 300px;
     gap: 10px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 290px;
     gap: 16px;
   }
@@ -59,7 +59,7 @@
   line-height: 117%;
   text-transform: uppercase;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 100px;
     font-size: 48px;
     line-height: 112%;
@@ -71,12 +71,12 @@
   gap: 20px;
   width: 95px;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 100px;
     gap: 10px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 56px;
   }
 }
@@ -88,7 +88,7 @@
   font-weight: 400;
   line-height: 157%;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     font-size: 12px;
     line-height: 100%;
   }
@@ -100,7 +100,7 @@
   line-height: 133%;
   border-bottom: 1px solid $color-base-white;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     font-size: 16px;
     line-height: 125%;
   }
@@ -117,7 +117,7 @@
   font-weight: 700;
   line-height: 100%;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     font-size: 24px;
   }
 }
@@ -126,7 +126,7 @@
   font-size: 18px;
   line-height: 133%;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     font-size: 16px;
     line-height: 125%;
   }
@@ -138,7 +138,7 @@
   width: 340px;
   align-self: end;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 210px;
   }
 }
@@ -148,12 +148,12 @@
   height: 500px;
   background-color: $bg-video;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 378px;
     height: 348px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 290px;
     height: 290px;
   }
@@ -163,12 +163,12 @@
   width: 660px;
   height: 500px;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 378px;
     height: 348px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 290px;
     height: 290px;
   }

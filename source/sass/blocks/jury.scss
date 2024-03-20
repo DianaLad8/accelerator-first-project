@@ -11,28 +11,26 @@
   margin-bottom: 46px;
   margin-left: 63px;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     margin-left: 0;
     text-align: center;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     margin-bottom: 20px;
   }
 }
 
 .juri__slider {
-  width: 1272px;
   background-color: #bfd4ee;
 
 
-  @media (max-width: $desctop-width) {
-    width: 678px;
+  @media (max-width: $desktop) {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 320px;
   }
 }
@@ -41,15 +39,14 @@
   background-color: #c2e684;
   padding-left: 63px;
   padding-right: 63px;
-  width: 1160px;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 558px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 290px;
     padding-left: 0;
     padding-right: 0;
@@ -58,12 +55,11 @@
 
 .juri__slide {
   position: relative;
-  margin-left: 40px;
   max-width: 260px;
   background-color: #ee4898;
   color: $color-base-white;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     padding: 0 30px;
     max-width: 290px;
     height: 280px;
@@ -100,7 +96,7 @@
   background-color: rgba($color-base-sapfire, 0.9);
   box-shadow: 0 0 35px 0 rgba($juru-shadow, 0.17);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 227px;
     left: 50%;
     transform: translateX(-50%);
@@ -136,7 +132,7 @@
   width: 260px;
   height: 300px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 227px;
     height: 280px;
   }
@@ -146,7 +142,7 @@
   width: 260px;
   height: 300px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 227px;
     height: 280px;
   }
@@ -165,12 +161,14 @@
 .juri__button {
   @include btn-circle;
 
+  background-color: $bg-primary;
+
 
   &::after {
     display: none;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     display: none;
   }
 }

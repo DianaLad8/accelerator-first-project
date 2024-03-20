@@ -4,12 +4,12 @@
   width: 360px;
   height: 230px;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 270px;
     height: 170px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 320px;
   }
 }
@@ -88,7 +88,7 @@
   }
 
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 72px;
     height: 72px;
 
@@ -107,7 +107,7 @@
   height: 17px;
   z-index: 1;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 12px;
     height: 12px;
   }
@@ -127,12 +127,12 @@
   width: 364px;
   height: 228px;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     width: 265px;
     height: 167px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     width: 320px;
     height: 167px;
   }

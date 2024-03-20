@@ -4,11 +4,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     padding: 30px 45px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     padding: 16px 15px;
   }
 }
@@ -23,11 +23,11 @@
   border: none;
   transition: color 0.5s;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     font-size: 24px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     font-size: 22px;
   }
 

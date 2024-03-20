@@ -3,11 +3,11 @@
   padding: 100px 103px;
   margin: 0 auto;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     padding: 60px 45px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     padding: 40px 15px;
   }
 }
@@ -20,11 +20,11 @@
   line-height: 100%;
   color: $color-base-sapfire;
 
-  @media (max-width: $desctop-width) {
+  @media (max-width: $desktop) {
     font-size: 42px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     font-size: 32px;
   }
 }
@@ -46,7 +46,7 @@
   cursor: pointer;
   transition: color, background-color 0.3s;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet) {
     padding: 22px 0;
   }
 
@@ -136,6 +136,60 @@
   &:disabled {
     opacity: 0.3;
     background-color: $bg-trans;
+  }
+}
+
+@mixin link($color) {
+  position: relative;
+  padding: 10px;
+  align-self: end;
+  height: 34px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  color: $color;
+  text-transform: uppercase;
+  border: 1px solid $bg-trans;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 78px;
+    left: 10px;
+    bottom: 5px;
+    background-color: $color;
+    transition: border-color 0.6s;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    border-color: $color;
+    outline: none;
+  }
+
+  &:focus::after {
+    display: none;
+  }
+
+  &:active {
+    border-color: $bg-trans;
+    opacity: 1;
+  }
+
+  &:active::after {
+    display: block;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet) {
+    justify-self: center;
   }
 }
 
