@@ -4,10 +4,14 @@
 // import 'swiper/css';
 
 import {initVideo} from './video';
-initVideo();
-import './price';
-import {onButtonPriceHover, onBuutonTabClick} from './price';
-onButtonPriceHover();
-onBuutonTabClick();
+import {onButtonPriceHover, onButtonTabClick} from './price';
+
 import './juri';
+import './faq.js';
+
+
+initVideo();
+onButtonPriceHover();
+onButtonTabClick();
+
 

@@ -67,7 +67,7 @@
 
   &:not(:nth-child(5n + 2)):not(:nth-child(5n)):not(:nth-child(5n - 1)) {
     padding-bottom: 39px;
-    border-bottom: 2px solid rgba($fuet-border, 0.2);
+    border-bottom: 2px solid rgba($feat-border, 0.2);
 
     @media (max-width: $desktop) {
       padding-bottom: 0;

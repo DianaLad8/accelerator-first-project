@@ -1,0 +1,137 @@
+.accordion {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133%;
+  color: $color-base-sapfire;
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.accordion__element {
+  margin: 0;
+  padding: 0;
+
+  &:last-child {
+    border-bottom: 1px solid $accordion-border;
+  }
+}
+
+.accordion__element button {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: start;
+  text-transform: none;
+  background-color: $bg-trans;
+
+  border: none;
+
+  &:first-child {
+    border-top: 1px solid $accordion-border;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover span {
+    background-color: $btn-border;
+
+    &::before,
+    &::after {
+      background-color: $color-base-white;
+    }
+  }
+
+  &:focus span {
+    background-color: $accordion-border;
+
+    &::before,
+    &::after {
+      background-color: $color-base-white;
+    }
+  }
+
+  &:disabled {
+    color: $color-base-sapfire;
+    cursor: not-allowed;
+  }
+}
+
+.accordion__element button:disabled span {
+  opacity: 0.3;
+  background-color: $bg-trans;
+
+  &::before,
+  &::after {
+    background-color: $color-base-sapfire;
+  }
+}
+
+.accordion__element span {
+  float: right;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $btn-border;
+  border-radius: 20px;
+  background-color: $bg-trans;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: $btn-border;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.accordion__element div {
+  overflow: hidden;
+  max-height: 0;
+  padding-bottom: 0;
+
+  transform: translate(0, -50%) scaleY(0);
+  transition: transform 0.5s, padding-bottom 0.5s;
+}
+
+.accordion__element.active div {
+  max-height: 100%;
+  transform: translate(0, 0);
+  padding-bottom: 26px;
+}
+
+.accordion__element.active span {
+  background-color: $btn-border;
+
+  &::before {
+    transform: rotate(0deg);
+  }
+
+  &::before,
+  &::after {
+    background-color: $color-base-white;
+  }
+}
+
+.accordion__element.active button:focus {
+  span {
+    background-color: $btn-border;
+  }
+}

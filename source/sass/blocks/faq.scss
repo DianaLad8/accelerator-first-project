@@ -1,0 +1,20 @@
+.faq {
+  @include container;
+
+  background-color: $bg-primary;
+}
+
+.faq__title {
+  @include title;
+
+  margin-bottom: 50px;
+  text-align: start;
+
+  @media (max-width: $desktop) {
+    text-align: center;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 37px;
+  }
+}

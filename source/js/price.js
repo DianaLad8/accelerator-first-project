@@ -16,7 +16,7 @@ function changesActiveClass (button) {
   });
 }
 
-const onBuutonTabClick = () => {
+const onButtonTabClick = () => {
   tabPriceButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const prevActiveButton = document.querySelector('.price__button.active');
@@ -44,5 +44,5 @@ const onButtonPriceHover = () => {
   });
 };
 
-export {onButtonPriceHover, onBuutonTabClick};
+export {onButtonPriceHover, onButtonTabClick};
 
