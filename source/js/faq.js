@@ -1,10 +1,12 @@
 const faqTabsElements = document.querySelectorAll('.tabs__element');
 const faqTabsButtons = document.querySelectorAll('.tabs__button');
-const accordionElements = document.querySelectorAll('.tabs__element.active .accordion__element');
+const faqTabsButtonsArray = Array.from(faqTabsButtons);
 
-initAccordion(accordionElements);
+window.addEventListener('DOMContentLoaded', () => {
+  initAccordion();
+});
 
-faqTabsButtons.forEach((button) => {
+const onButtonFaqClick = (button) => {
   button.addEventListener('click', () => {
     const prevActiveButton = document.querySelector('.tabs__button.active');
     const prevActiveElement = document.querySelector('.tabs__element.active');
@@ -15,26 +17,32 @@ faqTabsButtons.forEach((button) => {
     if (prevActiveElement) {
       prevActiveElement.classList.remove('active');
     }
+    button.classList.add('active');
 
     const nextActiveElementTab = button.dataset.faqTab;
     for (const element of faqTabsElements) {
       if (element.dataset.faqEl === nextActiveElementTab) {
         element.classList.add('active');
+        initAccordion();
       }
-      button.classList.add('active');
-      const accordionCurrentElements = document.querySelectorAll('.tabs__element.active .accordion__element');
-
-      initAccordion(accordionCurrentElements);
     }
   });
-});
+};
+
+const initFaqTabs = () => faqTabsButtonsArray.forEach((button) => onButtonFaqClick(button));
 
 
-function initAccordion (elements) {
-  for (const element of elements) {
+function initAccordion () {
+  const currentTabActive = document.querySelector('.accordion.active');
+  const accordionElements = currentTabActive.querySelectorAll('.accordion__element');
+  const accordionElementsArray = Array.from(accordionElements);
+  accordionElementsArray.forEach((element) => {
     const buttonElement = element.querySelector('button');
     buttonElement.addEventListener('click', () => {
-      element.classList.toggle('active');
+      element.classList.toggle('open');
     });
-  }
+  });
 }
+
+initFaqTabs();
+

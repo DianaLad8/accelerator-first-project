@@ -4,7 +4,7 @@
 // import 'swiper/css';
 
 import {initVideo} from './video';
-import {onButtonPriceHover, onButtonTabClick} from './price';
+import {onButtonPriceHover, onButtonPriceClick} from './price';
 
 import './juri';
 import './faq.js';
@@ -12,6 +12,4 @@ import './faq.js';
 
 initVideo();
 onButtonPriceHover();
-onButtonTabClick();
-
-
+onButtonPriceClick();
