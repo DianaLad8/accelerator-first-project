@@ -124,17 +124,17 @@
 
 .video__iframe {
   position: relative;
-  width: 364px;
-  height: 228px;
+  width: 360px;
+  height: 230px;
 
   @media (max-width: $desktop) {
-    width: 265px;
-    height: 167px;
+    width: 270px;
+    height: 170px;
   }
 
   @media (max-width: $tablet) {
     width: 320px;
-    height: 167px;
+    height: 170px;
   }
 }
 

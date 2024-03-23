@@ -122,6 +122,7 @@
   }
 
   &:focus {
+    border-color: $color-base-sapfire;
     background-color: $price-shadow;
     outline: none;
   }
@@ -137,6 +138,7 @@
   &:disabled {
     opacity: 0.3;
     background-color: $bg-trans;
+    border: 1px solid $bg-trans;
   }
 }
 

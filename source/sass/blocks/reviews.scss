@@ -1,0 +1,137 @@
+.reviews {
+  @include container;
+
+  @media (max-width: $desktop) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.reviews__title {
+  @include title;
+
+  margin-bottom: 75px;
+  text-align: center;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.reviews__slider {
+  width: 712px;
+
+  @media (max-width: $desktop) {
+    width: 718px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 240px;
+  }
+}
+
+.reviews__slide {
+  padding: 0 76px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (max-width: $desktop) {
+    padding: 0 110px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.reviews__content {
+  padding: 60px;
+  width: 560px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 30px;
+  color: $color-base-white;
+  background-color: $color-base-sapfire;
+
+  @media (max-width: $desktop) {
+    padding: 40px;
+    width: 500px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 30px 25px;
+    width: 240px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+  }
+}
+
+.reviews__content figure {
+  margin: 0;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @media (max-width: $tablet) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.reviews__content blockquote {
+  margin: 0;
+  text-align: start;
+  display: grid;
+
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
+}
+
+
+.reviews__content cite {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 100%;
+  font-style: normal;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 111%;
+  }
+}
+
+.reviews__content p {
+  margin: 0;
+}
+
+.reviews__button {
+  @include btn-circle;
+
+  &::after {
+    display: none;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.reviews__button svg {
+  width: 16px;
+  height: 32px;
+  z-index: 10;
+}
+

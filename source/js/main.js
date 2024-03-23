@@ -8,6 +8,7 @@ import {onButtonPriceHover, onButtonPriceClick} from './price';
 
 import './juri';
 import './faq.js';
+import './reviews.js';
 
 
 initVideo();

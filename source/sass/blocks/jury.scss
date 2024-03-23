@@ -24,39 +24,25 @@
 .juri__slider {
   background-color: #bfd4ee;
   width: 1366px;
+  padding-right: 103px;
+  padding-left: 103px;
 
 
   @media (max-width: $desktop) {
-    max-width: 678px;
+    width: 768px;
+
     padding-left: 10px;
     padding-right: 10px;
   }
 
   @media (max-width: $tablet) {
-    max-width: 320px;
+    width: 320px;
   }
 }
 
-.juri__wrapper {
-  background-color: #c2e684;
-  max-width: 1160px;
-  padding-left: 63px;
-  padding-right: 63px;
-
-  @media (max-width: $desktop) {
-    max-width: 560px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media (max-width: $tablet) {
-    max-width: 290px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 .juri__slide {
+  margin: 10px;
   position: relative;
   max-width: 260px;
   background-color: #ee4898;

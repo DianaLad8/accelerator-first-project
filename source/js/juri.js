@@ -1,8 +1,10 @@
 import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
+const jurySwiper = document.querySelector('juri__slider.swiper');
 
-let jurySwiper = new Swiper('.swiper', {
+
+new Swiper(jurySwiper, {
   modules: [Navigation, Pagination],
   navigation: {
     nextEl: '.swiper-button-next',
@@ -12,6 +14,7 @@ let jurySwiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 1,
   initialSlide: 0,
+  //breakpointsBase: 'conteiner',
 
   breakpoints: {
     320: {
@@ -30,7 +33,5 @@ let jurySwiper = new Swiper('.swiper', {
   }
 });
 
-jurySwiper = document.querySelector('.swiper').swiper;
-
-jurySwiper.slideNext();
+//jurySwiper.slideNext();
 
