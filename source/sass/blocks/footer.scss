@@ -1,0 +1,145 @@
+.footer {
+  @include container;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $bg-footer;
+
+  @media (max-width: $desktop) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+    line-height: 20px;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer__nav-list {
+  @include list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media (max-width: $desktop) {
+    gap: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 55px;
+    column-gap: 35px;
+    row-gap: 20px;
+    justify-content: flex-start;
+  }
+}
+
+.footer__nav-link {
+  position: relative;
+  padding: 5px 10px;
+  align-self: end;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-base-white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 20px);
+    left: 10px;
+    bottom: 0;
+    background-color: $color-base-white;
+  }
+
+  &:focus {
+    box-shadow: inset 1px 1px 0 $color-base-white, inset -1px -1px 0 $color-base-white,;
+    outline: none;
+  }
+
+  &:focus::after {
+    display: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  &:active::after {
+    display: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.footer__social-list {
+  @include list;
+
+  display: flex;
+  gap: 10px;
+  align-self: center;
+}
+
+.footer__social-link {
+  @include btn-circle;
+
+  width: 25px;
+  height: 25px;
+  background-color: $color-base-white;
+
+  &:hover {
+    background-color: $accordion-border;
+  }
+
+  &:focus {
+    background-color: $color-add;
+  }
+
+  &:active {
+    background-color: $color-base-sapfire;
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    --color: #ffffff;
+  }
+}
+
+.footer__social-link svg {
+  --color: #030a1a;
+
+  width: 13px;
+  height: 8px;
+
+  &--ok svg {
+    width: 10px;
+    height: 17px;
+  }
+
+  &--reddit svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+

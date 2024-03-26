@@ -5,10 +5,10 @@
 
 import {initVideo} from './video';
 import {onButtonPriceHover, onButtonPriceClick} from './price';
-
 import './juri';
 import './faq.js';
 import './reviews.js';
+import './form.js';
 
 
 initVideo();

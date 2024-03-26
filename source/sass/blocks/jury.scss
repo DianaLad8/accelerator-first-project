@@ -1,8 +1,14 @@
 .juri {
   @include container;
 
+  position: relative;
   padding-left: 37px;
   padding-right: 37px;
+
+  @media (max-width: $desktop) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .juri__title {
@@ -22,17 +28,13 @@
 }
 
 .juri__slider {
-  background-color: #bfd4ee;
-  width: 1366px;
+  width: 1160px;
   padding-right: 103px;
   padding-left: 103px;
 
 
   @media (max-width: $desktop) {
-    width: 768px;
-
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 560px;
   }
 
   @media (max-width: $tablet) {
@@ -40,12 +42,13 @@
   }
 }
 
-
 .juri__slide {
-  margin: 10px;
   position: relative;
   max-width: 260px;
-  background-color: #ee4898;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $color-base-white;
 
   @media (max-width: $tablet) {
@@ -150,7 +153,19 @@
 .juri__button {
   @include btn-circle;
 
-  background-color: $bg-primary;
+  background-color: tomato;
+  position: absolute;
+  left: 25px;
+  bottom: 50%;
+  z-index: 100;
+
+  &--next {
+    left: 1300px;
+
+    @media (max-width: $desktop) {
+      left: 709px;
+    }
+  }
 
 
   &::after {

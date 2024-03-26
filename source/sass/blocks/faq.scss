@@ -1,6 +1,8 @@
 .faq {
   @include container;
 
+  display: grid;
+  justify-content: center;
   background-color: $bg-primary;
 }
 
@@ -17,5 +19,11 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 37px;
+  }
+}
+
+.faq__tabs {
+  @media (max-width: $tablet) {
+    width: 320px;
   }
 }

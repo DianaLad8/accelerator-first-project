@@ -1,0 +1,102 @@
+.input {
+  display: grid;
+  grid-template-columns: repeat(2, 46%);
+  gap: 7%;
+  justify-content: space-between;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: repeat(2, 44%);
+    gap: 8%;
+  }
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.input__wrapper {
+  position: relative;
+  padding-bottom: 38px;
+
+  @media (max-width: $desktop) {
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 40px;
+  }
+}
+
+.input__field {
+  padding: 10px;
+  width: 100%;
+  line-height: 22px;
+  color: $color-base-white;
+  background-color: $bg-trans;
+  border: none;
+  border-bottom: 1px solid rgba($color-base-white, 0.5);
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    font-weight: 300;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-base-white;
+    opacity: 1;
+
+    @media (max-width: $tablet) {
+      font-weight: 300;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-bottom: 1px solid $color-base-white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid $color-base-white;
+
+    &::placeholder {
+      color: $bg-trans;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.input__wrapper.is-invalid input {
+  border-color: bg-trans;
+  border-bottom: 1px solid $color-error;
+}
+
+.input__wrapper span {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-error;
+
+  @media (max-width: $desktop) {
+    bottom: 9px;
+  }
+}
+
+.form__submit {
+  @include btn($color-base-white);
+
+  width: 100%;
+}

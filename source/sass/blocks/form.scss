@@ -1,0 +1,21 @@
+.form {
+  padding: 60px 103px;
+  color: $color-base-white;
+  background-color: $color-base-sapfire;
+
+  @media (max-width: $desktop) {
+    padding: 60px 45px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 70px 15px;
+  }
+}
+
+.form__title {
+  @include title;
+
+  margin-bottom: 36px;
+  color: $color-base-white;
+}
+

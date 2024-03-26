@@ -8,26 +8,31 @@
 
 // global
 
-@import "./global/fonts";
-@import "./global/variables";
-@import "./global/common";
-@import "./global/mixins";
-@import "./global/visually-hidden";
+@import "global/fonts";
+@import "global/variables";
+@import "global/common";
+@import "global/mixins";
+@import "global/visually-hidden";
 
 // blocks
 
-@import "./blocks/hero";
-@import "./blocks/header";
-@import "./blocks/logo";
-@import "./blocks/about";
-@import "./blocks/video";
-@import "./blocks/price";
-@import "./blocks/price-item";
-@import "./blocks/games";
-@import "./blocks/jury";
-@import "./blocks/features";
-@import "./blocks/offers";
-@import "./blocks/faq";
-@import "./blocks/tabs";
-@import "./blocks/accordion";
-@import "./blocks/reviews";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/about";
+@import "blocks/video";
+@import "blocks/price";
+@import "blocks/price-item";
+@import "blocks/games";
+@import "blocks/jury";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/faq";
+@import "blocks/tabs";
+@import "blocks/accordion";
+@import "blocks/reviews";
+@import "blocks/form-contacts";
+@import "blocks/form";
+@import "blocks/input";
+@import "blocks/contacts";
+@import "blocks/footer";

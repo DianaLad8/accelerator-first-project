@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
-const jurySwiper = document.querySelector('juri__slider.swiper');
 
+const juriSlider = document.querySelector('.juri__slider');
 
-new Swiper(jurySwiper, {
+const jurySwiper = new Swiper(juriSlider, {
   modules: [Navigation, Pagination],
   navigation: {
     nextEl: '.swiper-button-next',
@@ -14,7 +14,7 @@ new Swiper(jurySwiper, {
   loop: true,
   slidesPerView: 1,
   initialSlide: 0,
-  //breakpointsBase: 'conteiner',
+  spaceBetween: 100,
 
   breakpoints: {
     320: {
@@ -22,16 +22,18 @@ new Swiper(jurySwiper, {
       slidesPerView: 1,
     },
     768: {
+      initialSlide: 1,
+
       slidesPerView: 2,
-      spaceBetween: 0,
+      spaceBetween: 40,
     },
     1366: {
-      initialSlide: 0,
+      initialSlide: 1,
       slidesPerView: 4,
       spaceBetween: 40,
     },
   }
 });
 
-//jurySwiper.slideNext();
+export {jurySwiper};
 
