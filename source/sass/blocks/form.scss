@@ -1,21 +1,39 @@
-.form {
+.form__wrapper {
   padding: 60px 103px;
+  width: 683px;
   color: $color-base-white;
-  background-color: $color-base-sapfire;
 
   @media (max-width: $desktop) {
+    margin: 0 auto;
+    width: 530px;
     padding: 60px 45px;
   }
 
   @media (max-width: $tablet) {
     padding: 70px 15px;
+    width: 320px;
   }
 }
 
 .form__title {
   @include title;
 
-  margin-bottom: 36px;
+  margin-bottom: 31px;
   color: $color-base-white;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 54px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 32px;
+    font-size: 32px;
+    text-align: left;
+  }
 }
 
+.form__control {
+  margin-bottom: 36px;
+}

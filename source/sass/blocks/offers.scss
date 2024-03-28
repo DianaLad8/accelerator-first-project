@@ -4,6 +4,7 @@
   @media (max-width: $tablet) {
     padding-right: 0;
     padding-left: 0;
+    width: 100%;
   }
 }
 
@@ -51,7 +52,8 @@
   }
 
   @media (max-width: $tablet) {
-    grid-template-columns: 320px;
+    width: 100%;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -71,6 +73,7 @@
   @media (max-width: $tablet) {
     padding: 30px;
     padding-bottom: 20px;
+    align-items: center;
     text-align: center;
     gap: 28px;
   }
@@ -143,10 +146,16 @@
 }
 
 .offers__picture {
+  @media (max-width: $tablet) {
+    width: 100%;
+    background-image: linear-gradient(180deg, #416bdc 0%, #abcef1 100%);
+  }
+}
+
+.offers__picture img {
   justify-self: end;
   width: 280px;
   height: 460px;
-  background-color: #538ee6;
 
   @media (max-width: $desktop) {
     width: 400px;
@@ -154,6 +163,7 @@
   }
 
   @media (max-width: $tablet) {
+    margin: 0 auto;
     width: 320px;
     height: 360px;
   }

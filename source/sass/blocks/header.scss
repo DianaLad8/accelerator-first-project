@@ -1,15 +1,21 @@
 .header {
-  padding: 30px 103px;
+  @include container;
+
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: $desktop) {
-    padding: 30px 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @media (max-width: $tablet) {
-    padding: 16px 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 

@@ -1,9 +1,12 @@
 .faq {
+  background-color: $bg-primary;
+}
+
+.faq__wrapper {
   @include container;
 
   display: grid;
   justify-content: center;
-  background-color: $bg-primary;
 }
 
 .faq__title {

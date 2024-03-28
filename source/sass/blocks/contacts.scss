@@ -1,38 +1,48 @@
 .contacts {
-  padding: 60px 103px 64px 120px;
+  padding: 60px 103px;
+  width: 683px;
+  display: grid;
+  gap: 36px;
+  box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    padding: 100px 133px;
-    padding-right: 45px;
+    margin: 0 auto;
+    padding: 60px 45px;
+    width: 100%;
   }
 
   @media (max-width: $tablet) {
-    padding: 70px 15px;
+    padding: 40px 15px;
+    width: 320px;
+    gap: 42px;
   }
 }
 
 .contacts__title {
   @include title;
 
-  margin-bottom: 40px;
   text-align: left;
 
   @media (max-width: $desktop) {
-    margin-bottom: 36px;
+    text-align: center;
+    font-size: 54px;
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: 42px;
+    text-align: left;
+    font-size: 32px;
   }
 }
 
 .contacts__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 70px;
+  gap: 60px;
 
   @media (max-width: $desktop) {
-    gap: 60px;
+    margin: 0 auto;
+    width: 440px;
+    gap: 30px;
   }
 
   @media (max-width: $tablet) {
@@ -48,7 +58,7 @@
   gap: 15px;
 
   @media (max-width: $desktop) {
-    gap: 27px;
+    gap: 15px;
   }
 
   @media (max-width: $tablet) {
@@ -57,11 +67,11 @@
 }
 
 .contacts__list:first-child {
-  padding-right: 50px;
+  padding-right: 60px;
   border-right: 1px solid $accordion-border;
 
   @media (max-width: $desktop) {
-    padding-right: 81px;
+    padding-right: 30px;
   }
 
   @media (max-width: $tablet) {
@@ -70,35 +80,22 @@
   }
 }
 
-.contacts__headline {
-  margin: 0;
-  margin-bottom: 5px;
-  font-size: 24px;
-  font-weight: 400;
+.contacts__item {
+  width: 178px;
 
   @media (max-width: $desktop) {
-    margin-bottom: 11px;
-    font-size: 22px;
-    line-height: 22px;
+    width: 190px;
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: 12px;
-    font-size: 20px;
-    line-height: 20px;
+    width: 170px;
   }
 }
 
-.contacts__text {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: $color-base-sapfire;
-
-  @media (max-width: $tablet) {
-    line-height: 20px;
-  }
+.contacts__item a {
+  width: fit-content;
+  display: block;
+  border-bottom: 1px solid $bg-trans;
 
   &:hover {
     opacity: 0.7;
@@ -116,5 +113,35 @@
 
   &:disabled {
     opacity: 0.3;
+  }
+}
+
+.contacts__headline {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 24px;
+  font-weight: 400;
+
+  @media (max-width: $desktop) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.contacts__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 157%;
+  color: $color-base-sapfire;
+
+
+  @media (max-width: $tablet) {
+    line-height: 143%;
   }
 }

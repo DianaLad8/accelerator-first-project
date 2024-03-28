@@ -1,17 +1,7 @@
 .footer {
-  @include container;
-
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-color: $bg-footer;
 
-  @media (max-width: $desktop) {
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-
   @media (max-width: $tablet) {
-    padding-top: 40px;
     line-height: 20px;
     flex-direction: column;
     text-align: left;
@@ -19,11 +9,28 @@
 }
 
 .footer__wrapper {
+  @include container;
+
   margin: 0 auto;
-  width: 1160px;
+  width: 1366px;
   display: flex;
-  justify-content: space-between;
+  gap: 167px;
   text-align: center;
+
+  @media (max-width: $desktop) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 768px;
+    gap: 36px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 320px;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .footer__nav-list {
@@ -32,27 +39,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  width: 600px;
 
   @media (max-width: $desktop) {
-    gap: 30px;
+    width: 410px;
+    justify-content: space-between;
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: 55px;
+    margin-left: -10px;
+    width: 290px;
     column-gap: 35px;
-    row-gap: 20px;
+    row-gap: 16px;
     justify-content: flex-start;
   }
 }
 
 .footer__nav-link {
   position: relative;
-  padding: 5px 10px;
+  padding: 3px 10px;
   align-self: end;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 157%;
   color: $color-base-white;
 
   &:hover {
@@ -98,6 +107,10 @@
   display: flex;
   gap: 10px;
   align-self: center;
+
+  @media (max-width: $tablet) {
+    align-self: start;
+  }
 }
 
 .footer__social-link {
@@ -124,13 +137,13 @@
   &:active svg {
     --color: #ffffff;
   }
-}
 
-.footer__social-link svg {
-  --color: #030a1a;
+  svg {
+    --color: #030a1a;
 
-  width: 13px;
-  height: 8px;
+    width: 13px;
+    height: 8px;
+  }
 
   &--ok svg {
     width: 10px;
@@ -142,4 +155,3 @@
     height: 15px;
   }
 }
-

@@ -1,12 +1,15 @@
 .price {
+  background-color: $bg-primary;
+  position: relative;
+}
+
+.price__wrapper {
   @include container;
 
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: $bg-primary;
 }
 
 .price__title {

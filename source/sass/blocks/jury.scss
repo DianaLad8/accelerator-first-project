@@ -31,6 +31,8 @@
   width: 1160px;
   padding-right: 103px;
   padding-left: 103px;
+  display: grid;
+  justify-content: center;
 
 
   @media (max-width: $desktop) {
@@ -39,6 +41,12 @@
 
   @media (max-width: $tablet) {
     width: 320px;
+  }
+}
+
+.juri__wrapper {
+  @media (max-width: $tablet) {
+    padding-left: 91px;
   }
 }
 
@@ -153,17 +161,19 @@
 .juri__button {
   @include btn-circle;
 
-  background-color: tomato;
   position: absolute;
-  left: 25px;
+  left: 27px;
   bottom: 50%;
+  transform: translateY(50%);
   z-index: 100;
 
   &--next {
     left: 1300px;
+    bottom: 50%;
+    transform: translateY(50%) rotate(180deg);
 
     @media (max-width: $desktop) {
-      left: 709px;
+      left: 681px;
     }
   }
 

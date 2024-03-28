@@ -1,13 +1,15 @@
 @mixin container {
-  width: 100%;
+  width: 1366px;
   padding: 100px 103px;
   margin: 0 auto;
 
   @media (max-width: $desktop) {
+    width: 768px;
     padding: 60px 45px;
   }
 
   @media (max-width: $tablet) {
+    width: 320px;
     padding: 40px 15px;
   }
 }

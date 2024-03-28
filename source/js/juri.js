@@ -14,12 +14,13 @@ const jurySwiper = new Swiper(juriSlider, {
   loop: true,
   slidesPerView: 1,
   initialSlide: 0,
-  spaceBetween: 100,
+  spaceBetween: 0,
 
   breakpoints: {
     320: {
-      initialSlide: 2,
+      initialSlide: 3,
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     768: {
       initialSlide: 1,

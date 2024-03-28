@@ -1,41 +1,31 @@
 .input {
   display: grid;
-  grid-template-columns: repeat(2, 46%);
-  gap: 7%;
+  grid-template-columns: repeat(2, 223px);
+  gap: 30px;
   justify-content: space-between;
 
   @media (max-width: $desktop) {
-    grid-template-columns: repeat(2, 44%);
-    gap: 8%;
+    grid-template-columns: repeat(2, 205px);
   }
 
   @media (max-width: $tablet) {
-    grid-template-columns: 1fr;
-    gap: 35px;
+    grid-template-columns: 290px;
+    gap: 32px;
   }
 }
 
 .input__wrapper {
   position: relative;
-  padding-bottom: 38px;
-
-  @media (max-width: $desktop) {
-    padding-bottom: 30px;
-  }
-
-  @media (max-width: $tablet) {
-    padding-bottom: 40px;
-  }
 }
 
 .input__field {
-  padding: 10px;
+  padding: 4px 0;
   width: 100%;
-  line-height: 22px;
+  line-height: 157%;
   color: $color-base-white;
   background-color: $bg-trans;
   border: none;
-  border-bottom: 1px solid rgba($color-base-white, 0.5);
+  border-bottom: 1px solid $accordion-border;
 
   @media (max-width: $tablet) {
     width: 100%;
@@ -46,7 +36,7 @@
     font-size: 14px;
     line-height: 22px;
     color: $color-base-white;
-    opacity: 1;
+    opacity: 0.4;
 
     @media (max-width: $tablet) {
       font-weight: 300;
@@ -56,6 +46,10 @@
   &:hover {
     cursor: pointer;
     border-bottom: 1px solid $color-base-white;
+
+    &::placeholder {
+      opacity: 1;
+    }
   }
 
   &:focus {
