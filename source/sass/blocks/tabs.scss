@@ -9,31 +9,33 @@
     text-align: center;
     gap: 45px;
   }
+
+  @media (max-width: $tablet) {
+    gap: 35px;
+  }
 }
 
 .tabs__buttons {
   margin-bottom: 0;
   display: grid;
-  gap: 10px;
+  gap: 8px;
   width: 260px;
 
   @media (max-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
     width: 100%;
   }
 
   @media (max-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 30px;
-    gap: 8px;
+    gap: 9px;
   }
 }
 
 .tabs__button {
   @include btn-grad($color-base-sapfire);
 
-  padding: 18px 48px;
+  padding: 18px;
   width: 260px;
   font-size: 18px;
   font-weight: 400;
@@ -42,6 +44,7 @@
   border-color: rgba($color-base-sapfire, 0.2);
 
   @media (max-width: $desktop) {
+    padding: 17px;
     width: 162px;
   }
 
@@ -84,6 +87,10 @@
 
 .tabs__elements {
   @include list;
+
+  @media (max-width: $tablet) {
+    width: 290px;
+  }
 }
 
 .tabs__element {
@@ -94,4 +101,3 @@
     display: none;
   }
 }
-

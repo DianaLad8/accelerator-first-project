@@ -10,6 +10,31 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-image:
+    image-set(
+      url("../../img/price/dumbbells-desctop@1x.webp") type("image/webp") 1x,
+      url("../../img/price/dumbbells-desctop@2x.webp") type("image/webp") 2x,
+      url("../../img/price/dumbbells-desctop@1x.png") type("image/png") 1x,
+      url("../../img/price/dumbbells-desctop@2x.png") type("image/png") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  @media (max-width: $desktop) {
+    background-image:
+      image-set(
+        url("../../img/price/dumbbells-tablet@1x.webp") 1x,
+        url("../../img/price/dumbbells-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/price/dumbbells-tablet@1x.png") type("image/png") 1x,
+        url("../../img/price/dumbbells-tablet@2x.png") type("image/png") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  @media (max-width: $tablet) {
+    background-image: none;
+  }
 }
 
 .price__title {
@@ -18,7 +43,7 @@
   margin-bottom: 20px;
 
   @media (max-width: $desktop) {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   @media (max-width: $tablet) {
@@ -35,6 +60,7 @@
   border-bottom: 2px solid rgba($tabs-border, 0.2);
 
   @media (max-width: $desktop) {
+    margin-bottom: 45px;
     width: 310px;
   }
 
@@ -51,7 +77,7 @@
 
 .price__button {
   padding: 0;
-  padding-bottom: 14px;
+  padding-bottom: 9px;
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
@@ -61,7 +87,7 @@
   opacity: 0.5;
 
   @media (max-width: $desktop) {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     font-size: 18px;
   }
 
@@ -112,19 +138,8 @@
     flex-direction: column;
     gap: 40px;
   }
-}
-
-.price__picture {
-  position: absolute;
-  width: 303px;
-  bottom: 0;
-  right: 0;
-
-  @media (max-width: $desktop) {
-    width: 325px;
-  }
 
   @media (max-width: $tablet) {
-    display: none;
+    gap: 35px;
   }
 }

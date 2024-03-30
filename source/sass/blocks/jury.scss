@@ -6,8 +6,14 @@
   padding-right: 37px;
 
   @media (max-width: $desktop) {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 40px 15px;
+    padding-top: 41px;
   }
 }
 
@@ -15,15 +21,17 @@
   @include title;
 
   margin-bottom: 46px;
-  margin-left: 63px;
+  margin-left: 67px;
 
   @media (max-width: $desktop) {
     margin-left: 0;
     text-align: center;
+    font-size: 54px;
   }
 
   @media (max-width: $tablet) {
     margin-bottom: 20px;
+    font-size: 32px;
   }
 }
 
@@ -150,30 +158,34 @@
 
 .juri__label {
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   left: 50%;
   font-size: 22px;
   font-weight: 400;
   line-height: 100%;
   transform: translateX(-50%);
+
+  @media (max-width: $tablet) {
+    bottom: 23px;
+  }
 }
 
 .juri__button {
   @include btn-circle;
 
   position: absolute;
-  left: 27px;
+  left: 24px;
   bottom: 50%;
   transform: translateY(50%);
   z-index: 100;
 
   &--next {
-    left: 1300px;
+    left: 1285px;
     bottom: 50%;
     transform: translateY(50%) rotate(180deg);
 
     @media (max-width: $desktop) {
-      left: 681px;
+      left: 688px;
     }
   }
 

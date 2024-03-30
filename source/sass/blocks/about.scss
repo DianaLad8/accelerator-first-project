@@ -17,6 +17,7 @@
   @media (max-width: $tablet) {
     padding: 40px 0;
     width: 100%;
+    gap: 35px;
   }
 }
 
@@ -24,7 +25,7 @@
   width: 395px;
 
   @media (max-width: $desktop) {
-    padding: 0 75px;
+    padding: 0 88px;
     width: 100%;
     text-align: center;
   }
@@ -70,11 +71,20 @@
 
 .about__content {
   display: grid;
-  gap: 10px;
+  gap: 9px;
 }
 
 .about__content p {
   margin: 0;
+  width: 355px;
+
+  @media (max-width: $desktop) {
+    width: 502px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 290px;
+  }
 }
 
 .about__content p + p {
@@ -86,7 +96,7 @@
 .about__picture {
   @media (max-width: $tablet) {
     width: 100%;
-    background-image: linear-gradient(180deg, #d0cfdd 0%,  #d7e7f8 39.11%, #d7e7f8 75.5%, #d7d7d7 100%);
+    background-image: linear-gradient(180deg, #d0cfdd 0%, #d7e7f8 39.11%, #d7e7f8 75.5%, #d7d7d7 100%);
   }
 }
 
@@ -125,4 +135,3 @@
     transform: translate(0);
   }
 }
-

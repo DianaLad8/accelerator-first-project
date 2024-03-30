@@ -45,4 +45,3 @@ function initAccordion () {
 }
 
 initFaqTabs();
-

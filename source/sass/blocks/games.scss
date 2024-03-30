@@ -1,6 +1,10 @@
 .games {
   @include container;
 
+  @media (max-width: $desktop) {
+    padding-bottom: 30px;
+  }
+
   @media (max-width: $tablet) {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -28,8 +32,9 @@
 
 .games__content {
   padding: 60px 80px;
+  padding-bottom: 98px;
   display: grid;
-  gap: 30px;
+  gap: 29px;
   width: 500px;
   color: $color-base-white;
 
@@ -41,13 +46,14 @@
 
   @media (max-width: $tablet) {
     width: 290px;
-    gap: 16px;
+    gap: 15px;
   }
 }
 
 .games__adt {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .games__slogan {
@@ -68,7 +74,7 @@
 
 .games__date {
   display: grid;
-  gap: 20px;
+  gap: 22px;
   width: 95px;
 
   @media (max-width: $desktop) {
@@ -78,29 +84,43 @@
 
   @media (max-width: $tablet) {
     width: 56px;
+    gap: 4px;
   }
 }
 
 .games__time {
   margin: 0;
   display: grid;
+  gap: 5px;
   font-size: 14px;
   font-weight: 400;
   line-height: 157%;
 
+  @media (max-width: $desktop) {
+    gap: 1px;
+  }
+
   @media (max-width: $tablet) {
+    width: fit-content;
+    gap: 2px;
     font-size: 12px;
     line-height: 100%;
   }
 }
 
 .games__term {
+  padding-bottom: 5px;
   font-size: 18px;
   font-weight: 300;
   line-height: 133%;
   border-bottom: 1px solid $color-base-white;
 
+  @media (max-width: $desktop) {
+    padding-bottom: 2px;
+  }
+
   @media (max-width: $tablet) {
+    padding-bottom: 2px;
     font-size: 16px;
     line-height: 125%;
   }
@@ -139,6 +159,12 @@
   align-self: end;
 
   @media (max-width: $desktop) {
+    margin-top: 0;
+    width: 220px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 1px;
     width: 210px;
   }
 }

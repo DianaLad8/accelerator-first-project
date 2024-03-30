@@ -23,8 +23,8 @@
 }
 
 .accordion__element button {
-  position: relative;
-  padding: 25px 0;
+  padding: 24px 0;
+  padding-bottom: 21px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,12 +37,12 @@
   border: none;
 
   @media (max-width: $desktop) {
+    padding: 25px 0;
     font-size: 22px;
   }
 
   @media (max-width: $tablet) {
     padding: 20px 0;
-    padding-right: 52px;
     font-size: 20px;
   }
 
@@ -78,6 +78,30 @@
   }
 }
 
+.accordion__element b {
+  font-weight: 400;
+
+  @media (max-width: $desktop) {
+    width: 500px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 238px;
+  }
+}
+
+.accordion__element.open button {
+  padding-bottom: 22px;
+
+  @media (max-width: $desktop) {
+    padding-bottom: 10px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 20px;
+  }
+}
+
 .accordion__element button:disabled span {
   opacity: 0.3;
   background-color: $bg-trans;
@@ -89,7 +113,6 @@
 }
 
 .accordion__element span {
-  position: absolute;
   right: 0;
   width: 40px;
   height: 40px;
@@ -112,6 +135,7 @@
     width: 20px;
     height: 1px;
     background-color: $btn-border;
+    z-index: 10;
 
     @media (max-width: $tablet) {
       width: 12px;
@@ -135,7 +159,7 @@
 .accordion__element.open div {
   max-height: 100%;
   transform: translate(0, 0);
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   padding-right: 200px;
 
   @media (max-width: $desktop) {

@@ -7,17 +7,17 @@
     <title>SUPERGYM</title>
     <link rel="icon" href="favicon32.ico">
     <link rel="icon" type="image/png" href="img/favicon32.png">
-    <link rel="preload" href="./fonts/Alumni/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Alumni/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Roboto/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Roboto/Roboto-Condensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Roboto/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/alumni/alumnisans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/alumni/alumnisans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto/roboto-condensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body>
     <section class="hero" data-test="hero">
       <header class="hero__header header">
-        <h1 class="visually-hidden">Все про самый большой фитнес центр за Уралом</h1>
+        <h1 class="visually-hidden">Всё про самый большой фитнес центр за Уралом</h1>
         <div class="header__logo logo">
           <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип фитнес-центра">
         </div>
@@ -27,9 +27,10 @@
         <div class="hero__desk">
           <div class="hero__text">
             <div class="hero__headline">
-              <h2 class="hero__title">Омск</h2>
+              <h2 class="visually-hidden">Фитнес-центр "Supergym" в Омске</h2>
+              <span class="hero__title">Омск</span>
               <strong class="hero__caption">
-                ФИТНЕС ЦЕНТР
+                Фитнес центр
               </strong>
             </div>
             <ul class="hero__list">
@@ -59,7 +60,7 @@
           <h2 class="about__title">Тренажерный зал</h2>
           <span class="about__subtitle">Просторный зал площадью 900 кв/м</span>
           <div class="about__content">
-            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
             </p>
             <p>
               В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
@@ -114,72 +115,82 @@
             <li class="price-item__item">
               <h3 class="price-item__title">С тренером</h3>
               <span class="price-item__timing">12 занятий</span>
-              <p class="price-item__value active" data-price="tab-1">
+              <div class="price-item__value active" data-price="tab-1">
                 <span class="price-item__fond" role="presentation">5000</span>
                 <b class="price-item__number">5000</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
-              <p class="price-item__value" data-price="tab-2">
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
+              <div class="price-item__value" data-price="tab-2">
                 <span class="price-item__fond" role="presentation">30000</span>
                 <b class="price-item__number">30000</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
-              <p class="price-item__value" data-price="tab-3">
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
+              <div class="price-item__value" data-price="tab-3">
                 <span class="price-item__fond" role="presentation">60000</span>
                 <b class="price-item__number">60000</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
               <a class="price-item__link" href="#">Купить абонемент</a>
             </li>
             <li class="price-item__item">
               <h3 class="price-item__title">Дневной</h3>
               <span class="price-item__timing">с 8:00 до 17:00</span>
-              <p class="price-item__value active" data-price="tab-1">
+              <div class="price-item__value active" data-price="tab-1">
                 <span class="price-item__fond" role="presentation">1700</span>
                 <b class="price-item__number">1700</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
-              <p class="price-item__value " data-price="tab-2">
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
+              <div class="price-item__value " data-price="tab-2">
                 <span class="price-item__fond" role="presentation">10200</span>
                 <b class="price-item__number">10200</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
-              <p class="price-item__value" data-price="tab-3">
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
+              <div class="price-item__value" data-price="tab-3">
                 <span class="price-item__fond" role="presentation">20400</span>
                 <b class="price-item__number">20400</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
               <a class="price-item__link" href="#">Купить абонемент</a>
             </li>
             <li class="price-item__item">
               <h3 class="price-item__title">Полный день</h3>
               <span class="price-item__timing">с 8:00 до 22:00</span>
-              <p class="price-item__value active" data-price="tab-1">
+              <div class="price-item__value active" data-price="tab-1">
                 <span class="price-item__fond" role="presentation">2700</span>
                 <b class="price-item__number">2700</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
-              <p class="price-item__value " data-price="tab-2">
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
+              <div class="price-item__value " data-price="tab-2">
                 <span class="price-item__fond" role="presentation">16200</span>
                 <b class="price-item__number">16200</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
-              <p class="price-item__value" data-price="tab-3">
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
+              <div class="price-item__value" data-price="tab-3">
                 <span class="price-item__fond" role="presentation">32400</span>
                 <b class="price-item__number">32400</b>
-                <span class="price-item__rouble">&#8381;</span>
-              </p>
+                <p class="price-item__rouble">
+                  <img src="/__spritemap#sprite-rooble-view" width="30" height="42" alt="Знак рубля">
+                </p>
+              </div>
               <a class="price-item__link" href="#">Купить абонемент</a>
             </li>
           </ul>
-          <div class="price__picture">
-            <picture>
-              <source type="image/webp" media="(min-width: 1336px)" srcset="./img/price/dumbbells-desctop@1x.webp 1x, ./img/price/dumbbells-desctop@2x.webp 2x" width="500" height="524">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/price/dumbbells-tablet@1x.webp 1x, ./img/price/dumbbells-tablet@2x.webp 2x" width="325" height="389">
-              <source type="image/png" media="(min-width: 1366px)" srcset="./img/price/dumbbells-desktop@1x.png 1x, ./img/price/dumbbells-desctop@2x.png 2x" width="500" height="524">
-              <img src="./img/price/dumbbells-tablet@1x.png" srcset="./img/price/dumbbells-tablet@2x.png 2x" width="325" height="389" alt="Фотография гантелей-блинов.">
-            </picture>
-          </div>
         </div>
       </section>
 
@@ -434,12 +445,12 @@
             </li>
             <li class="features__content">
               <span><b>100</b>Тренажеров</span>
-              <p>Современные тренажеры на все группы мышц
+              <p>Современные тренажеры на все группы мышц
               </p>
             </li>
             <li class="features__content">
               <span><b>70</b>машин</span>
-              <p><span>Собственная парковка</span>Вы всегда найдете место для своей машины на нашей парковке
+              <p><span>Собственная парковка</span>Вы всегда найдете место для своей машины на нашей парковке
               </p>
             </li>
             <li class="features__content">
@@ -449,7 +460,7 @@
             </li>
             <li class="features__content">
               <span><b>5+</b>лет</span>
-              <p><span>Тренерский опыт</span>Добивайтесь своих целей быстрее с профессиональным тренером
+              <p><span>Тренерский опыт</span>Добивайтесь своих целей быстрее с профессиональным тренером
               </p>
             </li>
           </ul>
@@ -516,16 +527,21 @@
             <ul class="tabs__elements">
               <li class="tabs__element active accordion" data-faq-el="tab-1">
                 <div class="accordion__element open">
-                  <button type="button">Как стать членом фитнес&#8288;-&#8288;центра?
+                  <button type="button">
+                    <b>
+                      Как стать членом фитнес&#8288;-&#8288;центра?
+                    </b>
                     <span></span>
                   </button>
                   <div>
-                      При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                      При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
                   </div>
                 </div>
                 <div class="accordion__element">
                   <button type="button">
+                    <b>
                     Где можно посмотреть расписание?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -534,7 +550,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Есть кулеры в центре? Предоставляются полотенца?
+                    <b>
+                      Есть кулеры в центре? Предоставляются полотенца?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -543,7 +561,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Сколько тренеров работает в клубе и какова их квалификация?
+                    <b>
+                      Сколько тренеров работает в клубе и какова их квалификация?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -554,7 +574,9 @@
               <li class="tabs__element accordion" data-faq-el="tab-2">
                 <div class="accordion__element open">
                   <button type="button">
-                    Занятия с тренером входят в абонемент?
+                    <b>
+                      Занятия с тренером входят в абонемент?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -563,7 +585,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Можно ли заморозить абонемент?
+                    <b>
+                      Можно ли заморозить абонемент?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -572,7 +596,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+                    <b>
+                      Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -581,7 +607,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Что такое семейный доступ и доступ для друзей?
+                    <b>
+                      Что такое семейный доступ и доступ для друзей?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -592,7 +620,9 @@
               <li class="tabs__element accordion" data-faq-el="tab-3">
                 <div class="accordion__element open">
                   <button type="button">
-                    Предлагает ли клуб услуги по консультированию по вопросам питания?
+                    <b>
+                      Предлагает ли клуб услуги по консультированию по вопросам питания?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -601,7 +631,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Проводятся ли в клубе какие-либо мероприятия или соревнования?
+                    <b>
+                      Проводятся ли в клубе какие-либо мероприятия или соревнования?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -610,7 +642,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Можно ли приобрести в центре спортивное питание?
+                    <b>
+                      Можно ли приобрести в центре спортивное питание?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -619,7 +653,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Есть ли в центре детская комната?
+                    <b>
+                      Есть ли в центре детская комната?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -630,7 +666,9 @@
               <li class="tabs__element accordion" data-faq-el="tab-4">
                 <div class="accordion__element open">
                   <button type="button">
-                    Есть в фитнес-центре дресс-код?
+                    <b>
+                      Есть в фитнес-центре дресс-код?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -639,7 +677,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Можно ли приводить с собой детей на тренировки?
+                    <b>
+                      Можно ли приводить с собой детей на тренировки?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -648,7 +688,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Какие дополнительные правила посещения центра?
+                    <b>
+                      Какие дополнительные правила посещения центра?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -657,7 +699,9 @@
                 </div>
                 <div class="accordion__element">
                   <button type="button">
-                    Нужна ли медицинская справка для посещения залов и бассейна?
+                    <b>
+                      Нужна ли медицинская справка для посещения залов и бассейна?
+                    </b>
                     <span></span>
                   </button>
                   <div>
@@ -674,6 +718,16 @@
         <h2 class="reviews__title">
           Отзывы
         </h2>
+        <div class="reviews__button swiper-button-prev" tabindex="0">
+          <svg width="16" height="32" aria-hidden="true" focusable="false">
+            <use href="/__spritemap#sprite-arrow"></use>
+          </svg>
+        </div>
+        <div class="reviews__button  reviews__button--next swiper-button-next" tabindex="0">
+          <svg width="16" height="32" aria-hidden="true" focusable="false">
+            <use href="/__spritemap#sprite-arrow"></use>
+          </svg>
+        </div>
         <div class="reviews__slider swiper">
             <div class="reviews__wrapper swiper-wrapper">
               <div class="reviews__slide swiper-slide">
@@ -698,9 +752,9 @@
                   <figure>
                     <figcaption class="visually-hidden">Аватар</figcaption>
                     <picture>
-                      <source type="image/webp" media="(min-width: 1336px)" srcset="./img/reviews/reviews-desktop@1x.webp 1x, ./img/reviews/reviews-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews/reviews-desktop@1x.webp 1x, ./img/reviews/reviews-desktop@2x.webp 2x" width="80" height="80">
                       <source type="image/webp" srcset="./img/reviews/reviews-mobile@1x.webp 1x, ./img/reviews/reviews-mobile@2x.webp 2x" width="68" height="68">
-                      <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/reviews/reviews-desktop@1x.jpg 1x, ./img/reviews/reviews-desktop@2x.jpg 2x" width="80" height="80">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/reviews/reviews-desktop@1x.jpg 1x, ./img/reviews/reviews-desktop@2x.jpg 2x" width="80" height="80">
                       <img src="./img/reviews/reviews-mobile@1x.jpg" srcset="./img/reviews/reviews-mobile@2x.jpg 2x" width="68" height="68" alt="Аватар автора отзыва.">
                     </picture>
                   </figure>
@@ -715,9 +769,9 @@
                   <figure>
                     <figcaption class="visually-hidden">Аватар</figcaption>
                     <picture>
-                      <source type="image/webp" media="(min-width: 1336px)" srcset="./img/reviews/reviews-desktop@1x.webp 1x, ./img/reviews/reviews-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews/reviews-desktop@1x.webp 1x, ./img/reviews/reviews-desktop@2x.webp 2x" width="80" height="80">
                       <source type="image/webp" srcset="./img/reviews/reviews-mobile@1x.webp 1x, ./img/reviews/reviews-mobile@2x.webp 2x" width="68" height="68">
-                      <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/reviews/reviews-desktop@1x.jpg 1x, ./img/reviews/reviews-desktop@2x.jpg 2x" width="80" height="80">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/reviews/reviews-desktop@1x.jpg 1x, ./img/reviews/reviews-desktop@2x.jpg 2x" width="80" height="80">
                       <img src="./img/reviews/reviews-mobile@1x.jpg" srcset="./img/reviews/reviews-mobile@2x.jpg 2x" width="68" height="68" alt="Аватар автора отзыва.">
                     </picture>
                   </figure>
@@ -728,16 +782,7 @@
                 </div>
               </div>
             </div>
-            <div class="reviews__button swiper-button-prev" tabindex="0">
-              <svg width="16" height="32" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </div>
-            <div class="reviews__button  reviews__button--next swiper-button-next" tabindex="0">
-              <svg width="16" height="32" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </div>
+
         </div>
       </section>
 
@@ -761,7 +806,7 @@
                   <span id="error-tel" aria-live="assertive" aria-hidden="true"></span>
                 </div>
               </div>
-              <button class="form__submit" type="submit">Отправить заявку</button>
+              <button class="form__submit" type="submit">Отправить</button>
             </form>
           </div>
         </div>

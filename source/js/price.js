@@ -45,4 +45,3 @@ const onButtonPriceHover = () => {
 };
 
 export {onButtonPriceHover, onButtonPriceClick};
-

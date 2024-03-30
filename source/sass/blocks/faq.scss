@@ -7,6 +7,11 @@
 
   display: grid;
   justify-content: center;
+
+  @media (max-width: $tablet) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .faq__title {
@@ -21,12 +26,12 @@
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
 
 .faq__tabs {
   @media (max-width: $tablet) {
-    width: 320px;
+    width: 290px;
   }
 }

@@ -7,9 +7,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 
   @media (max-width: $desktop) {
-    padding-top: 30px;
+    padding-top: 29px;
     padding-bottom: 30px;
   }
 
@@ -19,7 +20,15 @@
   }
 }
 
+.header__logo {
+  @media (max-width: $tablet) {
+    padding-bottom: 18px;
+  }
+}
+
 .header__tel {
+  display: block;
+  padding-top: 2px;
   font-size: 26px;
   font-weight: 700;
   line-height: 100%;
@@ -45,7 +54,6 @@
   &:focus {
     color: $btn-border;
     opacity: 1;
-    outline: none;
   }
 
   &:active {
@@ -57,4 +65,3 @@
     color: rgba($bg-primary, 0.5);
   }
 }
-

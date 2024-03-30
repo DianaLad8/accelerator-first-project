@@ -37,4 +37,3 @@ const jurySwiper = new Swiper(juriSlider, {
 });
 
 export {jurySwiper};
-

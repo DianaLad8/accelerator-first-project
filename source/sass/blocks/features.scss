@@ -52,6 +52,7 @@
 .features__content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   @media (max-width: $desktop) {
     justify-content: flex-start;
@@ -71,7 +72,7 @@
   }
 
   &:not(:nth-child(5n + 2)):not(:nth-child(5n)):not(:nth-child(5n - 1)) {
-    padding-bottom: 39px;
+    padding-bottom: 38px;
     border-bottom: 2px solid rgba($feat-border, 0.2);
 
     @media (max-width: $desktop) {
@@ -83,16 +84,17 @@
 
 
 .features__content:nth-child(5n + 2) {
-  padding: 40px;
-  padding-bottom: 58px;
+  padding: 58px 40px;
+  padding-bottom: 48px;
   grid-column: 2 / 3;
   grid-row: span 2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   color: $color-base-white;
   background-color: $color-base-sapfire;
+  box-sizing: border-box;
 
   @media (max-width: $desktop) {
     padding: 35px;
@@ -104,6 +106,8 @@
   }
 
   @media (max-width: $tablet) {
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 30px;
     padding-bottom: 40px;
     width: 100%;
@@ -111,8 +115,27 @@
     order: 1;
   }
 
+  span {
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    color: $color-base-white;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 0;
+      font-size: 24px;
+      gap: 25px;
+    }
+
+    @media (max-width: $tablet) {
+      gap: 5px;
+      font-size: 22px;
+    }
+  }
+
+
   span b {
-    margin-bottom: 25px;
     text-align: center;
     background: $color-base-white;
     background-clip: text;
@@ -123,21 +146,17 @@
     }
   }
 
-  span {
-    margin-bottom: 30px;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 100%;
-    color: $color-base-white;
+  p {
+    width: 280px;
+    text-align: center;
 
     @media (max-width: $desktop) {
-      margin-bottom: 0;
-      font-size: 24px;
+      width: 212px;
     }
-  }
 
-  p {
-    text-align: center;
+    @media (max-width: $tablet) {
+      width: 170px;
+    }
   }
 }
 
@@ -168,7 +187,7 @@
 }
 
 .features__content p {
-  margin: 4px;
+  margin: 0;
   margin-bottom: 8px;
   width: 210px;
   display: flex;
@@ -180,10 +199,11 @@
   @media (max-width: $desktop) {
     margin-bottom: 0;
     flex-grow: 1;
+    gap: 12px;
   }
 
   @media (max-width: $tablet) {
-    width: 100%;
+    width: 230px;
     align-items: center;
     text-align: center;
   }
@@ -194,9 +214,12 @@
   font-weight: 400;
   line-height: 100%;
 
+  @media (max-width: $desktop) {
+    font-size: 20px;
+  }
+
   @media (max-width: $tablet) {
     font-size: 18px;
     line-height: 111%;
   }
 }
-

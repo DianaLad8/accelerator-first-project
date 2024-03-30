@@ -1,6 +1,8 @@
 .reviews {
   @include container;
 
+  position: relative;
+
   @media (max-width: $desktop) {
     padding-right: 25px;
     padding-left: 25px;
@@ -14,11 +16,13 @@
   text-align: center;
 
   @media (max-width: $desktop) {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
+    font-size: 54px;
   }
 
   @media (max-width: $tablet) {
     margin-bottom: 40px;
+    font-size: 32px;
   }
 }
 
@@ -61,8 +65,9 @@
   background-color: $color-base-sapfire;
 
   @media (max-width: $desktop) {
-    padding: 40px;
+    padding: 40px 30px;
     width: 500px;
+    gap: 40px;
   }
 
   @media (max-width: $tablet) {
@@ -119,6 +124,28 @@
 
 .reviews__button {
   @include btn-circle;
+
+  position: absolute;
+  top: 55%;
+  left: 324px;
+  transform: translateY(50%);
+
+  @media (max-width: $desktop) {
+    left: 25px;
+    top: 52%;
+    transform: translateY(50%);
+  }
+
+  &--next {
+    left: 688px;
+    transform: translateY(68%) rotate(180deg);
+
+    @media (max-width: $desktop) {
+      left: 688px;
+      top: 52%;
+      transform: translateY(50%) rotate(180deg);;
+    }
+  }
 
   &::after {
     display: none;
