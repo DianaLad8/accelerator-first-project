@@ -46,7 +46,7 @@
   border: 2px solid $color;
   box-sizing: border-box;
   cursor: pointer;
-  transition: color, background-color 0.3s;
+  transition: color, background 0.3s ease;
 
   @media (max-width: $tablet) {
     padding: 22px 0;

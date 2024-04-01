@@ -10,6 +10,7 @@
   background-color: $color-base-white;
   border: 7px solid $bg-trans;
   box-sizing: border-box;
+  transition: border 0.3s ease;
 
   @media (max-width: $desktop) {
     margin: 0 auto;

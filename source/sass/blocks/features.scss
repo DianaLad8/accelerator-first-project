@@ -32,8 +32,7 @@
 
   display: grid;
   grid-template-columns: repeat(3, 360px);
-  column-gap: 40px;
-  row-gap: 39px;
+  gap: 40px;
 
   @media (max-width: $desktop) {
     grid-template-columns: repeat(2, 324px);
@@ -72,7 +71,7 @@
   }
 
   &:not(:nth-child(5n + 2)):not(:nth-child(5n)):not(:nth-child(5n - 1)) {
-    padding-bottom: 38px;
+    padding-bottom: 39px;
     border-bottom: 2px solid rgba($feat-border, 0.2);
 
     @media (max-width: $desktop) {
@@ -93,7 +92,7 @@
   align-items: center;
   gap: 30px;
   color: $color-base-white;
-  background-color: $color-base-sapfire;
+  background-color: $btn-border;
   box-sizing: border-box;
 
   @media (max-width: $desktop) {

@@ -73,7 +73,7 @@
 
   @media (max-width: $tablet) {
     padding: 30px;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
     align-items: center;
     text-align: center;
     gap: 18px;
@@ -202,6 +202,7 @@
 
 .offers__item {
   padding: 27px 20px 17px 17px;
+  height: 174px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

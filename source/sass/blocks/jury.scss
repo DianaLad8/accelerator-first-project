@@ -13,7 +13,6 @@
 
   @media (max-width: $tablet) {
     padding: 40px 15px;
-    padding-top: 41px;
   }
 }
 
@@ -21,7 +20,7 @@
   @include title;
 
   margin-bottom: 46px;
-  margin-left: 67px;
+  margin-left: 66px;
 
   @media (max-width: $desktop) {
     margin-left: 0;
@@ -175,16 +174,20 @@
 
   position: absolute;
   left: 24px;
-  bottom: 50%;
-  transform: translateY(50%);
+  top: 331px;
   z-index: 100;
+
+  @media (max-width: $desktop) {
+    top: 264px;
+  }
 
   &--next {
     left: 1285px;
-    bottom: 50%;
-    transform: translateY(50%) rotate(180deg);
+    top: 331px;
+    transform: rotate(180deg);
 
     @media (max-width: $desktop) {
+      top: 264px;
       left: 688px;
     }
   }

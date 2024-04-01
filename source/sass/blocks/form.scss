@@ -18,11 +18,10 @@
 .form__title {
   @include title;
 
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   color: $color-base-white;
 
   @media (max-width: $desktop) {
-    margin-bottom: 29px;
     text-align: center;
     font-size: 54px;
   }
