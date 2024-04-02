@@ -104,6 +104,7 @@
   }
 
   @media (max-width: $tablet) {
+    gap: 9px;
     font-size: 22px;
   }
 }
@@ -125,6 +126,7 @@
   line-height: 133%;
 
   @media (max-width: $tablet) {
+    width: 260px;
     font-size: 16px;
     line-height: 125%;
   }

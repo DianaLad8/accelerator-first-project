@@ -173,21 +173,21 @@
   @include btn-circle;
 
   position: absolute;
-  left: 24px;
-  top: 331px;
+  left: 27px;
+  top: 341px;
   z-index: 100;
 
   @media (max-width: $desktop) {
-    top: 264px;
+    top: 274px;
   }
 
   &--next {
     left: 1285px;
-    top: 331px;
+    top: 341px;
     transform: rotate(180deg);
 
     @media (max-width: $desktop) {
-      top: 264px;
+      top: 274px;
       left: 688px;
     }
   }

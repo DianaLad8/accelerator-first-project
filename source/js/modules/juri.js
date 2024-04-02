@@ -15,6 +15,7 @@ const jurySwiper = new Swiper(juriSlider, {
   slidesPerView: 1,
   initialSlide: 0,
   spaceBetween: 0,
+  watchSlidesProgress: true,
 
   breakpoints: {
     320: {
@@ -36,4 +37,12 @@ const jurySwiper = new Swiper(juriSlider, {
   }
 });
 
-export {jurySwiper};
+const addVisibleSlidesTabindex = () => {
+  const visibleSlides = juriSlider.querySelectorAll('.swiper-slide-fully-visible');
+
+  visibleSlides.forEach((slide) => {
+    slide.setAttribute('tabindex', '0');
+  });
+};
+
+export {jurySwiper, addVisibleSlidesTabindex};

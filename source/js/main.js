@@ -1,16 +1,12 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
-import {initVideo} from './video';
-import {onButtonPriceHover, onButtonPriceClick} from './price';
-import './juri';
-import './faq.js';
-import './reviews.js';
-import './form.js';
+import {initVideo} from './modules/video.js';
+import {onButtonPriceHover, onButtonPriceClick} from './modules/price.js';
+import {addVisibleSlidesTabindex} from './modules/juri.js';
+import './modules/faq.js';
+import './modules/reviews.js';
+import './modules/form.js';
 
 
 initVideo();
 onButtonPriceHover();
 onButtonPriceClick();
+addVisibleSlidesTabindex();

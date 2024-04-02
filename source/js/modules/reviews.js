@@ -6,8 +6,8 @@ const reviewsSlider = document.querySelector('.reviews__slider');
 const reviewsSwiper = new Swiper(reviewsSlider, {
   modules: [Navigation, Pagination],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next.reviews__button--next',
+    prevEl: '.swiper-button-prev.reviews__button',
   },
   loop: false,
 });

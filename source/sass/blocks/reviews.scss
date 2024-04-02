@@ -126,21 +126,21 @@
   @include btn-circle;
 
   position: absolute;
-  top: 342px;
-  left: 324px;
+  top: 350px;
+  left: 326px;
 
   @media (max-width: $desktop) {
-    top: 254px;
-    left: 25px;
+    top: 264px;
+    left: 23px;
   }
 
   &--next {
-    top: 342px;
-    left: 1003px;
+    top: 350px;
+    left: 983px;
     transform: rotate(180deg);
 
     @media (max-width: $desktop) {
-      top: 254px;
+      top: 264px;
       left: 688px;
       transform: rotate(180deg);
     }
