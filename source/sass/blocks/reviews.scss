@@ -2,10 +2,16 @@
   @include container;
 
   position: relative;
+  width: 1366px;
 
   @media (max-width: $desktop) {
     padding-right: 25px;
     padding-left: 25px;
+    width: 768px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 320px;
   }
 }
 

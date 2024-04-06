@@ -4,19 +4,22 @@
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 1366px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 
   @media (max-width: $desktop) {
-    padding-top: 29px;
+    padding-top: 31px;
     padding-bottom: 30px;
+    width: 768px;
   }
 
   @media (max-width: $tablet) {
     padding-top: 16px;
     padding-bottom: 16px;
+    width: 320px;
   }
 }
 
@@ -28,7 +31,6 @@
 
 .header__tel {
   display: block;
-  padding-top: 2px;
   font-size: 26px;
   font-weight: 700;
   line-height: 100%;

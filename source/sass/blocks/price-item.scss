@@ -1,12 +1,13 @@
 .price-item__item {
-  padding: 58px;
+  padding: 60px;
+
   width: 360px;
   height: 450px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 17px;
+  gap: 14px;
   background-color: $color-base-white;
   border: 7px solid $bg-trans;
   box-sizing: border-box;
@@ -16,13 +17,13 @@
     margin: 0 auto;
     width: 380px;
     height: 460px;
-    gap: 23px;
+    gap: 21px;
   }
 
   @media (max-width: $tablet) {
     padding: 43px 35px;
     width: 290px;
-    height: 414px;
+    height: 412px;
     gap: 18px;
   }
 
@@ -35,16 +36,33 @@
 
 .price-item__title {
   margin: 0;
+
+
   font-size: 26px;
   font-weight: 700;
   line-height: 100%;
 
   @media (max-width: $desktop) {
+
+    margin-top: 1px;
+
     font-size: 24px;
   }
 
   @media (max-width: $tablet) {
+
+    margin-top: 1px;
+
+
     font-size: 22px;
+  }
+}
+
+.price-item__timing {
+  margin-top: 1px;
+
+  @media (max-width: $desktop) {
+    margin-top: 0;
   }
 }
 
@@ -87,8 +105,8 @@
   z-index: 1;
 
   @media (max-width: $tablet) {
-    margin-bottom: 10px;
-    margin-left: 5px;
+    margin-bottom: 11px;
+    margin-left: 3px;
     font-size: 48px;
   }
 }
@@ -109,8 +127,14 @@
   }
 }
 
-.price-item__rouble img {
-  object-fit: cover;
+.price-item__rouble svg {
+  width: 30px;
+  height: 42px;
+
+  @media (max-width: $tablet) {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .price-item__link {
@@ -123,7 +147,8 @@
   }
 
   @media (max-width: $tablet) {
+    margin-bottom: 1px;
     padding: 25px 0;
-    width: 195px;
+    width: 194px;
   }
 }

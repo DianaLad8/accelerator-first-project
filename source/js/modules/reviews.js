@@ -10,6 +10,7 @@ const reviewsSwiper = new Swiper(reviewsSlider, {
     prevEl: '.swiper-button-prev.reviews__button',
   },
   loop: false,
+  spaceBetween: 100,
 });
 
 export {reviewsSwiper};

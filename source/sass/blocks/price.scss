@@ -21,6 +21,7 @@
   background-position: bottom right;
 
   @media (max-width: $desktop) {
+    padding-left: 43px;
     background-image:
       image-set(
         url("../../img/price/dumbbells-tablet@1x.webp") 1x,
@@ -33,6 +34,8 @@
   }
 
   @media (max-width: $tablet) {
+    padding-left: 14px;
+    padding-top: 40px;
     background-image: none;
   }
 }
@@ -40,7 +43,7 @@
 .price__title {
   @include title;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   @media (max-width: $desktop) {
     margin-bottom: 37px;
@@ -71,13 +74,23 @@
 }
 
 .price__buttons .active {
-  box-shadow: 0 2px 0 $bg-accent;
+  position: relative;
   opacity: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $bg-accent;
+  }
 }
 
 .price__button {
   padding: 0;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
@@ -92,7 +105,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding-bottom: 18px;
+    padding-bottom: 17px;
     font-size: 16px;
   }
 
@@ -121,25 +134,38 @@
 
 .price__button.active {
   &:focus {
-    box-shadow: 0 2px 0 $bg-accent;
     opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $bg-accent;
+    }
   }
 }
 
 .price__list {
   @include list;
 
-  width: 100%;
+  margin: 0 auto;
+  width: 1160px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
   z-index: 1;
 
   @media (max-width: $desktop) {
     flex-direction: column;
+    width: 380px;
     gap: 40px;
   }
 
   @media (max-width: $tablet) {
-    gap: 35px;
+    width: 100%;
+    gap: 37px;
   }
 }
