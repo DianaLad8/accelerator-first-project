@@ -2,7 +2,7 @@
   padding: 60px;
 
   width: 360px;
-  height: 450px;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,14 +16,14 @@
   @media (max-width: $desktop) {
     margin: 0 auto;
     width: 380px;
-    height: 460px;
+    min-height: 460px;
     gap: 21px;
   }
 
   @media (max-width: $tablet) {
     padding: 43px 35px;
     width: 290px;
-    height: 412px;
+    min-height: 412px;
     gap: 18px;
   }
 
@@ -43,14 +43,12 @@
   line-height: 100%;
 
   @media (max-width: $desktop) {
-
     margin-top: 1px;
 
     font-size: 24px;
   }
 
   @media (max-width: $tablet) {
-
     margin-top: 1px;
 
 

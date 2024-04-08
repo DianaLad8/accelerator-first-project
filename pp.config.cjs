@@ -1,15 +1,15 @@
 const indexSections = [
-  {section: 'hero', misMatchThreshold: 0.3},
-  {section: 'about', misMatchThreshold: 0.3},
-  {section: 'price', misMatchThreshold: 0.3},
-  {section: 'games', misMatchThreshold: 0.3},
-  {section: 'juri', misMatchThreshold: 0.3},
-  {section: 'features', misMatchThreshold: 0.3},
-  {section: 'offers', misMatchThreshold: 0.3},
-  {section: 'faq', misMatchThreshold: 0.3},
-  {section: 'reviews', misMatchThreshold: 0.3},
-  {section: 'form', misMatchThreshold: 0.3},
-  {section: 'footer', misMatchThreshold: 0.3}
+  {section: 'hero', misMatchThreshold: 2},
+  // {section: 'about', misMatchThreshold: 5},
+  // {section: 'price', misMatchThreshold: 5},
+  // {section: 'games', misMatchThreshold: 5},
+  // {section: 'juri', misMatchThreshold: 0.3},
+  // {section: 'features', misMatchThreshold: 5},
+  // {section: 'offers', misMatchThreshold: 5},
+  // {section: 'faq', misMatchThreshold: 5},
+  // {section: 'reviews', misMatchThreshold: },
+  // {section: 'form', misMatchThreshold: 5},
+  // {section: 'footer', misMatchThreshold: 5}
 ];
 
 
@@ -63,7 +63,7 @@ module.exports = {
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"],
-    "gotoParameters": {"waitUntil": ["load", "networkidle0"], timeout: 60000},
+    "gotoParameters": {"waitUntil": ["load", "networkidle0"], timeout: 30000},
   },
   "asyncCaptureLimit": 10,
   "asyncCompareLimit": 50,

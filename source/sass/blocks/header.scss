@@ -2,7 +2,7 @@
   @include container;
 
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 31px;
   padding-bottom: 30px;
   width: 1366px;
   display: flex;
@@ -13,13 +13,13 @@
   @media (max-width: $desktop) {
     padding-top: 31px;
     padding-bottom: 30px;
-    width: 768px;
+    width: 767px;
   }
 
   @media (max-width: $tablet) {
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 320px;
+    width: 319px;
   }
 }
 
@@ -30,6 +30,7 @@
 }
 
 .header__tel {
+  margin-top: 1px;
   display: block;
   font-size: 26px;
   font-weight: 700;
@@ -41,6 +42,7 @@
   transition: color 0.5s;
 
   @media (max-width: $desktop) {
+    margin-top: 0;
     font-size: 24px;
   }
 
