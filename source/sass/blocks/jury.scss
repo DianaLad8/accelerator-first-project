@@ -23,11 +23,11 @@
   @include title;
 
   margin-top: 1px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
   margin-left: 66px;
 
   @media (max-width: $desktop) {
-    margin-left: 0;
+    margin-left: 1px;
     text-align: center;
     font-size: 54px;
   }
@@ -35,9 +35,7 @@
   @media (max-width: $tablet) {
     margin-top: 0;
     margin-bottom: 20px;
-
-    // test pp.config.cjs
-    margin-left: 113.5px;
+    margin-left: 114px;
     text-align: left;
     font-size: 32px;
   }

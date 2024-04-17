@@ -1,3 +1,4 @@
+
 .input {
   display: grid;
   grid-template-columns: repeat(2, 223px);
@@ -34,7 +35,7 @@
 
   &::placeholder {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 157%;
     color: $color-base-white;
     opacity: 0.4;

@@ -8,18 +8,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
   @media (max-width: $desktop) {
-    padding-top: 31px;
-    padding-bottom: 30px;
-    width: 767px;
+    padding-top: 30px;
+    padding-bottom: 29px;
+    width: 768px;
+    justify-content: center;
+    gap: 404px;
   }
 
   @media (max-width: $tablet) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 319px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    width: 320px;
+    gap: 39px;
   }
 }
 

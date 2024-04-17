@@ -6,8 +6,7 @@
   padding-bottom: 240px;
   width: 1366px;
   display: flex;
-  justify-content: space-between;
-  gap: 143px;
+  gap: 144px;
 
   @media (max-width: $desktop) {
     padding-top: 61px;
@@ -17,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 36px;
   }
 
   @media (max-width: $tablet) {
@@ -59,14 +58,14 @@
 }
 
 .about__subtitle {
-  margin-bottom: 95px;
+  margin-bottom: 94px;
   display: block;
   font-size: 22px;
   font-weight: 400;
   line-height: 100%;
 
   @media (max-width: $desktop) {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     font-size: 20px;
   }
 
