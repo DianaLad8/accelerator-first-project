@@ -1,16 +1,26 @@
 import Swiper from 'swiper';
-import {Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';import 'swiper/css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const swiperHero = new Swiper('.hero__slider', {
-  modules: [Pagination],
+const sliderHero = document.querySelector('.hero__slider');
+
+const swiperHero = new Swiper(sliderHero, {
+  modules: [Navigation, Pagination],
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
   },
   loop: true,
+  watchSlidesProgress: true,
 });
 
-export {swiperHero};
+const addTabindexBullets = () => {
+  const bullets = document.querySelectorAll('.swiper-pagination-bullet');
+  bullets.forEach((bullet) => {
+    bullet.setAttribute('tabindex', '0');
+  });
+};
+
+export {swiperHero, addTabindexBullets};

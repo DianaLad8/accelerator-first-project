@@ -1,3 +1,106 @@
+.tours {
+  @include center;
+
+  display: grid;
+  gap: 49px;
+
+  @media (max-width: $desktop) {
+    gap: 25px;
+  }
+}
+
+.tours__header {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $desktop) {
+    margin-top: 0;
+  }
+}
+
 .tours__headline {
   position: relative;
+  width: 100%;
+  display: grid;
+  align-items: end;
+}
+
+.tours__buttons {
+  align-self: flex-end;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.tours__slider {
+  min-height: 416px;
+  max-width: 1200px;
+
+  @media (max-width: $desktop) {
+    max-width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+  }
+}
+
+.tours__slide {
+  max-width: 380px;
+  height: 416px;
+  background-image: $bg-fond-tours;
+
+  @media (max-width: $desktop) {
+    max-width: 330px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+  }
+}
+
+.tours__link {
+  @include link;
+  @include bg-icon(arrow-link);
+
+  padding: 9px 0;
+  padding-top: 12px;
+  justify-self: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet) {
+    padding-top: 9px;
+    font-size: 14px;
+  }
+
+  &::before {
+    order: 1;
+    width: 12px;
+    height: 16px;
+    mask-size: 9px 14px;
+    background-color: $primary;
+  }
+
+  &:hover::before {
+    background-color: $additional-20;
+  }
+
+  &:focus::before {
+    background-color: $additional-100;
+  }
+
+  &:active::before {
+    background-color: $active;
+  }
+
+  &:disabled::before {
+    background-color: $disabled;
+  }
 }

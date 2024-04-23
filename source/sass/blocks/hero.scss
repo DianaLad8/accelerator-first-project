@@ -26,6 +26,14 @@
     width: 320px;
     min-height: 568px;
   }
+
+  .swiper-slide {
+    visibility: hidden;
+  }
+
+  .swiper-slide-visible {
+    visibility: visible;
+  }
 }
 
 .hero__picture-fond {
@@ -133,9 +141,9 @@
 .hero__details {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: row;
   gap: 10px;
 
   @media (max-width: $desktop) {

@@ -141,12 +141,184 @@
           <div class="hero__pagination swiper-pagination"></div>
         </div>
       </section>
-      <section class="tours" data-test="tours" id="tours">
-        <div class="tours__headline">
-          <h2 class="title">Ближайшие туры</h2>
-          <span class="title__shadow" role="presentation">Ближайшие туры</span>
+
+      <article class="tours" data-test="tours" id="tours">
+        <header class="tours__header">
+          <div class="tours__headline">
+            <h2 class="title">Ближайшие туры</h2>
+            <span class="title__shadow" role="presentation">Ближайшие туры</span>
+          </div>
+          <div class="tours__buttons swiper-buttons">
+            <div class="tours__button swiper-button swiper-button-prev"></div>
+            <div class="tours__button swiper-button swiper-button--next swiper-button-next"></div>
+          </div>
+        </header>
+        <div class="tours__slider swiper">
+
+          <div class="tours__wrapper swiper-wrapper">
+
+            <div class="tours__slide tours-slide swiper-slide">
+              <div class="tours-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-1@1x.webp 1x, ./img/tours/desktop-tours-1@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-1@1x.webp 1x, ./img/tours/tablet-tours-1@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/tours/mobile-tours-1@1x.webp 1x, ./img/tours/mobile-tours-1@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-1@1x.jpg 1x, ./img/tours/desktop-tours-1@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-1@1x.jpg 1x, ./img/tours/tablet-tours-1@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/tours/mobile-tours-1@1x.jpg" srcset="./img/tours/mobile-tours-1@2x.jpg 2x" width="290" height="416" alt="Фотография Эльбруса.">
+                </picture>
+              </div>
+
+              <div class="tours-slide__content">
+                <ul class="tours-slide__details">
+                  <li class="tours-slide__detail tours-slide__detail--place">Кавказ</li>
+                  <li class="tours-slide__detail tours-slide__detail--days">4 дня</li>
+                  <li class="tours-slide__detail tours-slide__detail--nights">3 ночи</li>
+                </ul>
+                <h3 class="tours-slide__subtitle">Путешествие
+                  вокруг Эльбруса</h3>
+                <ul class="tours-slide__info">
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Сложность:
+                    </span>
+                    <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  </li>
+
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Даты набора:</span>
+                    <span class="tours-slide__desk">12.06–19.06</span>
+                  </li>
+                  <li  class="tours-slide__info-item">
+                    <span class="tours-slide__term">Группа:</span>
+                    <span class="tours-slide__desk">до 15 чел.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tours__slide tours-slide swiper-slide">
+              <div class="tours-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-2@1x.webp 1x, ./img/tours/desktop-tours-2@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-2@1x.webp 1x, ./img/tours/tablet-tours-2@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/tours/mobile-tours-2@1x.webp 1x, ./img/tours/mobile-tours-2@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-2@1x.jpg 1x, ./img/tours/desktop-tours-2@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-2@1x.jpg 1x, ./img/tours/tablet-tours-2@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/tours/mobile-tours-2@1x.jpg" srcset="./img/tours/mobile-tours-2@2x.jpg 2x" width="290" height="416" alt="Фотография горы Белухи.">
+                </picture>
+              </div>
+
+              <div class="tours-slide__content">
+                <ul class="tours-slide__details">
+                  <li class="tours-slide__detail tours-slide__detail--place">Алтай</li>
+                  <li class="tours-slide__detail tours-slide__detail--days">14 дней</li>
+                  <li class="tours-slide__detail tours-slide__detail--nights">13 ночей</li>
+                </ul>
+                <h3 class="tours-slide__subtitle">Путь к подножию<br>
+                  Белухи</h3>
+                <ul class="tours-slide__info">
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Сложность:
+                    </span>
+                    <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                  </li>
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Даты набора:</span>
+                    <span class="tours-slide__desk">14.06–23.06</span>
+                  </li>
+                  <li  class="tours-slide__info-item">
+                    <span class="tours-slide__term">Группа:</span>
+                    <span class="tours-slide__desk">до 25 чел.</span>
+                  </li>
+                </ul>
+              </div>
+            </div></li>
+
+
+            <div class="tours__slide tours-slide swiper-slide">
+              <div class="tours-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-3@1x.webp 1x, ./img/tours/desktop-tours-3@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-3@1x.webp 1x, ./img/tours/tablet-tours-3@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/tours/mobile-tours-1@1x.webp 1x, ./img/tours/mobile-tours-1@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-3@1x.jpg 1x, ./img/tours/desktop-tours-3@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-3@1x.jpg 1x, ./img/tours/tablet-tours-3@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/tours/mobile-tours-3@1x.jpg" srcset="./img/tours/mobile-tours-3@2x.jpg 2x" width="290" height="416" alt="Фотография горы Фишт.">
+                </picture>
+              </div>
+
+              <div class="tours-slide__content">
+                <ul class="tours-slide__details">
+                  <li class="tours-slide__detail tours-slide__detail--place">Адыгея</li>
+                  <li class="tours-slide__detail tours-slide__detail--days">7 дней</li>
+                  <li class="tours-slide__detail tours-slide__detail--nights">6 ночей</li>
+                </ul>
+                <h3 class="tours-slide__subtitle">Через Фишт<br>
+                  к Чёрному морю и обратно</h3>
+                <ul class="tours-slide__info">
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Сложность:
+                    </span>
+                    <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  </li>
+
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Даты набора:</span>
+                    <span class="tours-slide__desk">15.07–19.07</span>
+                  </li>
+                  <li  class="tours-slide__info-item">
+                    <span class="tours-slide__term">Группа:</span>
+                    <span class="tours-slide__desk">до 22 чел.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tours__slide tours-slide swiper-slide">
+              <div class="tours-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-4@1x.webp 1x, ./img/tours/desktop-tours-4@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-4@1x.webp 1x, ./img/tours/tablet-tours-4@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/tours/mobile-tours-4@1x.webp 1x, ./img/tours/mobile-tours-4@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/tours/desktop-tours-4@1x.jpg 1x, ./img/tours/desktop-tours-4@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tours/tablet-tours-4@1x.jpg 1x, ./img/tours/tablet-tours-4@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/tours/mobile-tours-4@1x.jpg" srcset="./img/tours/mobile-tours-4@2x.jpg 2x" width="290" height="416" alt="Фотография горы Монарага.">
+                </picture>
+              </div>
+
+              <div class="tours-slide__content">
+                <ul class="tours-slide__details">
+                  <li class="tours-slide__detail tours-slide__detail--place">Урал</li>
+                  <li class="tours-slide__detail tours-slide__detail--days">9 дней</li>
+                  <li class="tours-slide__detail tours-slide__detail--nights">10 ночей</li>
+                </ul>
+                <h3 class="tours-slide__subtitle">Восхождение<br>
+                  Манарага</h3>
+                <ul class="tours-slide__info">
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Сложность:
+                    </span>
+                    <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  </li>
+
+                  <li class="tours-slide__info-item">
+                    <span class="tours-slide__term">Даты набора:</span>
+                    <span class="tours-slide__desk">12.07–19.07</span>
+                  </li>
+                  <li  class="tours-slide__info-item">
+                    <span class="tours-slide__term">Группа:</span>
+                    <span class="tours-slide__desk">до 7 чел..</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
         </div>
-      </section>
+
+        <a class="tours__link" href="#">Показать все туры</a>
+      </article>
 
       <section class="training" data-test="training" id="training">
         <div class="training__headline">

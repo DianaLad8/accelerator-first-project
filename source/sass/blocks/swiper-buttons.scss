@@ -1,0 +1,84 @@
+.swiper-buttons {
+  margin-bottom: 4px;
+  width: 78px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 4px;
+
+  .swiper-button-next {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: $desktop) {
+
+    // test
+    margin-bottom: -1px;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.swiper-buttons .swiper-button {
+  width: 37px;
+  height: 35px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: $additional-100;
+
+  &::before {
+    @include bg-mask(arrow);
+
+    content: "";
+    mask-size: 14px 9px;
+  }
+
+  &--next::before {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: $white-100;
+    outline: 1px solid $active;
+  }
+
+  &:hover::before {
+    background-color: $active;
+  }
+
+  &:focus {
+    background-color: $white-100;
+    outline: 1px solid $white-100;
+  }
+
+  &:focus::before {
+    background-color: $active;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+
+  &:active::before {
+    background-color: $white-100;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+  }
+
+  &:disabled::before {
+    background-color: $white-100;
+  }
+}
+
+.swiper-buttons .swiper-button-disabled {
+  background-color: $disabled;
+
+  &:disabled::before {
+    background-color: $white-100;
+  }
+}
