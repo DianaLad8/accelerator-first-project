@@ -10,12 +10,6 @@
     height: 20px;
   }
 
-  @media (max-width: $desktop) {
-
-    // test
-    margin-bottom: -1px;
-  }
-
   @media (max-width: $tablet) {
     display: none;
   }

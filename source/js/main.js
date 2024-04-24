@@ -8,7 +8,7 @@ import './modules/hero';
 import {addTabindexBullets} from './modules/hero';
 import './modules/tours';
 import {addTabindexButtons} from './modules/tours';
-
+import './modules/training';
 
 onBurgerButton();
 onLinkClick();

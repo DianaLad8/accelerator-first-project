@@ -20,7 +20,6 @@
 }
 
 .tours__headline {
-  position: relative;
   width: 100%;
   display: grid;
   align-items: end;
@@ -49,7 +48,7 @@
 
 .tours__slide {
   max-width: 380px;
-  height: 416px;
+  min-height: 416px;
   background-image: $bg-fond-tours;
 
   @media (max-width: $desktop) {

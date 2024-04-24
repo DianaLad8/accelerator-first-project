@@ -1,4 +1,138 @@
-.training {
-  position: relative;
-  height: 889px;
+.training__container {
+  @include center;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  gap: 56px;
+
+  @media (max-width: $desktop) {
+    gap: 27px;
+  }
 }
+
+.training__about {
+  display: grid;
+  gap: 31px;
+
+  @media (max-width: $desktop) {
+    gap: 18px;
+  }
+}
+
+.training__head {
+  padding-top: 6px;
+
+  @media (max-width: $desktop) {
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 0;
+  }
+}
+
+.training__content {
+  width: 820px;
+  font-size: 16px;
+  line-height: 150%;
+
+  @media (max-width: $desktop) {
+    width: 678px;
+
+    p {
+      padding-bottom: 3px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    width: 290px;
+    font-size: 14px;
+    line-height: 143%;
+
+    p {
+      padding-bottom: 0;
+    }
+  }
+
+
+  p {
+    margin: 0;
+  }
+}
+
+.training__masters {
+  display: grid;
+  gap: 20px;
+
+  @media (max-width: $desktop) {
+    gap: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    gap: 22px;
+  }
+}
+
+.training__headline {
+  min-height: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+
+  @media (max-width: $tablet) {
+    min-height: 22px;
+  }
+}
+
+.training__masters-title {
+  @include title;
+
+  @media (max-width: $tablet) {
+    padding-top: 0;
+  }
+}
+
+.training__buttons {
+  margin-bottom: 0;
+}
+
+.training__slider {
+  min-height: 356px;
+  max-width: 1200px;
+
+  @media (max-width: $desktop) {
+    max-width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+  }
+
+  .swiper-slide {
+    visibility: hidden;
+  }
+
+  .swiper-slide-visible {
+    visibility: visible;
+  }
+}
+
+.training__slide {
+  max-width: 285px;
+  min-height: 356px;
+  background-color: $white-100;
+
+  @media (max-width: $desktop) {
+    max-width: auto;
+    min-height: 388px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+    min-height: 356px;
+  }
+}
+
