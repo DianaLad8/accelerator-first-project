@@ -7,6 +7,7 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
+  width: 1220px;
   display: grid;
   grid-template-columns: 205px 838px 157px;
   align-items: center;
@@ -14,6 +15,7 @@
   @media (max-width: $desktop) {
     padding-top: 20px;
     padding-bottom: 21px;
+    width: 678px;
     grid-template-columns: repeat(3, 226px);
     justify-content: space-between;
   }
@@ -21,6 +23,7 @@
   @media (max-width: $tablet) {
     padding: 15px;
     padding-bottom: 11px;
+    width: 290px;
     grid-template-columns: 26px 142px;
     row-gap: 14px;
   }
@@ -51,7 +54,7 @@
   font-weight: 600;
 
   @media (max-width: $desktop) {
-    margin-right: 2px;
+    margin-right: 1px;
     font-size: 16px;
   }
 

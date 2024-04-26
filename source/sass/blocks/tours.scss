@@ -5,28 +5,53 @@
   gap: 49px;
 
   @media (max-width: $desktop) {
+    margin-left: 2px;
     gap: 25px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
   }
 }
 
 .tours__header {
+  margin: 0 auto;
   margin-top: 4px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 
   @media (max-width: $desktop) {
     margin-top: 0;
+    width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 290px;
   }
 }
 
 .tours__headline {
+  padding-top: 20px;
   width: 100%;
   display: grid;
-  align-items: end;
+  align-items: center;
+
+  @media (max-width: $desktop) {
+    padding-top: 11px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 5px;
+  }
 }
 
 .tours__buttons {
   align-self: flex-end;
+
+  @media (max-width: $desktop) {
+    margin-left: 2px;
+  }
 
   @media (max-width: $tablet) {
     display: none;
@@ -64,8 +89,10 @@
   @include link;
   @include bg-icon(arrow-link);
 
-  padding: 9px 0;
-  padding-top: 12px;
+  margin-right: 3px;
+  margin-bottom: 4px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   justify-self: center;
   gap: 12px;
   font-size: 16px;
@@ -74,8 +101,15 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  @media (max-width: $desktop) {
+    padding: 10px 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 3px;
+    gap: 11px;
+  }
+
   @media (max-width: $tablet) {
-    padding-top: 9px;
     font-size: 14px;
   }
 

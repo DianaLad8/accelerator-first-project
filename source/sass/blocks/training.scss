@@ -7,29 +7,35 @@
   gap: 56px;
 
   @media (max-width: $desktop) {
-    gap: 27px;
+    gap: 25px;
   }
 }
 
 .training__about {
+  margin: 0 auto;
   display: grid;
+  justify-content: start;
   gap: 31px;
 
   @media (max-width: $desktop) {
-    gap: 18px;
+    gap: 22px;
   }
 }
 
 .training__head {
-  padding-top: 6px;
+  margin: 0 auto;
+  padding-top: 24px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
 
   @media (max-width: $desktop) {
-    padding-top: 0;
-    padding-bottom: 5px;
+    width: 678px;
+    padding-top: 7px;
   }
 
   @media (max-width: $tablet) {
-    padding-bottom: 0;
+    width: 290px;
   }
 }
 
@@ -64,7 +70,7 @@
 
 .training__masters {
   display: grid;
-  gap: 20px;
+  gap: 16px;
 
   @media (max-width: $desktop) {
     gap: 30px;
@@ -76,13 +82,21 @@
 }
 
 .training__headline {
+  margin: 0 auto;
+  width: 1200px;
   min-height: 35px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
 
+  @media (max-width: $desktop) {
+    width: 678px;
+    align-items: center;
+  }
+
   @media (max-width: $tablet) {
+    width: 290px;
     min-height: 22px;
   }
 }
@@ -90,9 +104,15 @@
 .training__masters-title {
   @include title;
 
-  @media (max-width: $tablet) {
-    padding-top: 0;
+  margin-top: 5px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 3px;
   }
+
+  // @media (max-width: $tablet) {
+  //   margin-bottom: 3px;
+  // }
 }
 
 .training__buttons {

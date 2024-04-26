@@ -1,12 +1,18 @@
 .process {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 1200px;
   display: grid;
-  gap: 23px;
+  gap: 16px;
 
   @media (max-width: $desktop) {
+    margin-top: 3px;
+    width: 678px;
     gap: 101px;
   }
 
   @media (max-width: $tablet) {
+    width: 290px;
     gap: 23px;
   }
 }
@@ -30,6 +36,7 @@
   @include list;
 
   position: relative;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr) 440px;
 

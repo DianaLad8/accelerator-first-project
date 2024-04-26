@@ -1,23 +1,21 @@
 .title {
   position: relative;
+  min-height: 55px;
+
+  @media (max-width: $desktop) {
+    width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 320px;
+  }
 }
 
 .title__text {
   @include title;
 
-  min-height: 55px;
   display: flex;
-  align-items: flex-end;
-
-  @media (max-width: $desktop) {
-    padding-top: 10px;
-    align-items: center;
-  }
-
-  @media (max-width: $tablet) {
-    padding-top: 0;
-    align-items: center;
-  }
+  align-items: center;
 }
 
 .title__shadow {

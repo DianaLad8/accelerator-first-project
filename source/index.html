@@ -548,12 +548,34 @@
       </article>
 
 
-      <section class="about" data-test="about" id="about">
-        <div class="about__headline title">
-          <h2 class="title__text">О нас</h2>
-          <span class="title__shadow" role="presentation">О нас</span>
+      <article class="about" data-test="about" id="about">
+        <div class="about__image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/about/desktop-about@1x.webp 1x, ./img/about/desktop-about@2x.webp 2x" width="660" height="498">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/tablet-about@1x.webp 1x, ./img/about/tablet-about@2x.webp 2x" width="542" height="350">
+            <source type="image/webp" srcset="./img/about/mobile-about@1x.webp 1x, ./img/about/mobile-about@2x.webp 2x" width="434" height="400">
+            <source type="image/png" media="(min-width: 1440px)" srcset="./img/about/desktop-about@1x.png 1x, ./img/about/desktop-about@2x.png 2x" width="660" height="498">
+            <source type="image/png" media="(min-width: 768px)" srcset="./img/about/tablet-about@1x.png 1x, ./img/about/tablet-about@2x.png 2x" width="542" height="350">
+            <img src="./img/about/mobile-about@1x.png" srcset="./img/about/mobile-about@2x.png 2x" width="434" height="400" alt="Фотография группы в походе возле горного озера.">
+          </picture>
         </div>
-      </section>
+        <div class="about__content">
+          <div>
+            <span role="presentation">О нас</span>
+            <h2>О нас</h2>
+          </div>
+
+          <h3>История компании</h3>
+          <p>
+            В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить.  Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.
+          </p>
+          <h3>Наша цель</h3>
+          <p>
+            Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.
+          </p>
+        </div>
+      </article>
+
       <section class="reviews" data-test="reviews" id="reviews">
         <div class="reviews__headline title">
           <h2 class="title__text">Отзывы</h2>

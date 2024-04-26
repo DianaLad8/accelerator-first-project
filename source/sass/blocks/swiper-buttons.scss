@@ -1,6 +1,5 @@
 .swiper-buttons {
   margin-bottom: 4px;
-  width: 78px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 4px;
@@ -8,6 +7,10 @@
   .swiper-button-next {
     width: 20px;
     height: 20px;
+  }
+
+  @media (max-width: $desktop) {
+    margin-bottom: 0;
   }
 
   @media (max-width: $tablet) {

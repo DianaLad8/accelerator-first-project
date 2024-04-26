@@ -10,6 +10,8 @@
   @media (max-width: $desktop) {
     @include bg-mask(burger-open);
 
+    // margin-left: -1px;
+
     &--open {
       padding: 4px;
       mask-image: url("/__spritemap#sprite-burger-close-view");
