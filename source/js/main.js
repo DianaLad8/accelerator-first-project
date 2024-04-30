@@ -10,8 +10,10 @@ import './modules/tours';
 import {addTabindexButtons} from './modules/tours';
 import './modules/training';
 import './modules/reviews';
+import {initSliderAdv} from './modules/adv';
 
 onBurgerButton();
 onLinkClick();
 addTabindexBullets();
 addTabindexButtons();
+initSliderAdv();

@@ -1,8 +1,12 @@
 .adv {
-  min-height: 734px;
-  background-color: #d1f5d1;
+  @include center;
 
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
   position: relative;
+  min-height: 734px;
+
 
   &::before {
     content: "";
@@ -43,7 +47,7 @@
   }
 
   @media (max-width: $desktop) {
-    min-height: 1265px;
+    margin-right: 2px;
 
     &::before {
       top: 266px;
@@ -75,9 +79,98 @@
   }
 
   @media (max-width: $tablet) {
+    margin-right: 0;
+
     &::before,
     &::after {
       background-image: none;
     }
+  }
+}
+
+.adv__head {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-top: 36px;
+  width: min-content;
+  min-height: 70px;
+
+  @media (max-width: $desktop) {
+    padding-top: 20.5px;
+    min-height: 55px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+    padding-top: 16.5px;
+  }
+
+  .title__shadow {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: $tablet) {
+      bottom: 29px;
+    }
+  }
+}
+
+.adv__slider {
+  margin-bottom: 50px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 0;
+    width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    width: 290px;
+  }
+}
+
+.adv__wrapper {
+  @media (max-width: $desktop) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.adv__slide {
+  max-width: 380px;
+  min-height: 329px;
+
+  @media (max-width: $desktop) {
+    max-width: 324px;
+    min-height: 340px;
+
+    &:last-child {
+      margin: 0 auto;
+      padding-top: 28px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+    min-height: 239px;
+
+    &:last-child {
+      padding-top: 20px;
+    }
+  }
+}
+
+.adv__buttons {
+  margin: 0 auto;
+  width: 78px;
+
+  @media (max-width: $desktop) {
+    display: none;
   }
 }

@@ -1,0 +1,103 @@
+.adv-slide {
+  padding: 39px 20px;
+  text-align: center;
+  border: 1px solid $additional-20;
+  background-color: $white-100;
+  box-sizing: border-box;
+
+  @media (max-width: $desktop) {
+    padding: 29px 19px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 19px 8px;
+    padding-top: 20px;
+  }
+}
+
+.adv-slide__icon {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $additional-100;
+  box-sizing: border-box;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 26px;
+    width: 48px;
+    height: 48px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 19px;
+    width: 42px;
+    height: 42px;
+  }
+
+  img {
+    width: 22px;
+    height: 20px;
+    object-fit: cover;
+  }
+
+  &--shield img {
+    width: 20px;
+    height: 22px;
+  }
+
+  &--crown img {
+    width: 24px;
+    height: 22px;
+  }
+
+  &--path img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--leaf img {
+    width: 24px;
+    height: 18px;
+  }
+}
+
+.adv-slide__content {
+  @media (max-width: $desktop) {
+    width: 284px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 272px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+
+    @media (max-width: $desktop) {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 0 12px;
+      font-size: 14px;
+    }
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+}

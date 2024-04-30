@@ -37,6 +37,7 @@
 
   @media (max-width: $desktop) {
     width: 330px;
+    gap: 15px;
   }
 
   @media (max-width: $tablet) {
@@ -54,9 +55,9 @@
   gap: 15px;
 
   @media (max-width: $desktop) {
-    margin-bottom: 1px;
-    width: 288px;
-    gap: 14px;
+    margin-bottom: 0;
+    width: 290px;
+    gap: 13px;
   }
 
   @media (max-width: $tablet) {
@@ -69,6 +70,7 @@
 .tours-slide__detail {
   @include bg-icon(days);
 
+  padding: 4px 0;
   font-size: 12px;
   font-weight: 500;
   line-height: 100%;
@@ -87,12 +89,22 @@
     padding-bottom: 5px;
     gap: 5px;
     background-color: $additional-100;
+
+    @media (max-width: $desktop) {
+      padding-top: 3px;
+      padding-left: 12px;
+      padding-bottom: 5px;
+    }
+
+    @media (max-width: $tablet) {
+      padding-left: 11px;
+    }
   }
 
   &--place::before {
     width: 16px;
     height: 16px;
-    mask-size: 9px 16px;
+    mask-size: 9px 12px;
   }
 
   &--days {
@@ -100,6 +112,11 @@
 
     margin-left: auto;
     gap: 12px;
+
+    @media (max-width: $desktop) {
+      padding-top: 4px;
+      padding-bottom: 4.3px;
+    }
   }
 
   &--days::before {
@@ -110,6 +127,10 @@
 
   &--nights {
     gap: 12px;
+
+    @media (max-width: $desktop) {
+      padding-bottom: 5px;
+    }
 
     @media (max-width: $tablet) {
       margin-left: 10px;
@@ -127,10 +148,6 @@
   line-height: 117%;
   color: $white-100;
 
-  @media (max-width: $desktop) {
-    font-size: 24px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -140,6 +157,19 @@
     height: 1px;
     background-color: $white-100;
     opacity: 0.2;
+  }
+
+  @media (max-width: $desktop) {
+    padding-bottom: 15px;
+    font-size: 24px;
+
+    &::before {
+      bottom: 1px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 15px;
   }
 }
 
@@ -152,11 +182,13 @@
   align-content: start;
 
   @media (max-width: $desktop) {
-    width: 288px;
+    width: 290px;
+    gap: 24px;
   }
 
   @media (max-width: $tablet) {
     width: 250px;
+    gap: 7px;
   }
 }
 
@@ -167,7 +199,19 @@
   gap: 4px;
 
   @media (max-width: $desktop) {
+    gap: 4px;
+
+    &--group {
+      margin-left: 2px;
+    }
+  }
+
+  @media (max-width: $tablet) {
     gap: 5px;
+
+    &--group {
+      margin-left: 0;
+    }
   }
 }
 
@@ -185,6 +229,7 @@
   &--level {
     font-size: 15px;
     line-height: 106%;
-    letter-spacing: 0.29em;
+    letter-spacing: 0.32em;
+    opacity: 0.8;
   }
 }
