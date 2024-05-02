@@ -11,9 +11,11 @@ import {addTabindexButtons} from './modules/tours';
 import './modules/training';
 import './modules/reviews';
 import {initSliderAdv} from './modules/adv';
+import {initSliderGallery} from './modules/gallery';
 
 onBurgerButton();
 onLinkClick();
 addTabindexBullets();
 addTabindexButtons();
 initSliderAdv();
+initSliderGallery();
