@@ -12,6 +12,7 @@ import './modules/training';
 import './modules/reviews';
 import {initSliderAdv} from './modules/adv';
 import {initSliderGallery} from './modules/gallery';
+import './modules/form';
 
 onBurgerButton();
 onLinkClick();

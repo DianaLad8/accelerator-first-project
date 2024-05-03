@@ -1,11 +1,9 @@
 @mixin center {
   margin: 0 auto;
   padding: 100px 120px;
-  min-width: 1440px;
 
   @media (max-width: $desktop) {
     padding: 40px 45px;
-    min-width: 768px;
   }
 
   @media (max-width: $tablet) {
