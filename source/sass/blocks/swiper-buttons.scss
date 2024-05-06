@@ -48,7 +48,7 @@
 
   &:focus {
     background-color: $white-100;
-    outline: 1px solid $white-100;
+    outline: 1px solid $overlay-50;
   }
 
   &:focus::before {

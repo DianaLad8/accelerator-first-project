@@ -10,8 +10,6 @@
   @media (max-width: $desktop) {
     @include bg-mask(burger-open);
 
-    // margin-left: -1px;
-
     &--open {
       padding: 4px;
       mask-image: url("/__spritemap#sprite-burger-close-view");
@@ -38,9 +36,9 @@
   margin-top: 1px;
   padding: 0 40px;
   width: 838px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: start;
   justify-content: center;
   flex-direction: row;
   gap: 30px;
@@ -54,8 +52,8 @@
       position: absolute;
       top: 81px;
       left: 0;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
       gap: 26px;
       padding-top: 30px;
       padding-bottom: 70px;
@@ -77,8 +75,31 @@
   }
 }
 
+.nav__item {
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+}
+
 .nav__link {
   @include link-blue;
+
+  padding: 3px 5px;
+  border: 1px solid transparent;
+
+  &:hover {
+    color: $white-100;
+    border-bottom: 1px solid $white-100;
+  }
+
+  &:focus {
+    color: $white-100;
+    border-color: $white-100;
+  }
+
+  &:focus:active {
+    border-color: transparent;
+  }
 
   @media (max-width: $desktop) {
     font-weight: 700;

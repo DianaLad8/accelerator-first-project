@@ -97,7 +97,8 @@
     outline: none;
   }
 
-  &:active {
+  &:active,
+  &:focus:active {
     color: $active;
   }
 

@@ -20,11 +20,12 @@
   <body class="page-body">
     <header class="header" data-test="header">
       <div class="header__wrapper">
-        <div class="header__logo">
+        <a class="header__logo" href="/">
           <svg width="142" height="42" role="img" aria-label="Логотип сайта" focusable="false">
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
-        </div>
+        </a>
+
         <nav class="header__nav nav">
           <button class="nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -921,24 +922,105 @@
       </div>
     </main>
 
-    <footer class="footer" data-test="footer">
+    <footer data-test="footer">
       <section class="contacts" id="contacts">
-        <div class="contacts__headline title">
-          <h2 class="title__text">Контакты</h2>
-          <span class="title__shadow" role="presentation">Контакты</span>
+        <div class="contacts__text">
+          <div class="contacts__headline title">
+            <h2 class="title__text">Контакты</h2>
+            <span class="title__shadow" role="presentation">Контакты</span>
+          </div>
+          <div class="contacts__content">
+            <p>
+              Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
+            </p>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__info">
+                <strong class="contacts__title">Телефон</strong>
+                <a class="contacts__link" href="tel:79837454545" alt="Телефон LIFETOUR">+7 983 745-45-45</a>
+              </p>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <p class="contacts__info">
+                <strong class="contacts__title">Email</strong>
+                <a class="contacts__link" href="mailto:info@lifetour.com" alt="Email LIFETOUR">info@lifetour.com</a>
+              </p>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <p class="contacts__info">
+                <strong class="contacts__title">Адрес</strong>
+                <span>г. Москва, пр-т Мира, д. 14, офис 101</span>
+              </p>
+            </li>
+          </ul>
         </div>
+        <div class="contacts__map"></div>
       </section>
-      <div class="footer__logo">
-        <svg width="142" height="42" role="img" aria-label="Логотип сайта" focusable="false">
-          <use href="/__spritemap#sprite-logo"></use>
-        </svg>
-      </div>
+
+      <section class="footer">
+        <h2 class="visually-hidden">Навигация по сайту и другие важные ссылки</h2>
+        <div class="footer__wrapper">
+          <a class="footer__logo" href="/">
+            <svg width="142" height="42" role="img" aria-label="Логотип сайта" focusable="false">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+
+          <nav class="footer__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#tours">Туры</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#training">Обучение</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="footer__tel" href="tel:88000000000">
+            8 800 000-00-00</a>
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://vk.com/" aria-label="В контакте">
+              <svg width="16" height="9">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://ok.ru/" aria-label="Одноклассники">
+              <svg width="9" height="16">
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.reddit.com/" aria-label="форум Reddit">
+              <svg width="14" height="15">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__privacy"  href="#">Политика конфиденциальности</a>
+
+      </section>
+
     </footer>
-    <!-- пример использования спрайта -->
-    <img class="logo" src="/__spritemap#sprite-logo-view" width="300" height="300" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
+
     <script type="module" src="js/main.js"></script>
   </body>
 

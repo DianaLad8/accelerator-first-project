@@ -15,13 +15,14 @@ const swiperReviews = new Swiper(sliderReviews, {
   slidesPerView: 1,
   initialSlide: 0,
   watchSlidesProgress: true,
-  spaceBetween: 100,
+  spaceBetween: 30,
 
   breakpoints: {
     320: {
       navigation: false,
       width: 290,
       slidesPerView: 1,
+      centeredSlides: true,
     },
     768: {
       slidesPerView: 1.23,

@@ -7,7 +7,7 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
-  width: 1220px;
+  width: 1440px;
   display: grid;
   grid-template-columns: 205px 838px 157px;
   align-items: center;
@@ -15,7 +15,7 @@
   @media (max-width: $desktop) {
     padding-top: 20px;
     padding-bottom: 21px;
-    width: 678px;
+    width: 768px;
     grid-template-columns: repeat(3, 226px);
     justify-content: space-between;
   }
@@ -39,10 +39,26 @@
   @media (max-width: $desktop) {
     padding: 0;
   }
-}
 
-.header__logo svg {
-  --color: #ffffff;
+  svg {
+    --color: #ffffff;
+  }
+
+  &:hover svg {
+    --color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus svg {
+    --color: #2d383f;
+  }
+
+  &:active svg {
+    --color: #1c3374;
+  }
 }
 
 .header__tel {

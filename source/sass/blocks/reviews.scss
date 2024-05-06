@@ -72,6 +72,10 @@
 
 .reviews__wrapper {
   height: min-content;
+
+  @media (max-width: $tablet) {
+    margin-left: 15px;
+  }
 }
 
 .reviews__slide {
