@@ -26,13 +26,17 @@
     width: 320px;
     min-height: 568px;
   }
+}
 
-  .swiper-slide {
-    visibility: hidden;
+.hero__slide {
+  max-width: 1440px;
+
+  @media (max-width: $desktop) {
+    max-width: 768px;
   }
 
-  .swiper-slide-visible {
-    visibility: visible;
+  @media (max-width: $tablet) {
+    max-width: 320px;
   }
 }
 
@@ -92,6 +96,7 @@
     margin-bottom: 25px;
     font-size: 77px;
     color: $white-100;
+    word-break: normal;
 
     @media (max-width: $desktop) {
       text-indent: 31px;
@@ -132,6 +137,7 @@
   @include btn;
 
   width: 180px;
+  margin-bottom: 44px;
 
   @media (max-width: $desktop) {
     justify-self: center;

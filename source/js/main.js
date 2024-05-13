@@ -3,7 +3,7 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-import {onBurgerButton, onLinkClick} from './modules/burger';
+import {onBurgerButton, onLinkClick} from './modules/header';
 import './modules/hero';
 import {addTabindexBullets} from './modules/hero';
 import './modules/tours';

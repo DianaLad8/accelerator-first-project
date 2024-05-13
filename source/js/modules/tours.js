@@ -7,8 +7,8 @@ const sliderTours = document.querySelector('.tours__slider');
 const swiperTours = new Swiper(sliderTours, {
   modules: [Navigation, Pagination],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.tours__button--next',
+    prevEl: '.tours__button--prev',
   },
   activeIndex: 0,
   loop: false,

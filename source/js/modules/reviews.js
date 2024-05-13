@@ -7,8 +7,8 @@ const sliderReviews = document.querySelector('.reviews__slider');
 const swiperReviews = new Swiper(sliderReviews, {
   modules: [Navigation, Pagination],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
   },
   activeIndex: 0,
   loop: false,
@@ -26,7 +26,7 @@ const swiperReviews = new Swiper(sliderReviews, {
     },
     768: {
       slidesPerView: 1.23,
-      spaceBetween: 30,
+      spaceBetween: 5,
     },
     1440: {
       slidesPerView: 1.7,

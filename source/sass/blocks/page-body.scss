@@ -1,36 +1,36 @@
 .page-body {
   background-image:
     image-set(
-      url("../../img/clouds/desktop-clouds-1@1x.webp") type("image/webp") 1x,
-      url("../../img/clouds/desktop-clouds-1@2x.webp") type("image/webp") 2x,
-      url("../../img/clouds/desktop-clouds-1@1x.png") type("image/png") 1x,
-      url("../../img/clouds/desktop-clouds-1@2x.png") type("image/png") 2x
+      url("../img/clouds/desktop-clouds-1@1x.webp") type("image/webp") 1x,
+      url("../img/clouds/desktop-clouds-1@2x.webp") type("image/webp") 2x,
+      url("../img/clouds/desktop-clouds-1@1x.png") type("image/png") 1x,
+      url("../img/clouds/desktop-clouds-1@2x.png") type("image/png") 2x
     );
   background-repeat: no-repeat;
-  background-position: top 802px right;
+  background-position: top 800px right;
 
   @media (max-width: $desktop) {
     background-image:
       image-set(
-        url("../../img/clouds/tablet-clouds-1@1x.webp") type("image/webp") 1x,
-        url("../../img/clouds/tablet-clouds-1@2x.webp") type("image/webp") 2x,
-        url("../../img/clouds/tablet-clouds-1@1x.png") type("image/png") 1x,
-        url("../../img/clouds/tablet-clouds-1@2x.png") type("image/png") 2x
+        url("../img/clouds/tablet-clouds-1@1x.webp") type("image/webp") 1x,
+        url("../img/clouds/tablet-clouds-1@2x.webp") type("image/webp") 2x,
+        url("../img/clouds/tablet-clouds-1@1x.png") type("image/png") 1x,
+        url("../img/clouds/tablet-clouds-1@2x.png") type("image/png") 2x
       );
     background-repeat: no-repeat;
-    background-position: top 1024px right;
+    background-position: top 1024.5px right;
   }
 
   @media (max-width: $tablet) {
     background-image:
       image-set(
-        url("../../img/clouds/mobile-clouds-1@1x.webp") type("image/webp") 1x,
-        url("../../img/clouds/mobile-clouds-1@2x.webp") type("image/webp") 2x,
-        url("../../img/clouds/mobile-clouds-1@1x.png") type("image/png") 1x,
-        url("../../img/clouds/mobile-clouds-1@2x.png") type("image/png") 2x
+        url("../img/clouds/mobile-clouds-1@1x.webp") type("image/webp") 1x,
+        url("../img/clouds/mobile-clouds-1@2x.webp") type("image/webp") 2x,
+        url("../img/clouds/mobile-clouds-1@1x.png") type("image/png") 1x,
+        url("../img/clouds/mobile-clouds-1@2x.png") type("image/png") 2x
       );
     background-repeat: no-repeat;
-    background-position: top 678px right;
+    background-position: top 678px right 0;
   }
 
   &--fix {

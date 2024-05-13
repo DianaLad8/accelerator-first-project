@@ -79,12 +79,23 @@
   display: flex;
   justify-content: flex-start;
   text-align: start;
+
+  @media (max-width: $desktop) {
+    margin: 0 auto;
+    width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    width: 290px;
+  }
 }
 
 .nav__link {
   @include link-blue;
 
   padding: 3px 5px;
+  word-break: break-all;
   border: 1px solid transparent;
 
   &:hover {

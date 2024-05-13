@@ -18,9 +18,11 @@ function initSwiperAdv () {
       1440: {
         spaceBetween: 30,
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         slidesPerGroup: 2,
-        slidesOffsetBefore: -290,
+        initialSlide: 2,
+        loopAddBlankSlides: false,
+        centeredSlides: true,
       },
     }
   });

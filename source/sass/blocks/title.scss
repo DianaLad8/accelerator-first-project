@@ -1,13 +1,16 @@
 .title {
   position: relative;
   min-height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   @media (max-width: $desktop) {
     width: 678px;
   }
 
   @media (max-width: $tablet) {
-    width: 320px;
+    width: auto;
   }
 }
 
@@ -36,7 +39,6 @@
   }
 
   @media (max-width: $tablet) {
-    bottom: 29px;
     font-size: 26px;
   }
 }

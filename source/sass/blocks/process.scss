@@ -12,6 +12,7 @@
   }
 
   @media (max-width: $tablet) {
+    margin-top: 0;
     width: 290px;
     gap: 23px;
   }
@@ -22,6 +23,7 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 100%;
+  word-break: break-all;
 
   @media (max-width: $desktop) {
     font-size: 18px;
@@ -46,6 +48,7 @@
     justify-content: space-between;
     align-content: space-between;
     min-height: 192px;
+    row-gap: 104px;
   }
 
   @media (max-width: $tablet) {
@@ -125,7 +128,6 @@
     font-size: 12px;
     line-height: 150%;
   }
-
 }
 
 .process__line {

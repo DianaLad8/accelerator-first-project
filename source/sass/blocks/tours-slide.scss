@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: end;
+  justify-content: space-between;
 }
 
 .tours-slide__picture-fond {
@@ -30,14 +31,16 @@
 }
 
 .tours-slide__content {
-  padding: 30px 20px;
+  padding: 30px 19px;
   display: grid;
   gap: 15px;
   color: $white-100;
+  box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    width: 330px;
-    gap: 15px;
+    padding-left: 20px;
+    width: 290px;
+    gap: 14.5px;
   }
 
   @media (max-width: $tablet) {
@@ -49,15 +52,19 @@
 .tours-slide__details {
   @include list;
 
-  width: 100%;
+  width: 340px;
+  margin-left: 1px;
+  margin-bottom: 1px;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 15px;
 
   @media (max-width: $desktop) {
-    margin-bottom: 0;
+    margin-left: 0;
     width: 290px;
-    gap: 13px;
+    gap: 15px;
   }
 
   @media (max-width: $tablet) {
@@ -85,15 +92,12 @@
     @include bg-icon(pin);
 
     padding: 6px 12px;
-    padding-left: 11px;
-    padding-bottom: 5px;
-    gap: 5px;
+    height: 28px;
     background-color: $additional-100;
 
     @media (max-width: $desktop) {
-      padding-top: 3px;
-      padding-left: 12px;
-      padding-bottom: 5px;
+      gap: 6px;
+      padding: 6px 12px;
     }
 
     @media (max-width: $tablet) {
@@ -104,13 +108,15 @@
   &--place::before {
     width: 16px;
     height: 16px;
-    mask-size: 9px 12px;
+    mask-size: 10px 13px;
+    mask-position: center;
   }
 
   &--days {
     @include bg-icon(sun);
 
     margin-left: auto;
+    height: 20px;
     gap: 12px;
 
     @media (max-width: $desktop) {
@@ -126,6 +132,7 @@
   }
 
   &--nights {
+    height: 20px;
     gap: 12px;
 
     @media (max-width: $desktop) {
@@ -147,6 +154,7 @@
   font-weight: 700;
   line-height: 117%;
   color: $white-100;
+  word-break: normal;
 
   &::before {
     content: "";
@@ -162,10 +170,6 @@
   @media (max-width: $desktop) {
     padding-bottom: 15px;
     font-size: 24px;
-
-    &::before {
-      bottom: 1px;
-    }
   }
 
   @media (max-width: $tablet) {
@@ -176,14 +180,17 @@
 .tours-slide__info {
   @include list;
 
+  width: 340px;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
-  align-content: start;
+  gap: 26px;
 
   @media (max-width: $desktop) {
     width: 290px;
-    gap: 24px;
+    justify-content: flex-start;
+    gap: 27px;
   }
 
   @media (max-width: $tablet) {
@@ -193,25 +200,19 @@
 }
 
 .tours-slide__info-item {
+  height: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7px;
 
-  @media (max-width: $desktop) {
+  &--star {
     gap: 4px;
-
-    &--group {
-      margin-left: 2px;
-    }
   }
 
   @media (max-width: $tablet) {
     gap: 5px;
-
-    &--group {
-      margin-left: 0;
-    }
   }
 }
 
@@ -227,9 +228,11 @@
   line-height: 100%;
 
   &--level {
-    font-size: 15px;
-    line-height: 106%;
-    letter-spacing: 0.32em;
+    width: 84px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0.25em;
     opacity: 0.8;
   }
 }

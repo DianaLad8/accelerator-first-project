@@ -12,13 +12,15 @@ function initSwiperGallery () {
       prevEl: '.gallery__button--prev',
     },
     loop: true,
+    width: 320,
+    slidesPerView: 2,
     breakpoints: {
       320: {
-        navigation: false,
         width: 320,
         slidesPerView: 2,
       },
       768: {
+        width: 768,
         slidesPerView: 3,
       },
       1440: {

@@ -26,6 +26,7 @@
   font-weight: 800;
   line-height: 100%;
   color: $primary;
+  word-break: break-all;
 
   @media (max-width: $desktop) {
     font-size: 25px;
@@ -124,7 +125,7 @@
 @mixin bg-mask($name) {
   display: block;
   padding: 0;
-  width: 26px;
+  min-width: 26px;
   height: 26px;
   border: none;
   mask-image: url("/__spritemap#sprite-#{$name}-view");

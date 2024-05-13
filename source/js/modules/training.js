@@ -7,13 +7,13 @@ const sliderTraining = document.querySelector('.training__slider');
 const swiperTours = new Swiper(sliderTraining, {
   modules: [Navigation, Pagination],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.training__button--next',
+    prevEl: '.training__button--prev',
   },
   activeIndex: 0,
   loop: false,
   slidesPerView: 1,
-  initialSlide: 0,
+  initialSlide: 2,
   watchSlidesProgress: true,
   spaceBetween: 100,
 
@@ -25,10 +25,12 @@ const swiperTours = new Swiper(sliderTraining, {
       slidesPerView: 1,
     },
     768: {
+      initialSlide: 0,
       slidesPerView: 3,
       spaceBetween: 20,
     },
     1440: {
+      initialSlide: 0,
       slidesPerView: 4,
       spaceBetween: 20,
     },

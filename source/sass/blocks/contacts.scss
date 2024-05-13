@@ -1,53 +1,54 @@
 .contacts {
   @include center;
 
+  padding-bottom: 95px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 500px 600px;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 
   @media (max-width: $desktop) {
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
   }
 
   @media (max-width: $tablet) {
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     gap: 10px;
   }
 }
 
 .contacts__text {
+  width: 500px;
   display: grid;
   gap: 25px;
   font-size: 16px;
   line-height: 150%;
 
   @media (max-width: $desktop) {
-    @include center;
-
-    gap: 20px;
-
-    @media (max-width: $tablet) {
-      font-size: 14px;
-      line-height: 157%;
-    }
+    padding: 40px 43px 40px 44px;
+    width: 768px;
+    gap: 19px;
   }
 
   @media (max-width: $tablet) {
-    min-width: 290px;
-    width: 290px;
-    gap: 12px;
+    padding: 20px 15px;
+    width: 320px;
+    gap: 11px;
+    font-size: 14px;
     line-height: 143%;
   }
 }
 
 .contacts__headline {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: flex-start;
 
   @media (max-width: $desktop) {
+    margin-bottom: 2px;
     min-height: 45px;
 
     .title__shadow {
@@ -57,7 +58,12 @@
 
   @media (max-width: $tablet) {
     min-height: 55px;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+
+    .title__shadow {
+      bottom: 25px;
+    }
   }
 }
 
@@ -90,63 +96,103 @@
   @media (max-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
-    gap: 34px;
+    gap: 32px;
   }
 
   @media (max-width: $tablet) {
+    padding-left: 1px;
     flex-direction: column;
     gap: 30px;
   }
 }
 
 .contacts__item {
+  width: 192px;
   display: flex;
   align-items: center;
   gap: 30px;
+  word-break: break-all;
 
   &::before {
     @include bg-mask(phone);
 
     content: "";
     background-color: $primary;
+    mask-size: 26px 26px;
+  }
+
+  &--email {
+    width: 199px;
   }
 
   &--email::before {
     @include bg-mask(mail);
 
     background-color: $primary;
+    mask-size: 26px 18px;
+  }
+
+  &--address {
+    width: 346px;
   }
 
   &--address::before {
     @include bg-mask(pin-stroke);
 
     background-color: $primary;
+    mask-size: 20px 26px;
   }
 
   @media (max-width: $desktop) {
+    width: 153px;
     gap: 10px;
     align-items: flex-start;
 
-
     &::before {
-      width: 24px;
+      min-width: 24px;
       height: 24px;
+      mask-size: 24px 24px;
+    }
+
+    &--email {
+      width: 159px;
+    }
+
+    &--email::before {
+      mask-size: 24px 18px;
+    }
+
+    &--address {
+      width: 288px;
+    }
+
+    &--address::before {
+      mask-size: 18px 24px;
     }
   }
 
   @media (max-width: $tablet) {
+    width: 290px;
     align-items: flex-start;
+    gap: 11px;
 
     &::before {
-      width: 20px;
+      min-width: 20px;
       height: 20px;
       mask-size: 20px 20px;
     }
 
     &--email::before {
-      margin-top: 1px;
+      margin-top: 2px;
       width: 20px;
-      height: 14px;
+      height: 16px;
+      mask-size: 20px 16px;
+    }
+
+    &--address::before {
+      width: 15px;
+      height: 20px;
+      mask-size: 16px 22px;
     }
   }
 }
@@ -158,7 +204,7 @@
   gap: 8px;
 
   @media (max-width: $desktop) {
-    gap: 6px;
+    gap: 7px;
     font-size: 14px;
     line-height: 157%;
   }
@@ -172,6 +218,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 100%;
+  word-break: break-all;
 
   @media (max-width: $desktop) {
     font-size: 16px;
@@ -185,15 +232,28 @@
 .contacts__link {
   @include link;
 
+  width: 300px;
+  justify-content: flex-start;
   line-height: 150%;
 
   @media (max-width: $desktop) {
+    width: 119px;
     font-size: 14px;
     line-height: 157%;
+
+    &--email {
+      width: 125px;
+    }
+
+    &--address {
+      width: 254px;
+    }
   }
 
   @media (max-width: $tablet) {
+    width: 173px;
     line-height: 143%;
+    text-align: left;
   }
 }
 
@@ -203,10 +263,10 @@
   background-color: $stroke-br;
   background-image:
     image-set(
-      url("../../img/contacts/desktop-map@1x.webp") type("image/webp") 1x,
-      url("../../img/contacts/desktop-map@2x.webp") type("image/webp") 2x,
-      url("../../img/contacts/desktop-map@1x.png") type("image/png") 1x,
-      url("../../img/contacts/desktop-map@2x.png") type("image/png") 2x
+      url("../img/contacts/desktop-map@1x.webp") type("image/webp") 1x,
+      url("../img/contacts/desktop-map@2x.webp") type("image/webp") 2x,
+      url("../img/contacts/desktop-map@1x.png") type("image/png") 1x,
+      url("../img/contacts/desktop-map@2x.png") type("image/png") 2x
     );
   background-repeat: no-repeat;
   background-position: center;
@@ -216,21 +276,31 @@
     height: 340px;
     background-image:
       image-set(
-        url("../../img/contacts/tablet-map@1x.webp") type("image/webp") 1x,
-        url("../../img/contacts/tablet-map@2x.webp") type("image/webp") 2x,
-        url("../../img/contacts/tablet-map@1x.png") type("image/png") 1x,
-        url("../../img/contacts/tablet-map@2x.png") type("image/png") 2x
+        url("../img/contacts/tablet-map@1x.webp") type("image/webp") 1x,
+        url("../img/contacts/tablet-map@2x.webp") type("image/webp") 2x,
+        url("../img/contacts/tablet-map@1x.png") type("image/png") 1x,
+        url("../img/contacts/tablet-map@2x.png") type("image/png") 2x
       );
+
+    // Для теста:
+
+    background-position: left -1px;
+
+    // Для центрирования:
+    // background-position: center;
   }
 
   @media (max-width: $tablet) {
     height: 343px;
     background-image:
       image-set(
-        url("../../img/contacts/mobile-map@1x.webp") type("image/webp") 1x,
-        url("../../img/contacts/mobile-map@2x.webp") type("image/webp") 2x,
-        url("../../img/contacts/mobile-map@1x.png") type("image/png") 1x,
-        url("../../img/contacts/mobile-map@2x.png") type("image/png") 2x
+        url("../img/contacts/mobile-map@1x.webp") type("image/webp") 1x,
+        url("../img/contacts/mobile-map@2x.webp") type("image/webp") 2x,
+        url("../img/contacts/mobile-map@1x.png") type("image/png") 1x,
+        url("../img/contacts/mobile-map@2x.png") type("image/png") 2x
       );
+
+    background-size: 320px 343px;
+    background-position: center;
   }
 }

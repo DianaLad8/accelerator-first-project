@@ -38,16 +38,20 @@
 }
 
 .reviews-slide__text {
+  width: 352px;
   display: grid;
   min-height: 253px;
 
   @media (max-width: $desktop) {
+    padding-top: 3px;
+    width: 299px;
     min-height: 237px;
     align-content: space-between;
-
   }
 
   @media (max-width: $tablet) {
+    padding-top: 0;
+    width: 250px;
     min-height: 255px;
   }
 }
@@ -79,10 +83,17 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 100%;
+  word-break: break-all;
 
-  // @media (max-width: $desktop) {
-  //   margin-top: auto;
-  // }
+  @media (max-width: $desktop) {
+    margin-bottom: 5px;
+    gap: 5px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 0;
+    gap: 8px;
+  }
 }
 
 .reviews-slide__info {

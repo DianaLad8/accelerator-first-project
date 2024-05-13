@@ -2,17 +2,25 @@
   @include center;
 
   padding-right: 0;
+  max-width: 1440px;
 
   @media (max-width: $desktop) {
     padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    width: 768px;
   }
 
   @media (max-width: $tablet) {
     padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    width: 320px;
   }
 }
 
 .reviews__header {
+  margin: 0 auto;
   margin-bottom: 28px;
   width: 1200px;
   min-height: 80px;
@@ -22,14 +30,17 @@
   text-align: start;
 
   @media (max-width: $desktop) {
-    margin-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 1px;
+    padding-right: 20px;
     min-height: 55px;
-    width: 678px;
+    width: 698px;
   }
 
   @media (max-width: $tablet) {
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-left: 15px;
+    padding-left: 0;
     width: 290px;
   }
 }
@@ -37,11 +48,19 @@
 .reviews__headline {
   padding-top: 45px;
   width: 100%;
-  display: grid;
-  align-items: center;
+  align-items: flex-start;
+
+  .title__shadow {
+    bottom: 15px;
+  }
 
   @media (max-width: $desktop) {
     padding-top: 11px;
+    justify-content: center;
+
+    .title__shadow {
+      bottom: 10px;
+    }
   }
 
   @media (max-width: $tablet) {
@@ -64,6 +83,10 @@
 .reviews__slider {
   padding-right: 0;
 
+  @media (max-width: $desktop) {
+    width: 768px;
+  }
+
   @media (max-width: $tablet) {
     margin: 0 auto;
     width: 320px;
@@ -72,10 +95,6 @@
 
 .reviews__wrapper {
   height: min-content;
-
-  @media (max-width: $tablet) {
-    margin-left: 15px;
-  }
 }
 
 .reviews__slide {
@@ -85,11 +104,17 @@
 
   @media (max-width: $desktop) {
     margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
     width: 565px;
     max-width: 565px;
   }
 
   @media (max-width: $tablet) {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     width: 290px;
     max-width: 290px;
   }

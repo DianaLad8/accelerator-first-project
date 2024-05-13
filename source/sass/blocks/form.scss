@@ -9,39 +9,37 @@
   background-color: $stroke-br;
   background-image:
     image-set(
-      url("../../img/form/desktop-forest@1x.webp") type("image/webp") 1x,
-      url("../../img/form/desktop-forest@2x.webp") type("image/webp") 2x,
-      url("../../img/form/desktop-forest@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/form/desktop-forest@2x.jpg") type("image/jpeg") 2x
+      url("../img/form/desktop-forest@1x.webp") type("image/webp") 1x,
+      url("../img/form/desktop-forest@2x.webp") type("image/webp") 2x,
+      url("../img/form/desktop-forest@1x.jpg") type("image/jpeg") 1x,
+      url("../img/form/desktop-forest@2x.jpg") type("image/jpeg") 2x
     );
   background-repeat: no-repeat;
   background-position: center;
 
   @media (max-width: $desktop) {
-    margin-right: 1px;
     min-height: 680px;
+    justify-content: flex-start;
     gap: 25px;
     background-image:
       image-set(
-        url("../../img/form/tablet-forest@1x.webp") type("image/webp") 1x,
-        url("../../img/form/tablet-forest@2x.webp") type("image/webp") 2x,
-        url("../../img/form/tablet-forest@1x.jpg") type("image/jpeg") 1x,
-        url("../../img/form/tablet-forest@2x.jpg") type("image/jpeg") 2x
+        url("../img/form/tablet-forest@1x.webp") type("image/webp") 1x,
+        url("../img/form/tablet-forest@2x.webp") type("image/webp") 2x,
+        url("../img/form/tablet-forest@1x.jpg") type("image/jpeg") 1x,
+        url("../img/form/tablet-forest@2x.jpg") type("image/jpeg") 2x
       );
   }
 
   @media (max-width: $tablet) {
-    padding: 174px 31px;
-    margin-right: 0;
     min-height: 638px;
     justify-content: flex-start;
     gap: 19.5px;
     background-image:
       image-set(
-        url("../../img/form/mobile-forest@1x.webp") type("image/webp") 1x,
-        url("../../img/form/mobile-forest@2x.webp") type("image/webp") 2x,
-        url("../../img/form/mobile-forest@1x.jpg") type("image/jpeg") 1x,
-        url("../../img/form/mobile-forest@2x.jpg") type("image/jpeg") 2x
+        url("../img/form/mobile-forest@1x.webp") type("image/webp") 1x,
+        url("../img/form/mobile-forest@2x.webp") type("image/webp") 2x,
+        url("../img/form/mobile-forest@1x.jpg") type("image/jpeg") 1x,
+        url("../img/form/mobile-forest@2x.jpg") type("image/jpeg") 2x
       );
     background-size: auto 638px;
     background-repeat: no-repeat;
@@ -50,20 +48,26 @@
 }
 
 .form__content {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 21px;
 
   @media (max-width: $desktop) {
-    gap: 27px;
+    padding: 0 159px;
+    padding-top: 181px;
+    max-width: 678px;
+    gap: 25px;
   }
 
   @media (max-width: $tablet) {
-    margin-top: 1px;
-    gap: 20px;
+    padding: 0 16px;
+    padding-top: 170px;
+    width: 320px;
+    gap: 16px;
   }
 
   h2 {
@@ -72,11 +76,15 @@
     color: $white-100;
 
     @media (max-width: $desktop) {
-      margin-top: 4px;
+      min-width: 280px;
+      min-height: 31px;
+      display: flex;
+      align-items: center;
     }
 
     @media (max-width: $tablet) {
-      margin-top: 0;
+      min-width: 290px;
+      justify-content: center;
     }
   }
 
@@ -86,7 +94,9 @@
     line-height: 150%;
 
     @media (max-width: $desktop) {
+      padding-right: 1px;
       width: 300px;
+      min-height: 48px;
     }
 
     @media (max-width: $tablet) {
@@ -97,17 +107,25 @@
 }
 
 .form__form {
+  max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   @media (max-width: $desktop) {
+    padding: 0 158px;
+    padding-left: 157px;
+    max-width: 678px;
+    min-height: 190px;
     flex-direction: column;
     gap: 11px;
-    align-items: center;
+    align-items: flex-start;
   }
 
   @media (max-width: $tablet) {
-    gap: 8px;
+    padding: 0 16px;
+    min-height: 174px;
+    gap: 7.5px;
   }
 }
 
@@ -140,8 +158,13 @@
   border: 1px solid $additional-20;
   border-radius: 2px;
 
+  @media (max-width: $desktop) {
+    padding-top: 21px;
+  }
+
   @media (max-width: $tablet) {
-    padding: 17px 15px;
+    padding: 16px 15px;
+    padding-top: 17px;
     width: 258px;
     height: 50px;
   }
@@ -186,8 +209,9 @@
   border: none;
 
   @media (max-width: $desktop) {
+    padding-top: 21px;
     width: 360px;
-    border-radius: 4px;
+    border-radius: 5px;
   }
 
   @media (max-width: $tablet) {
@@ -198,4 +222,3 @@
     border-radius: 0;
   }
 }
-

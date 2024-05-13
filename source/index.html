@@ -26,7 +26,7 @@
           </svg>
         </a>
 
-        <nav class="header__nav nav">
+        <nav class="header__nav nav" aria-label="Главное меню">
           <button class="nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -150,12 +150,11 @@
             <span class="title__shadow" role="presentation">Ближайшие туры</span>
           </div>
           <div class="tours__buttons swiper-buttons">
-            <div class="tours__button swiper-button swiper-button-prev"></div>
-            <div class="tours__button swiper-button swiper-button--next swiper-button-next"></div>
+            <div class="tours__button tours__button--prev swiper-button swiper-button-prev"></div>
+            <div class="tours__button tours__button--next swiper-button swiper-button--next swiper-button-next"></div>
           </div>
         </header>
         <div class="tours__slider swiper">
-
           <div class="tours__wrapper swiper-wrapper">
 
             <div class="tours__slide tours-slide swiper-slide">
@@ -179,17 +178,16 @@
                 <h3 class="tours-slide__subtitle">Путешествие
                   вокруг Эльбруса</h3>
                 <ul class="tours-slide__info">
-                  <li class="tours-slide__info-item">
+                  <li class="tours-slide__info-item tours-slide__info-item--star">
                     <span class="tours-slide__term">Сложность:
                     </span>
                     <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                   </li>
-
                   <li class="tours-slide__info-item">
                     <span class="tours-slide__term">Даты набора:</span>
                     <span class="tours-slide__desk">12.06–19.06</span>
                   </li>
-                  <li  class="tours-slide__info-item tours-slide__info-item--group">
+                  <li  class="tours-slide__info-item">
                     <span class="tours-slide__term">Группа:</span>
                     <span class="tours-slide__desk">до 15 чел.</span>
                   </li>
@@ -218,7 +216,7 @@
                 <h3 class="tours-slide__subtitle">Путь к подножию<br>
                   Белухи</h3>
                 <ul class="tours-slide__info">
-                  <li class="tours-slide__info-item">
+                  <li class="tours-slide__info-item tours-slide__info-item--star">
                     <span class="tours-slide__term">Сложность:
                     </span>
                     <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
@@ -233,8 +231,7 @@
                   </li>
                 </ul>
               </div>
-            </div></li>
-
+            </div>
 
             <div class="tours__slide tours-slide swiper-slide">
               <div class="tours-slide__picture-fond">
@@ -257,12 +254,11 @@
                 <h3 class="tours-slide__subtitle">Через Фишт<br>
                   к Чёрному морю и обратно</h3>
                 <ul class="tours-slide__info">
-                  <li class="tours-slide__info-item">
+                  <li class="tours-slide__info-item tours-slide__info-item--star">
                     <span class="tours-slide__term">Сложность:
                     </span>
                     <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                   </li>
-
                   <li class="tours-slide__info-item">
                     <span class="tours-slide__term">Даты набора:</span>
                     <span class="tours-slide__desk">15.07–19.07</span>
@@ -296,12 +292,11 @@
                 <h3 class="tours-slide__subtitle">Восхождение<br>
                   Манарага</h3>
                 <ul class="tours-slide__info">
-                  <li class="tours-slide__info-item">
+                  <li class="tours-slide__info-item tours-slide__info-item--star">
                     <span class="tours-slide__term">Сложность:
                     </span>
                     <span class="tours-slide__desk tours-slide__desk--level">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                   </li>
-
                   <li class="tours-slide__info-item">
                     <span class="tours-slide__term">Даты набора:</span>
                     <span class="tours-slide__desk">12.07–19.07</span>
@@ -322,10 +317,11 @@
       </article>
 
       <article class="training" data-test="training" id="training">
+        <h2 class="visually-hidden">Как проходит обучение в LIFETOUR.</h2>
         <div class="training__container">
           <section class="training__about">
             <div class="training__head title">
-              <h2 class="title__text">Обучение</h2>
+              <h3 class="title__text">Обучение</h3>
               <span class="title__shadow" role="presentation">Обучение</span>
             </div>
             <div class="training__content">
@@ -336,13 +332,12 @@
             <div class="training__headline">
               <h3 class="training__masters-title">Наши инструкторы</h3>
               <div class="training__buttons swiper-buttons">
-                <div class="training__button swiper-button swiper-button-prev"></div>
-                <div class="training__button swiper-button swiper-button--next swiper-button-next"></div>
+                <div class="training__button training__button--prev swiper-button swiper-button-prev"></div>
+                <div class="training__button training__button--next swiper-button swiper-button--next swiper-button-next"></div>
               </div>
             </div>
 
             <div class="training__slider swiper">
-
               <div class="training__wrapper swiper-wrapper">
 
                 <div class="training__slide training-slide swiper-slide">
@@ -541,7 +536,6 @@
             </ul>
           </section>
         </div>
-
       </article>
 
 
@@ -580,12 +574,11 @@
             <span class="title__shadow" role="presentation">Отзывы</span>
           </div>
           <div class="reviews__buttons swiper-buttons">
-            <div class="reviews__button swiper-button swiper-button-prev"></div>
-            <div class="reviews__button swiper-button swiper-button--next swiper-button-next"></div>
+            <div class="reviews__button reviews__button--prev swiper-button swiper-button-prev"></div>
+            <div class="reviews__button reviews__button--next swiper-button swiper-button--next swiper-button-next"></div>
           </div>
         </header>
         <div class="reviews__slider swiper">
-
           <div class="reviews__wrapper swiper-wrapper">
 
             <div class="reviews__slide reviews-slide swiper-slide">
@@ -602,8 +595,10 @@
               <div class="reviews-slide__text">
                 <div class="reviews-slide__content">
                   <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.
+                  </p>
                   <p>
-                    С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                    С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!
+                  </p>
                 </div>
                 <p class="reviews-slide__autor">Фролов Александр
                   <span class="reviews-slide__info">38 лет, Москва</span>
@@ -704,7 +699,6 @@
             </div>
 
           </div>
-
         </div>
 
       </article>
@@ -719,7 +713,9 @@
 
             <div class="adv__slide adv-slide swiper-slide">
               <div class="adv-slide__icon adv-slide__icon--shield">
-                <img src="/__spritemap__608cc43c#sprite-shield-view" width="20" height="22" alt="Щит.">
+                <svg width="20" height="22" role="img" aria-label="Щит.">
+                  <use href="/__spritemap#sprite-shield"></use>
+                </svg>
               </div>
               <div class="adv-slide__content">
                 <h3>Безопасность</h3>
@@ -732,7 +728,9 @@
 
             <div class="adv__slide adv-slide swiper-slide">
               <div class="adv-slide__icon adv-slide__icon--crown">
-                <img src="/__spritemap__608cc43c#sprite-crown-view" width="24" height="22" alt="Корона.">
+                <svg width="24" height="22" role="img" aria-label="Корона.">
+                  <use href="/__spritemap#sprite-crown"></use>
+                </svg>
               </div>
               <div class="adv-slide__content">
                 <h3>Экспертиза и знания</h3>
@@ -745,7 +743,9 @@
 
             <div class="adv__slide adv-slide swiper-slide">
               <div class="adv-slide__icon">
-                <img src="/__spritemap__608cc43c#sprite-boots-view" width="22" height="20" alt="Ботинок.">
+                <svg width="22" height="20" role="img" aria-label="Ботинок.">
+                  <use href="/__spritemap#sprite-boots"></use>
+                </svg>
               </div>
               <div class="adv-slide__content">
                 <h3>Оборудование и снаряжение</h3>
@@ -755,9 +755,12 @@
               </div>
 
             </div>
+
             <div class="adv__slide adv-slide swiper-slide">
               <div class="adv-slide__icon adv-slide__icon--path">
-                <img src="/__spritemap__608cc43c#sprite-path-view" width="24" height="24" alt="Маршруты.">
+                <svg width="24" height="24" role="img" aria-label="Маршруты.">
+                  <use href="/__spritemap#sprite-path"></use>
+                </svg>
               </div>
               <div class="adv-slide__content">
                 <h3>Индивидуальные маршруты</h3>
@@ -768,14 +771,62 @@
 
             </div>
 
-            <div class="adv__slide adv-slide swiper-slide">
+            <div class="adv__slide adv__slide--loop adv-slide swiper-slide">
               <div class="adv-slide__icon adv-slide__icon--leaf">
-                <img src="/__spritemap__608cc43c#sprite-leaf-view" width="22" height="16" alt="Экология.">
+                <svg width="22" height="16" role="img" aria-label="Экология.">
+                  <use href="/__spritemap#sprite-leaf"></use>
+                </svg>
               </div>
               <div class="adv-slide__content">
                 <h3>Бережное отношение к природе</h3>
               <p>
                 Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
+              </p>
+              </div>
+
+            </div>
+
+
+            <div class="adv__slide adv__slide--loop adv-slide swiper-slide">
+              <div class="adv-slide__icon adv-slide__icon--shield">
+                <svg width="20" height="22" role="img" aria-label="Щит.">
+                  <use href="/__spritemap#sprite-shield"></use>
+                </svg>
+              </div>
+              <div class="adv-slide__content">
+                <h3>Безопасность</h3>
+              <p>
+                Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий  на случай непредвиденных обстоятельств  и даем гарантию полной безопасности  во время всего тура.
+              </p>
+              </div>
+
+            </div>
+
+            <div class="adv__slide adv__slide--loop adv-slide swiper-slide">
+              <div class="adv-slide__icon adv-slide__icon--crown">
+                <svg width="24" height="22" role="img" aria-label="Корона.">
+                  <use href="/__spritemap#sprite-crown"></use>
+                </svg>
+              </div>
+              <div class="adv-slide__content">
+                <h3>Экспертиза и знания</h3>
+              <p>
+                Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся  в надежных руках и могут в полной мере насладиться опытом без опасений.
+              </p>
+              </div>
+
+            </div>
+
+            <div class="adv__slide adv-slide swiper-slide">
+              <div class="adv-slide__icon adv-slide__icon--leaf">
+                <svg width="22" height="16" role="img" aria-label="Экология.">
+                  <use href="/__spritemap#sprite-leaf"></use>
+                </svg>
+              </div>
+              <div class="adv-slide__content">
+                <h3>Бережное отношение к природе</h3>
+              <p>
+                Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
               </p>
               </div>
 
@@ -789,7 +840,6 @@
         </div>
 
       </section>
-
 
       <section class="gallery" data-test="gallery" id="gallery">
         <div class="gallery__headline title">
@@ -891,7 +941,7 @@
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/desktop-photo-7@1x.webp 1x, ./img/gallery/desktop-photo-7@2x.webp 2x" width="253" height="418">
                   <source type="image/webp" srcset="./img/gallery/desktop-photo-7@1x.webp 1x, ./img/gallery/desktop-photo-7@2x.webp 2x" width="158" height="266">
                   <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/gallery/desktop-photo-7@1x.jpg 1x, ./img/gallery/desktop-photo-7@2x.jpg 2x" width="284" height="463">
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/gallery/desktop-photo-7x`@1x.jpg 1x, ./img/desktop/tablet-photo-7@2x.jpg 2x" width="453" height="418">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/gallery/desktop-photo-7x@1x.jpg 1x, ./img/desktop/tablet-photo-7@2x.jpg 2x" width="453" height="418">
                   <img src="./img/gallery/desktop-photo-7@1x.jpg" srcset="./img/gallery/desktop-photo-7@2x.jpg 2x" width="158" height="266" alt="Фотография двух парней в лощине на фоне дыма от костра.">
                 </picture>
               </div>
@@ -905,7 +955,7 @@
         <div class="form__content">
           <h2>Остались вопросы?</h2>
           <p>
-            Заполните форму и наш оператор свяжется с вами для консультации.
+            Заполните форму и наш оператор свяжется с вами для консультации.
           </p>
         </div>
         <form class="form__form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -938,19 +988,19 @@
             <li class="contacts__item">
               <p class="contacts__info">
                 <strong class="contacts__title">Телефон</strong>
-                <a class="contacts__link" href="tel:79837454545" alt="Телефон LIFETOUR">+7 983 745-45-45</a>
+                <a class="contacts__link" href="tel:79837454545">+7 983 745-45-45</a>
               </p>
             </li>
             <li class="contacts__item contacts__item--email">
               <p class="contacts__info">
                 <strong class="contacts__title">Email</strong>
-                <a class="contacts__link" href="mailto:info@lifetour.com" alt="Email LIFETOUR">info@lifetour.com</a>
+                <a class="contacts__link contacts__link--email" href="mailto:info@lifetour.com">info@lifetour.com</a>
               </p>
             </li>
             <li class="contacts__item contacts__item--address">
               <p class="contacts__info">
                 <strong class="contacts__title">Адрес</strong>
-                <span>г. Москва, пр-т Мира, д. 14, офис 101</span>
+                <span class="contacts__link contacts__link--address">г. Москва, пр-т Мира, д. 14, офис 101</span>
               </p>
             </li>
           </ul>
@@ -967,7 +1017,7 @@
             </svg>
           </a>
 
-          <nav class="footer__nav nav">
+          <nav class="footer__nav nav" aria-label="Навигация в подвале">
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="#tours">Туры</a>

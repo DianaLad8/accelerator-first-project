@@ -1,25 +1,44 @@
 .adv-slide {
-  padding: 39px 20px;
+  padding: 39px 19px;
   text-align: center;
   border: 1px solid $additional-20;
   background-color: $white-100;
   box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    padding: 29px 19px;
+    padding: 29px 20px;
+    padding-left: 19px;
+    padding-bottom: 28px;
   }
 
   @media (max-width: $tablet) {
-    padding: 19px 8px;
-    padding-top: 20px;
+    padding: 19px 9px;
+    padding-left: 7px;
+  }
+}
+
+.adv-slide.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  @media (max-width: $tablet) {
+    gap: 20px;
+  }
+}
+
+.adv-slide.adv__slide--loop {
+  @media (max-width: $desktop) {
+    display: none;
   }
 }
 
 .adv-slide__icon {
-  margin: 0 auto;
   margin-bottom: 30px;
   width: 54px;
   height: 54px;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,13 +46,14 @@
   box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    margin-bottom: 26px;
+    margin-bottom: 25.5px;
     width: 48px;
-    height: 48px;
+    height: 48.5px;
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: 19px;
+    margin-bottom: 1px;
+    margin-left: 2px;
     width: 42px;
     height: 42px;
   }
@@ -66,38 +86,55 @@
 }
 
 .adv-slide__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+
   @media (max-width: $desktop) {
+    padding-right: 2px;
     width: 284px;
   }
 
   @media (max-width: $tablet) {
-    width: 272px;
+    padding-right: 0;
+    width: 274px;
+    gap: 14px;
   }
 
   h3 {
     margin: 0;
-    margin-bottom: 15px;
     font-size: 18px;
     font-weight: 600;
     line-height: 100%;
 
     @media (max-width: $desktop) {
       font-size: 16px;
-      text-align: center;
     }
 
     @media (max-width: $tablet) {
-      padding: 0 12px;
+      padding: 0 13px;
       font-size: 14px;
     }
   }
 
   p {
     margin: 0;
-    text-align: center;
 
     @media (max-width: $tablet) {
       font-size: 12px;
     }
   }
 }
+
+// Попытки пройти тест pp.congif.js
+// .adv-slide:first-child .adv-slide__content,
+// .adv-slide:last-child .adv-slide__content {
+//   @media (max-width: $tablet) {
+//     h3 {
+//       padding-left: 12px;
+//       padding-right: 14px;
+//     }
+//   }
+// }

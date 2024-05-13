@@ -1,8 +1,7 @@
 const navList = document.querySelector('.nav__list');
 const navToggle = document.querySelector('.nav__toggle');
 const body = document.querySelector('.page-body');
-const navLinkAll = document.querySelectorAll('.nav__link');
-// const mobileWidthMedia = window.matchMedia('(max-width: 768px)');
+const navLinkAll = document.querySelectorAll('.header__nav .nav__link');
 
 function toggleBurger () {
   navList.classList.toggle('nav__list--open');
