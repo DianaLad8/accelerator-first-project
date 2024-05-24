@@ -1,0 +1,170 @@
+@mixin center {
+  margin: 0 auto;
+  padding: 60px 100px;
+
+  @media (max-width: $desktop) {
+    padding: 50px 45px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 50px 15px;
+    min-width: 320px;
+  }
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin title {
+  margin: 0;
+  font-family: $font-family;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $text;
+
+  @media (max-width: $desktop) {
+    font-size: 34px;
+    line-height: 147%;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+
+@mixin subtitle {
+  @include title;
+
+  font-size: 32px;
+  line-height: 112%;
+
+  @media (max-width: $desktop) {
+    font-size: 28px;
+    line-height: 100%;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    line-height: 122%;
+  }
+}
+
+@mixin bg-mask($name) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 44px;
+  background-color: $primary;
+  transition: all 300ms ease;
+
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    mask-image: url("/__spritemap#sprite-#{$name}-view");
+    mask-size: 16px 16px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $white;
+    transition: all 300ms ease;
+  }
+}
+
+@mixin btn {
+  padding: 4px 4px 4px 31px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  border: 1px solid $primary;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primary;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $primary;
+    color: rgba($white, 0.7);
+  }
+
+  &:disabled {
+    color: $state-disabled;
+    border-color: $state-disabled;
+  }
+}
+
+@mixin btn-span {
+  @include btn;
+
+  &:hover span {
+    background-color: $white;
+
+    &::before {
+      background-color: $primary;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:focus span {
+    background-color: $primary;
+
+    &::before {
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active span {
+    background-color: $white;
+
+    &::before {
+      transform: rotate(0);
+      background-color: rgba($primary, 0.7);
+    }
+  }
+
+  &:disabled span {
+    background-color: $state-disabled;
+
+    &::before {
+      background-color: rgba($white, 0.7);
+    }
+  }
+}
+
+@mixin link {
+  display: flex;
+  color: $text;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    color: $primary;
+  }
+
+  &:active {
+    color: $state-active;
+  }
+}
