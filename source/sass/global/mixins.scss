@@ -79,13 +79,14 @@
   }
 }
 
-@mixin btn {
+@mixin btn($color, $bg-color) {
   padding: 4px 4px 4px 31px;
+  width: 136px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 30px;
-  border: 1px solid $primary;
+  border: 1px solid $color;
   border-radius: 30px;
   font-size: 14px;
   font-weight: 500;
@@ -93,16 +94,21 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
-  color: $primary;
+  color: $color;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: color 0.3s width 0.6s;
 
   &:hover {
-    background-color: $primary;
-    color: $white;
+    background-color: $color;
+    color: $bg-color;
   }
 
   &:active {
-    background-color: $primary;
-    color: rgba($white, 0.7);
+    background-color: $color;
+    color: rgba($bg-color, 0.7);
   }
 
   &:disabled {
@@ -111,33 +117,36 @@
   }
 }
 
-@mixin btn-span {
-  @include btn;
+@mixin btn-span($color, $bg-color) {
+  @include btn($color, $bg-color);
 
+  color: $color;
+
+  &:focus:hover span,
   &:hover span {
-    background-color: $white;
+    background-color: $bg-color;
 
     &::before {
-      background-color: $primary;
+      background-color: $color;
       transform: rotate(45deg);
     }
   }
 
   &:focus span {
-    background-color: $primary;
+    background-color: $color;
 
     &::before {
-      background-color: $white;
+      background-color: $bg-color;
       transform: rotate(45deg);
     }
   }
 
   &:active span {
-    background-color: $white;
+    background-color: $bg-color;
 
     &::before {
-      transform: rotate(0);
-      background-color: rgba($primary, 0.7);
+      transform: rotate(45deg);
+      background-color: rgba($color, 0.7);
     }
   }
 
@@ -145,7 +154,7 @@
     background-color: $state-disabled;
 
     &::before {
-      background-color: rgba($white, 0.7);
+      background-color: rgba($color, 0.7);
     }
   }
 }
