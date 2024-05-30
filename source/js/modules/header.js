@@ -13,11 +13,23 @@ function toggleNav () {
 
 function toggleBurger () {
   navList.classList.toggle('nav__list--open');
+  const openMenu = navList.classList.contains('nav__list--open');
+  const menuLinks = nav.querySelectorAll('.nav__link--menu');
+
+  if (openMenu) {
+    navList.setAttribute('aria-hidden', 'false');
+    menuLinks.forEach((link) => {
+      link.setAttribute('tabindex', '0');
+    });
+    navSublistToggleALL.forEach((button) => {
+      button.setAttribute('tabindex', '0');
+    });
+  }
+
 }
 
 function toggleButton () {
   navToggle.classList.toggle('nav__toggle--open');
-
 }
 
 function toggleFixBody () {
@@ -47,6 +59,16 @@ const onOverlayClick = () => {
 };
 
 const onBurgerButton = () => {
+  const openMenu = navList.classList.contains('nav__list--open');
+  if (!openMenu) {
+    navList.setAttribute('aria-hidden', 'true');
+    navLinkAll.forEach((link) => {
+      link.setAttribute('tabindex', '-1');
+    });
+    navSublistToggleALL.forEach((button) => {
+      button.setAttribute('tabindex', '-1');
+    });
+  }
   navToggle.addEventListener('click', (e) => {
     toggleBurger();
     toggleButton();

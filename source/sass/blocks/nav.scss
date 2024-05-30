@@ -26,7 +26,7 @@
 .nav__toggle {
   @include btn-span($primary, $white);
 
-  padding-left: 20px;
+  padding: 3px 3px 3px 31px;
   gap: 20px;
   transition: width, background-color 300ms ease-in-out;
 
@@ -110,7 +110,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   border-radius: 16px;
-  transition: width 300ms ease-in-out;
+  transition: width, line-height 300ms ease;
 
   &--open {
     padding: 35px 25px;

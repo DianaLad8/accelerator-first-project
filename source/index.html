@@ -24,12 +24,12 @@
           aria-controls="list">Меню
             <span class="nav__toggle-icon"></span>
           </button>
-          <ul class="nav__list">
+          <ul class="nav__list" id="list" aria-hidden="true">
             <li class="nav__item">
-              <a class="nav__link" href="#about">О проекте</a>
+              <a class="nav__link nav__link--menu" href="#about">О проекте</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#programs">Программы</a>
+              <a class="nav__link nav__link--menu" href="#programs">Программы</a>
               <button class="nav__sublist-toggle" type="button" aria-expanded="false" aria-controls="list">
                 <span class="visually-hidden">Подменю</span>
               </button>
@@ -49,13 +49,13 @@
               </ul>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#about">Как поехать</a>
+              <a class="nav__link nav__link--menu" href="#about">Как поехать</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#reviews">Отзывы</a>
+              <a class="nav__link nav__link--menu" href="#reviews">Отзывы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#news">Новости</a>
+              <a class="nav__link nav__link--menu" href="#news">Новости</a>
               <button class="nav__sublist-toggle" type="button" aria-expanded="false" aria-controls="list">
                 <span class="visually-hidden">Подменю</span>
               </button>
@@ -77,89 +77,187 @@
               </ul>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#contacts">Контакты</a>
+              <a class="nav__link nav__link--menu" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
       </header>
+
       <section class="hero">
         <h2 class="visually-hidden">Различные программы обучения.</h2>
         <section class="hero" data-test="hero">
           <h2 class="visually-hidden">Самые красивые и популярные походы в горы</h2>
           <div class="hero__slider swiper">
+            <div class="hero__pagination swiper-pagination"></div>
             <div class="hero__wrapper swiper-wrapper">
               <div class="hero__slide swiper-slide">
-                <div class="hero__picture-fond">
-    <!-- примеры требуемых атрибутов data-test="*"
-    <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/hero/desktop-hero-slide1@1x.webp 1x, ./img/hero/desktop-hero-slide1@2x.webp 2x" width="1440" height="800">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero/tablet-hero-slide1@1x.webp 1x, ./img/hero/tablet-hero-slide1@2x.webp 2x" width="768" height="1034">
-                    <source type="image/webp" srcset="./img/hero/mobile-hero-slide1@1x.webp 1x, ./img/hero/mobile-hero-slide1@2x.webp 2x" width="320" height="568">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/hero/desktop-hero-slide1@1x.jpg 1x, ./img/hero/desktop-hero-slide1@2x.jpg 2x" width="1440" height="800">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/hero/tablet-hero-slide1@1x.jpg 1x, ./img/hero/tablet-hero-slide1@2x.jpg 2x" width="768" height="1034">
-                    <img src="./img/hero/mobile-hero-slide1@1x.jpg" srcset="./img/hero/mobile-hero-slide1@2x.jpg 2x" width="320" height="568" alt="Фотография Кавказких гор.">
-                  </picture> -->
-                </div>
-                <div class="hero__container">
-                  <div class="hero__text">
-                    <div class="hero__content">
-                      <h3>Захватывающие  вершины Кавказа</h3>
-                      <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                    </div>
-                    <a class="hero__link"  href="#">Смотреть тур</a>
+                <div class="hero__slide-wrapper">
+                  <div class="hero__picture-fond">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="/img/hero/desktop-slide1.webp" width="1440" height="800">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="/img/hero/tablet-slide1.webp" width="768" height="1034">
+                      <source type="image/webp" srcset="/img/hero/mobile-slide1.webp" width="320" height="568">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="/img/hero/desktop-slide1.jpg" width="1440" height="800">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="/img/hero/tablet-slide1.jpg" width="768" height="1034">
+                      <img src="./img/hero/mobile-slide1.jpg" width="320" height="568" alt="Фотография девушки.">
+                    </picture>
                   </div>
-                  <div class="hero__details">
-                    <p class="hero__duration">6 дней/5 ночей</p>
-                    <p class="hero__duration hero__duration--level">Высокая сложность</p>
+                  <div class="hero__container">
+                    <div class="hero__test"></div>
+                    <div class="hero__text">
+                      <div class="hero__content">
+                        <h3>Захватывающие  вершины Кавказа</h3>
+                        <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                      </div>
+                      <a class="hero__link"  href="#">Смотреть тур</a>
+                    </div>
+                    <div class="hero__details">
+                      <p class="hero__duration">6 дней/5 ночей</p>
+                      <p class="hero__duration hero__duration--level">Высокая сложность</p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="hero__slide swiper-slide">
-                <div class="hero__picture-fond">
-
-                </div>
-                <div class="hero__container">
-                  <div class="hero__text">
-                    <div class="hero__content">
-                      <h3>Невероятная
-                        природа Камчатки</h3>
-                      <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                    </div>
-                    <a class="hero__link"  href="#">Смотреть тур</a>
+                <div class="hero__slide-wrapper">
+                  <div class="hero__picture-fond">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="/img/hero/desktop-slide2.webp" width="1440" height="800">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="/img/hero/tablet-slide2.webp" width="768" height="1034">
+                      <source type="image/webp" srcset="/img/hero/mobile-slide2.webp" width="320" height="568">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="/img/hero/desktop-slide2.jpg" width="1440" height="800">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="/img/hero/tablet-slide2.jpg" width="768" height="1034">
+                      <img src="./img/hero/mobile-slide2.jpg" width="320" height="568" alt="Фотография двух студенток с преподавателем за столом.">
+                    </picture>
                   </div>
-                  <div class="hero__details">
-                    <p class="hero__duration">9 дней/10 ночей</p>
-                    <p class="hero__duration hero__duration--level">Средняя сложность</p>
+                  <div class="hero__container">
+                    <div class="hero__text">
+                      <div class="hero__content">
+                        <h3>Невероятная
+                          природа Камчатки</h3>
+                        <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                      </div>
+                      <a class="hero__link"  href="#">Смотреть тур</a>
+                    </div>
+                    <div class="hero__details">
+                      <p class="hero__duration">9 дней/10 ночей</p>
+                      <p class="hero__duration hero__duration--level">Средняя сложность</p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="hero__slide swiper-slide">
-                <div class="hero__picture-fond">
-
-                </div>
-                <div class="hero__container">
-                  <div class="hero__text">
-                    <div class="hero__content">
-                      <h3>Магические пейзажи Алтайского Края</h3>
-                      <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических  и захватывающих дух ландшафтов Алтайских гор.</p>
+                <div class="hero__slide-wrapper">
+                  <div class="hero__picture-fond">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="/img/hero/desktop-slide3.webp" width="1440" height="800">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="/img/hero/tablet-slide3.webp" width="768" height="1034">
+                      <source type="image/webp" srcset="/img/hero/mobile-slide3.webp" width="320" height="568">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="/img/hero/desktop-slide3.jpg" width="1440" height="800">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="/img/hero/tablet-slide3.jpg" width="768" height="1034">
+                      <img src="./img/hero/mobile-slide3.jpg" width="320" height="568" alt="Фотография группы студентов.">
+                    </picture>
+                  </div>
+                  <div class="hero__container">
+                    <div class="hero__text">
+                      <div class="hero__content">
+                        <h3>Магические пейзажи Алтайского Края</h3>
+                        <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических  и захватывающих дух ландшафтов Алтайских гор.</p>
+                      </div>
+                      <a class="hero__link"  href="#">Смотреть тур</a>
                     </div>
-                    <a class="hero__link"  href="#">Смотреть тур</a>
-                  </div>
-                  <div class="hero__details">
-                    <p class="hero__duration">8 дней/7 ночей</p>
-                    <p class="hero__duration hero__duration--level">Лёгкая сложность</p>
+                    <div class="hero__details">
+                      <p class="hero__duration">8 дней/7 ночей</p>
+                      <p class="hero__duration hero__duration--level">Лёгкая сложность</p>
+                    </div>
                   </div>
                 </div>
+                
               </div>
-
             </div>
-            <div class="hero__pagination swiper-pagination"></div>
+            
           </div>
         </section>
       </section>
     </div>
     <main>
-      <div data-test="about" id="about">about</div>
+      <article class="about" data-test="about" id="about">
+        <h1 class="visually-hidden">Деятельность центра.</h1>
+          <section class="about__description">
+            <div class="about__head">
+              <h2 class="about__title">О проекте «Стажировка»</h2>
+              <div class="about__content">
+                <span>«Стажировка» — совместный проект правительств и волонтёрских бригад.</span>
+              </div>
+            </div>
+            <div class="about__target">
+              <div class="about__text about__content">
+                <h3>Наша цель</h3>
+                <p>
+                  Наша деятельность направлена на повышение квалификации
+                  молодых специалистов на ранних и средних стадиях карьеры,
+                  предоставляя им инструменты для решения сложных проблем,
+                  с которыми сталкиваются в мире. Цель центра — наделить этих
+                  людей способностью инициировать значимые изменения.
+                </p>
+              </div>
+              <button class="about__button" type="button">Подробнее о проекте
+                <span class="about__button-icon"></span>
+              </button>
+            </div>
+          </section>
+          <section class="about__enumeration">
+            <h2 class="visually-hidden">Наши достижения.</h2>
+            <ul class="about__list">
+              <h3 class="visually-hidden">Список наших активов.</h3>
+              <li class="about__item">
+                <div class="about__point">
+                  <div class="about__content">
+                    <h4>Более 250
+                      программ</h4>
+                    <small>
+                      учебных и рабочих,
+                      разной длительностью
+                      от 3 месяцев до 1 года
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="about__point">
+                  <div class="about__content">
+                    <h4>Более 3000 участников</h4>
+                    <small>
+                      уже успешно прошли программу от «Стажировка» и остались в разных странах
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="about__point">
+                  <div class="about__content">
+                    <h4>участники из 60 стран</h4>
+                    <small>
+                      студенты со всего мира приезжают на программу
+                      «Стажировки» от 3 месяцев до 1 года
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="about__point">
+                  <div class="about__content">
+                    <h4>от 4 200 $ <br>
+                      до 8 400 $</h4>
+                    <small>
+                      грант всем участникам                     для комфортного прохождения программы
+                    </small>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+      </article>
       <div data-test="programs" id="programs">programs</div>
       <div data-test="grant" id="grant">grant</div>
       <div data-test="news" id="news">news</div>
