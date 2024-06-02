@@ -30,6 +30,26 @@
   }
 }
 
+.about__feature {
+  padding: 50px 100px;
+  width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: $primary;
+  border-radius: 20px;
+
+  @media (max-width: $desktop) {
+    padding: 50px;
+    width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 0;
+    width: 290px;
+  }
+}
+
 .about__head {
   padding: 10px 0;
   width: 702px;
@@ -185,26 +205,6 @@
     width: 10px;
     height: 10px;
     mask-size: 8px 8px;
-  }
-}
-
-.about__enumeration {
-  padding: 50px 100px;
-  width: 1240px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: $primary;
-  border-radius: 20px;
-
-  @media (max-width: $desktop) {
-    padding: 50px;
-    width: 678px;
-  }
-
-  @media (max-width: $tablet) {
-    padding: 0;
-    width: 290px;
   }
 }
 

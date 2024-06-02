@@ -6,6 +6,10 @@
 import {onBurgerButton, onLinkClick, onOverlayClick, toggleSubmenu} from './modules/header';
 import './modules/hero';
 import {addTabindexBullets} from './modules/hero';
+import './modules/form-mask';
+import './modules/form-select';
+import './modules/modal';
+
 
 onBurgerButton();
 onLinkClick();

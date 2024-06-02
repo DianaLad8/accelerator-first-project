@@ -25,7 +25,6 @@ function toggleBurger () {
       button.setAttribute('tabindex', '0');
     });
   }
-
 }
 
 function toggleButton () {
