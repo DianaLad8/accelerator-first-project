@@ -264,32 +264,54 @@
       <div data-test="FAQ" id="faq">FAQ</div>
       <div data-test="reviews" id="reviews">reviews</div>
       <div data-test="contacts" id="contacts">contacts</div>
-      <div class="write" data-test="form" id="form">form
-        <form class="write__form form" action="https://echo.htmlacademy.ru/" method="POST">
-          <div class="form__control">
-            <label class="form__label" for="name">Имя</label>
-            <input class="form__field" type="text" name="name" id="name" required autocomplete="off">
+      <div class="write" data-test="form" id="form">
+        <div class="write__wrapper">
+          <div class="write__container">
+            <div class="write__head">
+              <h2 class="write__title">Напишите нам</h2>
+              <p class="write__text">
+                Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
+              </p>
+            </div>
+            <form class="write__form form" action="https://echo.htmlacademy.ru/" method="POST">
+              <div class="form__control">
+                <label class="form__label" for="name">Имя</label>
+                <input class="form__field form__field--write" type="text" name="name" id="name" required autocomplete="off">
+              </div>
+              <div class="form__control">
+                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__field form__field--write" type="tel" name="phone" id="phone" required autocomplete="off">
+              </div>
+              <div class="form__control">
+                <label class="form__label" for="message">Ваше сообщение</label>
+              <textarea class="form__field form__field--write form__field--text-area" name="message" id="message"></textarea>
+              </div>
+              <div class="form__control form__control--select form__control--write">
+                <label class="form__label" for="town" hidden></label>
+                <input class="form__field form__field--hidden" type="text" name="towm" id="town" data-input="town"  required>
+                <label class="form__label" for="town-but">Выберите город</label>
+                <input class="form__select-toggle  form__field form__field--select form__field--write" type="button" id="town-but" name="touwn-button" value=" ">
+                <ul class="form__options">
+                  <li class="form__option" tabindex="0">Санкт-Петербург</li>
+                  <li class="form__option" tabindex="0">Санкт-Петербург</li>
+                  <li class="form__option" tabindex="0">Санкт-Петербург</li>
+                  <li class="form__option" tabindex="0">Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="form__control">
+                <label class="form__label form__label--checkbox" for="policy">
+                  <input class="form__field form__field--checkbox form__field--write" type="checkbox" name="policy" id="policy" value="policy" required>
+                  Я согласен на обработку моих персональных данных
+                </label>
+              </div>
+              <button class="form__submit form__submit--write" type="submit">
+                Отправить
+                <span class="form__submit-icon form__submit-icon--write"></span>
+              </button>
+            </form>
           </div>
-          <div class="form__control">
-            <label class="form__label" for="phone">Телефон</label>
-            <input class="form__field" type="tel" name="phone" id="phone" required autocomplete="off">
-          </div>
-          <div class="form__control form__control--select">
-            <label class="form__label" for="town" hidden></label>
-            <input class="form__field form__field--hidden" type="text" name="towm" id="town" data-input="town"  required>
-            <label class="form__label" for="town-but">Выберите город</label>
-            <input class="form__select-toggle  form__field form__field--select" type="button" id="town-but" name="touwn-button" value=" ">
-            <ul class="form__options">
-              <li class="form__option" tabindex="0">Санкт-Петербург</li>
-              <li class="form__option" tabindex="0">Санкт-Петербург</li>
-              <li class="form__option" tabindex="0">Санкт-Петербург</li>
-              <li class="form__option" tabindex="0">Санкт-Петербург</li>
-            </ul>
-          </div>
-          <button class="form__submit" type="submit">Отправить
-            <span class="form__submit-icon"></span>
-          </button>
-        </form>
+
+        </div>
 
       </div>
     </main>
@@ -324,7 +346,7 @@
               <input class="form__field form__field--hidden" type="text" name="towm" id="town-modal" data-input="town"  required>
               <label class="form__label" for="town-button">Выберите город</label>
               <input class="form__select-toggle  form__field form__field--select" type="button" id="town-button" name="touwn-button" value=" ">
-              <ul class="form__options">
+              <ul class="form__options form__options--write">
                 <li class="form__option" tabindex="0">Санкт-Петербург</li>
                 <li class="form__option" tabindex="0">Санкт</li>
                 <li class="form__option" tabindex="0">Петербург</li>
@@ -332,9 +354,11 @@
               </ul>
             </div>
             <div class="form__control">
-              <label class="form__label form__label--checkbox" for="policy">
-                <input class="form__field form__field--checkbox" type="checkbox" name="policy" id="policy" value="policy" required>
-                Я согласен на обработку моих персональных данных
+              <label class="form__label form__label--checkbox" for="policy-modal">
+                <input class="form__field form__field--write form__field--checkbox" type="checkbox" name="policy" id="policy-modal" value="policy" required>
+                <span>
+                  Я согласен на обработку моих персональных данных
+                </span>
               </label>
             </div>
             <button class="form__submit" type="submit">Отправить

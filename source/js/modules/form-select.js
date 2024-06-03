@@ -1,5 +1,4 @@
 const buttonSelectToogleAll = document.querySelectorAll('.form__select-toggle');
-// const inputTown = document.querySelector('#test');
 
 const onButtonSelectToggleClick = (e) => {
   const button = e.target;
@@ -11,14 +10,17 @@ const onButtonSelectToggleClick = (e) => {
   listOptions.classList.toggle('form__options--open');
   const listOpen = listOptions.classList.contains('form__options--open');
   if (listOpen) {
-    button.style.backgroundImage = 'url("/__spritemap#sprite-arrow-up-view")';
+    formControlCurrent.classList.add('form__control--select-open');
+    formControlCurrent.classList.remove('form__control--select');
   } else {
-    button.style.backgroundImage = 'url("/__spritemap#sprite-arrow-down-view")';
+    formControlCurrent.classList.remove('form__control--select-open');
+    formControlCurrent.classList.add('form__control--select');
   }
 
   const listOptionsRemove = () => {
     listOptions.classList.remove('form__options--open');
-    button.style.backgroundImage = 'url("/__spritemap#sprite-arrow-down-view")';
+    formControlCurrent.classList.remove('form__control--select-open');
+    formControlCurrent.classList.add('form__control--select');
   };
 
   const onOptionClick = (evt) => {

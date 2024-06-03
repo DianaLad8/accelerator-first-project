@@ -1,3 +1,135 @@
+.write {
+  @include center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+}
+
+.write__wrapper {
+  width: 1240px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: #807771;
+  background-image:
+    image-set(
+      url("../img/form/desktop-bg.webp") type("image/webp"),
+      url("../img/form/desktop-bg.jpg") type("image/jpg"),
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media (max-width: $desktop) {
+    margin-right: 26px;
+    width: 652px;
+    background-image:
+      image-set(
+        url("../img/form/tablet-bg.webp") type("image/webp"),
+        url("../img/form/tablet-bg.jpg") type("image/jpg"),
+      );
+  }
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+    padding: 40px 10px;
+    width: 100%;
+    min-width: 320px;
+    min-height: 753px;
+    align-items: center;
+    background-image:
+      image-set(
+        url("../img/form/mobile-bg.webp") type("image/webp"),
+        url("../img/form/mobile-bg.jpg") type("image/jpg"),
+      );
+    border-radius: 0;
+  }
+}
+
+.write__container {
+  padding: 30px 70px;
+  width: 490px;
+  min-height: 800px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: $white;
+  gap: 40px;
+  background-color: $primary;
+  border-radius: 16px;
+
+  @media (max-width: $desktop) {
+    padding: 30px 40px;
+    width: 442px;
+    min-height: 780px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 15px;
+    padding-bottom: 27px;
+    width: 300px;
+    min-height: 670px;
+    gap: 20px;
+  }
+}
+
+.write__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: $desktop) {
+    width: 350px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 270px;
+    gap: 10px;
+  }
+}
+
+.write__title {
+  @include subtitle;
+
+  padding: 14px 0;
+  color: $white;
+
+  @media (max-width: $desktop) {
+    padding: 11px 0;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.write__text {
+  margin: 0;
+}
+
 .write__form {
   width: 350px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: $desktop) {
+    width: 362px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 270px;
+  }
 }
