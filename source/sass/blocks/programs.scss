@@ -9,6 +9,7 @@
 
   @media (max-width: $desktop) {
     padding-right: 0;
+    max-width: 1079px;
     min-width: 723px;
     min-height: 678px;
     align-items: flex-start;
@@ -173,7 +174,7 @@
 
   @media (max-width: $tablet) {
     position: absolute;
-    bottom: 557px;
+    bottom: 558px;
     right: 15px;
     width: 52px;
   }
