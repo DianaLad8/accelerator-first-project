@@ -1,0 +1,7 @@
+.test {
+  @include btn-span;
+}
+
+.test__arrow {
+  @include bg-mask(arrow-button);
+}

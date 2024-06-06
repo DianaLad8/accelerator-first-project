@@ -84,6 +84,11 @@
 
     @media (max-width: $tablet) {
       height: 42px;
+      justify-content: start;
+      align-items: start;
+      display: grid;
+      grid-template-columns: 20px 80px;
+      grid-template-rows: repeat(3, 12px);
     }
   }
 }
@@ -94,9 +99,20 @@
   &--hidden {
     padding: 1px 6px 1px 20px;
     position: absolute;
-    top: 29px;
+    top: 30px;
     width: 348px;
+    height: 52px;
     opacity: 0;
+
+    @media (max-width: $desktop) {
+      top: 32px;
+      width: 350px;
+    }
+
+    @media (max-width: $tablet) {
+      top: 26px;
+      width: 259px;
+    }
   }
 
   &--write {
@@ -133,6 +149,29 @@
   appearance: none;
 }
 
+.form__field--select.form__field--write {
+  @media (max-width: $desktop) {
+    width: 362px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 260px;
+  }
+}
+
+.form__field--hidden.form__field--write {
+  width: 348px;
+  height: 53px;
+
+  @media (max-width: $desktop) {
+    width: 362px;
+    height: 52px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 260px;
+  }
+}
 
 .form__field--checkbox {
   padding: 6px 4px;
@@ -143,6 +182,13 @@
   border: 1px solid $text;
   border-radius: 2px;
   opacity: 0.7;
+
+  @media (max-width: $tablet) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    grid-row: 1/-1;
+    grid-column: 1/2;
+  }
 
   &:hover,
   &:focus {
@@ -159,27 +205,27 @@
 
 .form__field--checkbox:checked {
   border-color: $primary;
-  background-color: $white;
+  background-color: $primary;
   opacity: 1;
 
   &::before {
     content: "";
     width: 10px;
     height: 8px;
-    background-color: $primary;
+    background-color: $white;
     mask-image: url("/__spritemap#sprite-checked-view");
     opacity: 1;
   }
 
   &:hover,
   &:focus {
-    background-color: $primary;
+    background-color: $white;
     border-color: $primary;
   }
 
   &:hover::before,
   &:focus::before {
-    background-color: $white;
+    background-color: $primary;
   }
 
   &:disabled {
@@ -244,7 +290,7 @@
   font-size: 14px;
 
   @media (max-width: $desktop) {
-    width: 362px;
+    // width: 362px;
   }
 
   @media (max-width: $tablet) {
@@ -285,7 +331,7 @@
 
 .form__option {
   padding: 17px 20px;
-  width: 348px;
+  width: 100%;
   height: 48px;
   display: flex;
   align-items: center;
@@ -296,7 +342,9 @@
   line-height: 100%;
 
   @media (max-width: $desktop) {
-    width: 362px;
+    &--write {
+      width: 362px;
+    }
   }
 
   @media (max-width: $tablet) {

@@ -9,6 +9,7 @@ import {addTabindexBullets} from './modules/hero';
 import './modules/form-mask';
 import './modules/form-select';
 import './modules/modal';
+import './modules/programs';
 
 
 onBurgerButton();
