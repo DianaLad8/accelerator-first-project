@@ -10,7 +10,7 @@ import './modules/form-mask';
 import './modules/form-select';
 import './modules/modal';
 import './modules/programs';
-
+import './modules/news';
 
 onBurgerButton();
 onLinkClick();

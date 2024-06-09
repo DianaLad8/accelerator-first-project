@@ -1,0 +1,271 @@
+.news {
+  @include center;
+
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  overflow: hidden;
+
+  @media (max-width: $desktop) {
+    width: 768px;
+    gap: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-right: 0;
+    min-width: 320px;
+    width: 320px;
+    gap: 24px;
+  }
+}
+
+.news__title {
+  @include title;
+
+  @media (max-width: $tablet) {
+    padding-right: 15px;
+  }
+}
+
+.news__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+
+  @media (max-width: $desktop) {
+    justify-content: flex-start;
+    width: 674px;
+    gap: 10px;
+  }
+
+  @media (max-width: $tablet) {
+    justify-self: flex-start;
+    flex-wrap: nowrap;
+    min-width: 305px;
+    width: 305px;
+    gap: 12px;
+    overflow-x: auto;
+  }
+}
+
+.news__tabs-button {
+  padding: 14px 0;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $primary;
+  background-color: $trans;
+  border: 2px solid $trans;
+  border-radius: 20px;
+  box-sizing: border-box;
+  opacity: 0.6;
+
+  @media (max-width: $desktop) {
+    padding: 14px 18px;
+    width: auto;
+    border: 2px solid $trans;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    background-color: $white;
+    outline: none;
+    opacity: 1;
+  }
+}
+
+.news__tabs-button--active {
+  border: 2px solid $primary;
+  opacity: 1;
+
+  @media (max-width: $desktop) {
+    min-width: 94px;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: 75px;
+  }
+}
+
+
+.news__slider.swiper {
+  max-width: 1240px;
+
+  @media (max-width: $desktop) {
+    max-width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+    max-width: 290px;
+  }
+}
+
+
+.news__slider-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  @media (max-width: $tablet) {
+    max-height: 640px;
+    min-height: 590px;
+  }
+}
+
+.news__slide {
+  max-width: 286px;
+  min-height: 400px;
+
+  @media (max-width: $desktop) {
+    max-width: 324px;
+    min-height: 350px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+    min-height: 240px;
+  }
+}
+
+.news__slide.swiper-slide-active {
+  position: relative;
+  max-width: 684px;
+
+  @media (max-width: $desktop) {
+    max-width: 324px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+    min-height: 330px;
+  }
+}
+
+.news__navigation {
+  margin-top: 8px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  @media (max-width: $desktop) {
+    position: relative;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 2px;
+    margin-right: auto;
+    width: 290px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-bottom: 8px;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.news__pagination.swiper-pagination {
+  padding-left: 20px;
+  min-width: 300px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 14px;
+
+  @media (max-width: $desktop) {
+    padding-left: 45px;
+    gap: 12px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 33px;
+    min-width: 290px;
+    height: 26px;
+    gap: 8px;
+  }
+
+  span {
+    transform: scale(0);
+  }
+
+  .swiper-pagination-bullet-active-prev,
+  .swiper-pagination-bullet-active-main,
+  .swiper-pagination-bullet-active-next {
+    min-width: 32px;
+    min-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 125%;
+    color: $primary;
+    background-color: $trans;
+    transform: none;
+    opacity: 0.5;
+
+    @media (max-width: $tablet) {
+      min-width: 26px;
+      min-height: 26px;
+      font-size: 14px;
+      line-height: 100%;
+    }
+
+    &:hover {
+      border: 2px solid $primary;
+      opacity: 1;
+    }
+
+    &:focus {
+      color: $primary;
+      background-color: $white;
+      border: 2px solid $primary;
+      outline: none;
+      opacity: 1;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $state-active;
+      opacity: 1;
+    }
+  }
+
+  .swiper-pagination-bullet-active-prev-prev,
+  .swiper-pagination-bullet-active-next-next {
+    transform: scale(0);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $white;
+    background-color: $primary;
+    opacity: 1;
+  }
+}

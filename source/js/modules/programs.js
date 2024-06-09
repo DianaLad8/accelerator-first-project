@@ -16,6 +16,7 @@ const programsSlider = new Swiper(programsSwiper, {
   },
   activeIndex: 0,
   loop: false,
+  autoplay: false,
   slidesPerView: 1,
   initialSlide: 0,
   watchSlidesProgress: true,
@@ -24,7 +25,6 @@ const programsSlider = new Swiper(programsSwiper, {
     320: {
       width: 290,
       slidesPerView: 1,
-      // centeredSlides: true,
     },
     768: {
       slidesPerView: 2.25,

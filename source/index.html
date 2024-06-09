@@ -387,6 +387,7 @@
         </div>
 
       </section>
+
       <article class="grant" data-test="grant" id="grant">
         <div class="grant__wrapper">
           <section class="grant__info">
@@ -423,10 +424,191 @@
           </section>
         </div>
       </article>
-      <div data-test="news" id="news">news</div>
+
+      <section class="news" data-test="news" id="news">
+        <h2 class="news__title">Новости и материалы</h2>
+        <div class="news__tabs">
+          <button class="news__tabs-button news__tabs-button--active" type="button">
+            Oбщее
+          </button>
+          <button class="news__tabs-button" type="button">
+            Волонтёрство
+          </button>
+          <button class="news__tabs-button" type="button">
+            Стажировки
+          </button>
+          <button class="news__tabs-button" type="button">
+            Карьера
+          </button>
+          <button class="news__tabs-button" type="button">
+            Путешествия
+          </button>
+        </div>
+        <div class="news__slider swiper">
+          <div class="news__slider-wrapper swiper-wrapper">
+            <div class="news__slide swiper-slide news-slide">
+              <div class="news-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="/img/news/desktop-big1.webp" width="604" height="552">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/news/tablet-news1.webp" width="324" height="350">
+                  <source type="image/webp" srcset="/img/news/mobile-news1.webp" width="290" height="330">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="/img/news/desktop-big1.jpg" width="604" height="552">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="/img/news/tablet-news1.jpg" width="324" height="350">
+                  <img src="./img/news/mobile-news1.jpg" width="290" height="330" alt="Фотография рабочего стола с ноутбуками - вид сверху.">
+                </picture>
+              </div>
+              <div class="news-slide__wrapper">
+                <div class="news-slide__description">
+                  <span class="news-slide__data">23/03/2023</span>
+                  <h3 class="news-slide__title">Интервью с участницей программы
+                    стажировки</h3>
+                  <div class="news-slide__block">
+                    <div class="news-slide__content">
+                      <p>
+                        Саша рассказывает, как попала в программу и как прошла 6-
+                        месячная стажировка в ISOFound
+                      </p>
+                    </div>
+                    <a class="news-slide__link"  href="#">
+                      <span class="visually-hidden">
+                        Подробнее.
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide swiper-slide news-slide">
+              <div class="news-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="/img/news/desktop-big2.webp" width="604" height="552">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/news/tablet-news2.webp" width="324" height="350">
+                  <source type="image/webp" srcset="/img/news/mobile-news2.webp" width="290" height="240">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="/img/news/desktop-big2.jpg" width="604" height="552">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="/img/news/tablet-news2.jpg" width="324" height="350">
+                  <img src="./img/news/mobile-news2.jpg" width="290" height="240" alt="Фотография побережья с высоты птичьего полета.">
+                </picture>
+              </div>
+              <div class="news-slide__wrapper">
+                <div class="news-slide__description">
+                  <span class="news-slide__data">20/03/2023</span>
+                  <h3 class="news-slide__title">Путешествуем
+                    по миру
+                  </h3>
+                  <div class="news-slide__block">
+                    <div class="news-slide__content">
+                      <p>
+                        Какие места посещают
+                        наши студенты весной
+                      </p>
+                    </div>
+                    <a class="news-slide__link"  href="#">
+                      <span class="visually-hidden">
+                        Подробнее.
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide swiper-slide news-slide">
+              <div class="news-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="/img/news/desktop-big3.webp" width="604" height="552">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/news/tablet-news3.webp" width="324" height="350">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="/img/news/desktop-big3.jpg" width="604" height="552">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="/img/news/tablet-news3.jpg" width="324" height="350">
+                  <img src="./img/news/desktop-big3.jpg" width="604" height="552" alt="Фотография девушки со значком волонтера.">
+                </picture>
+              </div>
+              <div class="news-slide__wrapper">
+                <div class="news-slide__description">
+                  <span class="news-slide__data">17/03/2023</span>
+                  <h3 class="news-slide__title">Новая
+                    программа
+                    волонтёрства</h3>
+                  <div class="news-slide__block">
+                    <div class="news-slide__content">
+                      <p>
+                        Программа помощи детям длительностью 4 месяца
+                      </p>
+                    </div>
+                    <a class="news-slide__link"  href="#">
+                      <span class="visually-hidden">
+                        Подробнее.
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide swiper-slide news-slide">
+              <div class="news-slide__picture-fond">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="/img/news/desktop-news4.webp" width="604" height="552">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/news/tablet-news4.webp" width="324" height="350">
+                  <source type="image/webp" srcset="/img/news/mobile-news4.webp" width="290" height="240">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="/img/news/desktop-news4.jpg" width="604" height="552">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="/img/news/tablet-news4.jpg" width="324" height="350">
+                  <img src="./img/news/mobile-news4.jpg" width="290" height="240" alt="Фотография рабочего стола с ноутбуками - вид сверху.">
+
+                </picture>
+              </div>
+              <div class="news-slide__wrapper">
+                <div class="news-slide__description">
+                  <span class="news-slide__data">10/03/2023</span>
+                  <h3 class="news-slide__title">Построй свою карьеру</h3>
+                  <div class="news-slide__block">
+                    <div class="news-slide__content">
+                      <p>
+                        Ведущие компании
+                        готовы трудоустроить
+                        выпускников стажировки
+                      </p>
+                    </div>
+                    <a class="news-slide__link"  href="#">
+                      <span class="visually-hidden">
+                        Подробнее.
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide swiper-slide news-slide">Slide 5</div>
+            <div class="news__slide swiper-slide news-slide">Slide 6</div>
+            <div class="news__slide swiper-slide news-slide">Slide 7</div>
+            <div class="news__slide swiper-slide news-slide">Slide 8</div>
+            <div class="news__slide swiper-slide news-slide">Slide 9</div>
+            <div class="news__slide swiper-slide news-slide">Slide 10</div>
+            <div class="news__slide swiper-slide news-slide">Slide 6</div>
+            <div class="news__slide swiper-slide news-slide">Slide 7</div>
+            <div class="news__slide swiper-slide news-slide">Slide 8</div>
+            <div class="news__slide swiper-slide news-slide">Slide 9</div>
+            <div class="news__slide swiper-slide news-slide">Slide 10</div>
+
+          </div>
+        </div>
+
+        <div class="news__navigation">
+          <button class="swiper-button-prev" type="button">
+            <span class="visually-hidden">
+              Предыдущий слайд.
+            </span>
+          </button>
+          <div class="news__pagination swiper-pagination"></div>
+          <button class="swiper-button-next" type="button">
+            <span class="visually-hidden">
+              Предыдущий слайд.
+            </span>
+          </button>
+        </div>
+      </section>
+
       <div data-test="FAQ" id="faq">FAQ</div>
       <div data-test="reviews" id="reviews">reviews</div>
       <div data-test="contacts" id="contacts">contacts</div>
+
       <div class="write" data-test="form" id="form">
         <div class="write__wrapper">
           <div class="write__container">

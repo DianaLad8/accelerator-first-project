@@ -136,23 +136,24 @@
   display: grid;
   align-items: start;
   justify-content: start;
-  gap: 21px;
+  gap: 23px;
 
   @media (max-width: $desktop) {
     grid-template-columns: repeat(2, 305px);
-    row-gap: 24px;
+    row-gap: 25px;
     column-gap: 48px;
   }
 
   @media (max-width: $tablet) {
     padding-left: 15px;
     grid-template-columns: 290px;
-    gap: 13px;
+    gap: 15px;
   }
 }
 
 .grant__item {
   padding: 31px 26px;
+  padding-bottom: 30px;
   position: relative;
   width: 478px;
   height: 100%;
@@ -183,17 +184,17 @@
   }
 
   @media (max-width: $desktop) {
+    padding: 30px 25px;
     width: 305px;
   }
 
   @media (max-width: $tablet) {
-    padding: 25px;
+    padding: 24px 25px;
     width: 275px;
 
     &::before {
       font-size: 18px;
       transform: translate(-50%, -20%);
-
     }
   }
 }
