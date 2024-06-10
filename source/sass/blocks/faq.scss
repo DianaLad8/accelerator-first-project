@@ -1,0 +1,252 @@
+.faq {
+  @include center;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 60px;
+
+  @media (max-width: $desktop) {
+    gap: 40px;
+  }
+
+  @media (max-width: $tablet) {
+    gap: 30px;
+  }
+}
+
+.faq__title {
+  @include title;
+
+  padding: 11px 9px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @media (max-width: $desktop) {
+    padding: 0;
+  }
+}
+
+.faq__list {
+  @include list;
+
+  width: 1028px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 11px;
+
+  @media (max-width: $desktop) {
+    width: 678px;
+    gap: 10px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 290px;
+    gap: 11px;
+  }
+}
+
+.faq__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq__button {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28px;
+  line-height: 121%;
+  word-break: normal;
+  color: $primary;
+  background-color: $trans;
+  text-transform: none;
+  border-radius: 16px;
+  border: 2px solid $primary;
+  transition: all 300ms ease;
+
+  @media (max-width: $desktop) {
+    padding: 30px;
+    font-size: 22px;
+    line-height: 118%;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 20px 15px;
+    font-size: 16px;
+    line-height: 112%;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary;
+    background-color: $white;
+    outline: none;
+  }
+
+  &:hover span,
+  &:focus span {
+    background-color: $white;
+    outline: 1px solid $primary;
+
+    &::before {
+      background-color: $primary;
+      transform: none;
+    }
+  }
+
+  &:active {
+    color: $state-active;
+  }
+
+  &:active span {
+    background-color: $state-active;
+
+    &::before {
+      background-color: $white;
+      transform: none;
+    }
+  }
+}
+
+.faq__button-icon {
+  @include bg-mask(plus);
+
+  align-self: flex-start;
+  width: 40px;
+  height: 40px;
+  background-color: $primary;
+  transition: all 300ms ease;
+
+  @media (max-width: $tablet) {
+    align-self: center;
+  }
+
+  &::before {
+    width: 18px;
+    height: 18px;
+    mask-size: 18px 18px;
+    background-color: $white;
+  }
+}
+
+.faq__button--open {
+  padding-bottom: 20px;
+  color: $white;
+  background-color: $primary;
+  border-radius: 16px 16px 0 0;
+  border-bottom: none;
+
+  @media (max-width: $desktop) {
+    padding-bottom: 21px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $state-active;
+  }
+}
+
+.faq__button--open .faq__button-icon {
+  @include bg-mask(minus);
+
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+
+  &::before {
+    width: 18px;
+    height: 2px;
+    background-size: 18px 2px;
+    background-color: $primary;
+  }
+}
+
+.faq__button--open:hover .faq__button-icon,
+.faq__button--open:focus .faq__button-icon {
+  background-color: $trans;
+  outline: 1px solid $white;
+
+  &::before {
+    background-color: $white;
+  }
+}
+
+.faq__button--open:active .faq__button-icon {
+  background-color: $white;
+
+  &::before {
+    background-color: $state-active;
+  }
+}
+
+.faq__button--open:active + .faq__content--open {
+  background-color: $state-active;
+}
+
+.faq__button-text {
+  width: 868px;
+  text-align: left;
+  font-weight: 400;
+
+
+  @media (max-width: $desktop) {
+    width: 550px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 195px;
+  }
+}
+
+
+.faq__content {
+  overflow: hidden;
+  max-height: 0;
+  padding-bottom: 0;
+  color: $trans;
+
+  transform: translate(0, -50%) scaleY(0);
+  transition: transform 300ms, padding-bottom 300ms;
+}
+
+.faq__content--open {
+  padding: 0 72px 41px 42px;
+  color: $white;
+  background-color: $primary;
+  border-radius: 0 0 16px 16px;
+  max-height: 100%;
+  transform: translate(0, 0);
+
+  @media (max-width: $desktop) {
+    padding: 0 32px 31px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 0 17px 21px;
+  }
+
+  p {
+    margin: 0;
+  }
+}

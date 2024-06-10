@@ -11,6 +11,7 @@ import './modules/form-select';
 import './modules/modal';
 import './modules/programs';
 import './modules/news';
+import './modules/faq';
 
 onBurgerButton();
 onLinkClick();
