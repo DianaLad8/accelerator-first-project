@@ -12,6 +12,7 @@ import './modules/modal';
 import './modules/programs';
 import './modules/news';
 import './modules/faq';
+import './modules/reviews';
 
 onBurgerButton();
 onLinkClick();

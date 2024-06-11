@@ -681,7 +681,146 @@
         </ul>
       </section>
 
-      <div data-test="reviews" id="reviews">reviews</div>
+      <section class="reviews" data-test="reviews" id="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+
+        <div class="reviews__slider swiper">
+          <div class="reviews__wrapper swiper-wrapper">
+
+            <div class="reviews__slide reviews-slide swiper-slide">
+              <div class="reviews-slide__wrapper">
+                <div class="reviews-slide__head">
+                  <div class="reviews-slide__avatar">
+                    <div class="reviews-slide__image">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)" srcset="/img/reviews/desktop-reviews1.webp" width="90" height="90">
+                        <source type="image/webp" srcset="/img/reviews/mobile-reviews1.webp" width="60" height="60">
+                        <source type="image/jpeg" media="(min-width: 1440px)" srcset="/img/reviews/desktop-reviews1.jpg" width="90" height="90">
+                        <img src="./img/reviews/mobile-reviews1.jpg" width="60" height="60" alt="Аватар автора отзыва.">
+                      </picture>
+                    </div>
+                    <p class="reviews-slide__name">
+                      <span >Лола</span>
+                      <span >Алекс</span>
+                    </p>
+                  </div>
+                  <ul class="reviews-slide__info">
+                    <li class="reviews-slide__info-item">
+                      <span class="reviews-slide__info-title">
+                        Программа
+                      </span>
+                      <span class="reviews-slide__info-desk">
+                        Masa Art Challenge
+                      </span>
+                    </li>
+                    <li class="reviews-slide__info-item">
+                      <span class="reviews-slide__info-title">
+                        Дата
+                      </span>
+                      <span class="reviews-slide__info-desk">
+                        Осень 2022
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="reviews-slide__desk">
+                  <h3 class="reviews-slide__slogan">
+                    Я могу с уверенностью сказать, что это был
+                    один из самых незабываемых опытов
+                    в жизни!
+                  </h3>
+                  <div class="reviews-slide__content">
+                    <p>
+                      Я рекомендую программу «Стажировка» всем студентам,
+                      желающим получить незабываемые впечатления. Сочетание
+                      путешествий, общения и значимой работы действительно
+                      отличает её от других программ, и я чувствую огромную
+                      благодарность за предоставленную мне возможность.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="reviews__slide reviews-slide swiper-slide">
+              <div class="reviews-slide__wrapper">
+                <div class="reviews-slide__head">
+                  <div class="reviews-slide__avatar">
+                    <div class="reviews-slide__image">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)" srcset="/img/reviews/desktop-reviews2.webp" width="90" height="90">
+                        <source type="image/webp" srcset="/img/reviews/desktop-reviews2.webp" width="60" height="60">
+                        <source type="image/jpeg" media="(min-width: 1440px)" srcset="/img/reviews/desktop-reviews2.jpg" width="90" height="90">
+                        <img src="./img/reviews/desktop-reviews2.jpg" width="60" height="60" alt="Аватар автора отзыва.">
+                      </picture>
+                    </div>
+                    <p class="reviews-slide__name">
+                      <span >Давид</span>
+                      <span >Иванов</span>
+                    </p>
+                  </div>
+                  <ul class="reviews-slide__info">
+                    <li class="reviews-slide__info-item">
+                      <span class="reviews-slide__info-title">
+                        Программа
+                      </span>
+                      <span class="reviews-slide__info-desk">
+                        Volunteer Chance
+                      </span>
+                    </li>
+                    <li class="reviews-slide__info-item">
+                      <span class="reviews-slide__info-title">
+                        Дата
+                      </span>
+                      <span class="reviews-slide__info-desk">
+                        Лето 2022
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="reviews-slide__desk">
+                  <h3 class="reviews-slide__slogan">
+                    Благодаря опыту стажировки я узнал
+                    так много нового о себе и об окружающем
+                    мире.
+                  </h3>
+                  <div class="reviews-slide__content">
+                    <p>
+                      Каждый день был возможностью оказать ощутимое влияние
+                      на жизнь других людей. Я бы очень рекомендовал
+                      эту волонтёрскую программу всем, кто ищет значимый
+                      и незабываемый опыт. Организация была на высшем уровне.
+                      Для меня было честью быть частью такой удивительной
+                      инициативы.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__navigation">
+          <div class="reviews__scrollbar-desktop"></div>
+          <div class="swiper-scrollbar"></div>
+
+          <div class="reviews__buttons">
+            <button class="swiper-button-prev"  type="button">
+              <span class="visually-hidden">
+                Предыдущий слайд.
+              </span>
+            </button>
+            <button class="swiper-button-next"  type="button">
+              <span class="visually-hidden">
+                Следующий слайд.
+              </span>
+            </button>
+          </div>
+        </div>
+
+      </section>
       <div data-test="contacts" id="contacts">contacts</div>
 
       <div class="write" data-test="form" id="form">

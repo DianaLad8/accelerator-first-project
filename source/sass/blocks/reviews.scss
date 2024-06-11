@@ -1,0 +1,137 @@
+.reviews {
+  @include center;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (max-width: $desktop) {
+    padding-right: 0;
+    max-width: 1150px;
+    min-width: 723px;
+    min-height: 417px;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  @media (max-width: $tablet) {
+    padding-right: 15px;
+    position: relative;
+    width: 320px;
+    max-width: 320px;
+    min-width: 320px;
+    gap: 30px;
+  }
+}
+
+.reviews__title {
+  @include title;
+
+  padding: 5px 3px;
+  width: 1240px;
+
+  @media (max-width: $desktop) {
+    padding: 0;
+    width: 678px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 5px 0;
+    width: 290px;
+  }
+}
+
+.reviews__slider {
+  max-width: 1240px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 32px;
+
+  @media (max-width: $desktop) {
+    max-width: 1150px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+    max-width: 320px;
+    gap: 0;
+  }
+}
+
+.reviews__slide {
+  width: 604px;
+  box-sizing: border-box;
+
+  @media (max-width: $desktop) {
+    width: 560px;
+    max-width: 560px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 290px;
+  }
+}
+
+.reviews__navigation {
+  width: 1240px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 50px;
+
+  @media (max-width: $desktop) {
+    width: 678px;
+    gap: 62px;
+  }
+
+  @media (max-width: $tablet) {
+    position: absolute;
+    top: 54px;
+    right: 15px;
+    width: 52px;
+  }
+}
+
+.reviews__scrollbar-desktop {
+  position: relative;
+  width: 1136px;
+  height: 2px;
+  background-color: rgba($primary, 0.2);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 394px;
+    height: 2px;
+    background-color: $primary;
+    opacity: 1;
+  }
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.reviews__buttons {
+  width: 54px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  @media (max-width: $tablet) {
+    width: 52px;
+    gap: 8px;
+  }
+}
+

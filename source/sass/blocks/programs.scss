@@ -17,11 +17,12 @@
   }
 
   @media (max-width: $tablet) {
+    padding-right: 15px;
     position: relative;
     width: 320px;
+    max-width: 320px;
     min-width: 320px;
     min-height: 634px;
-    padding-right: 15px;
     gap: 30px;
   }
 }
@@ -174,7 +175,7 @@
 
   @media (max-width: $tablet) {
     position: absolute;
-    bottom: 558px;
+    top: 54px;
     right: 15px;
     width: 52px;
   }
@@ -190,6 +191,7 @@
   gap: 10px;
 
   @media (max-width: $tablet) {
+    width: 52px;
     gap: 8px;
   }
 }
