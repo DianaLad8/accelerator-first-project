@@ -1,0 +1,217 @@
+.footer {
+  @include center;
+
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 25px;
+
+  @media (max-width: $desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.footer__wrapper {
+  width: 1240px;
+  display: grid;
+  grid-template-columns: 52px 1fr 220px;
+  justify-content: start;
+  align-items: center;
+  row-gap: 25px;
+  column-gap: 52px;
+  grid-template-areas:
+    "l n s"
+    "a a p";
+
+  @media (max-width: $desktop) {
+    width: 678px;
+    grid-template-rows: auto 30px auto;
+    row-gap: 10px;
+    grid-template-areas:
+      "l n n"
+      "p p s"
+      "a a s";
+  }
+
+  @media (max-width: $tablet) {
+    width: 290px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 62px auto 27px 17px auto;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+      "l"
+      "n"
+      "p"
+      "a"
+      "s";
+  }
+}
+
+.footer__logo {
+  grid-area: l;
+
+  @media (max-width: $tablet) {
+    justify-self: center;
+    align-self: start;
+  }
+}
+
+.footer__nav {
+  grid-area: n;
+}
+
+.footer__list {
+  @include list;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+
+  @media (max-width: $desktop) {
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 30px;
+  }
+}
+
+.footer__link {
+  @include link;
+}
+
+.footer__social-list {
+  @include list;
+
+  grid-area: s;
+  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width: $desktop) {
+    align-self: flex-end;
+    gap: 10px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 3px;
+    justify-self: center;
+    align-self: end;
+  }
+}
+
+.footer__social-link {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  border-radius: 50%;
+
+  @media (max-width: $tablet) {
+    width: 26px;
+    height: 26px;
+
+    svg {
+      width: 11px;
+      height: 6px;
+    }
+
+    &--ok svg {
+      width: 7px;
+      height: 12px;
+    }
+
+    &--reddit svg {
+      width: 11px;
+      height: 11px;
+    }
+  }
+
+  svg {
+    --color: #ffffff;
+  }
+
+  &:hover {
+    background-color: $primary;
+
+    svg {
+      --color: #ffffff;
+
+      opacity: 0.7;
+    }
+  }
+
+  &:focus {
+    background-color: $white;
+    outline: none;
+
+    svg {
+      --color: #316dc2;
+    }
+  }
+
+  &:active {
+    background-color: $state-active;
+
+    svg {
+      --color: #ffffff;
+
+      opacity: 1;
+    }
+  }
+}
+
+.footer__autor {
+  grid-area: a;
+  font-size: 14px;
+  line-height: 129%;
+
+  @media (max-width: $desktop) {
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  @media (max-width: $tablet) {
+    justify-self: center;
+    line-height: 117%;
+  }
+}
+
+.footer__privacy {
+  @include link;
+
+  padding-bottom: 2px;
+  width: fit-content;
+  grid-area: p;
+  justify-self: end;
+  font-size: 14px;
+  line-height: 129%;
+  border-bottom: 1px solid $text;
+
+  @media (max-width: $desktop) {
+    align-self: end;
+    justify-self: start;
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  @media (max-width: $tablet) {
+    justify-self: center;
+    line-height: 117%;
+  }
+}

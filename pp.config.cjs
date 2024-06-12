@@ -6,9 +6,9 @@ const desktopSections = [
   // {section: 'news', misMatchThreshold: 0.5},
   // {section: 'FAQ', misMatchThreshold: 0.5},
   // {section: 'reviews', misMatchThreshold: 0.5},
-  {section: 'contacts', misMatchThreshold: 0.5},
+  // {section: 'contacts', misMatchThreshold: 0.5},
   // {section: 'form', misMatchThreshold: 0.5},
-  // {section: 'footer', misMatchThreshold: 0.5},
+  {section: 'footer', misMatchThreshold: 0.5},
 ]
 
 const tabletSections = [
@@ -19,9 +19,9 @@ const tabletSections = [
   // {section: 'news', misMatchThreshold: 0.7},
   // {section: 'FAQ', misMatchThreshold: 1.1},
   // {section: 'reviews', misMatchThreshold: 0.5},
-  {section: 'contacts', misMatchThreshold: 1.1},
+  // {section: 'contacts', misMatchThreshold: 1.1},
   // {section: 'form', misMatchThreshold: 0.5},
-  // {section: 'footer', misMatchThreshold: 1.1}
+  {section: 'footer', misMatchThreshold: 1.1}
 ]
 
 const mobileSections = [
@@ -32,9 +32,9 @@ const mobileSections = [
   // {section: 'news', misMatchThreshold: 0.5},
   // {section: 'FAQ', misMatchThreshold: 1.8},
   // {section: 'reviews', misMatchThreshold: 2.5},
-  {section: 'contacts', misMatchThreshold: 1.1},
+  // {section: 'contacts', misMatchThreshold: 1.1},
   // {section: 'form', misMatchThreshold: 0.7},
-  // {section: 'footer', misMatchThreshold: 1.5}
+  {section: 'footer', misMatchThreshold: 1.5}
 ]
 
 const VIEWPORTS = {

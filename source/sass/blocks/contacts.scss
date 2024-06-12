@@ -34,7 +34,7 @@
 
 .contacts__description {
   padding-bottom: 40px;
-  width: 100%;
+  width: 1240px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -42,6 +42,7 @@
 
   @media (max-width: $desktop) {
     padding-bottom: 30px;
+    width: 678px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -50,6 +51,7 @@
   }
 
   @media (max-width: $tablet) {
+    width: 290px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
