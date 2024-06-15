@@ -86,12 +86,8 @@
   justify-content: flex-start;
   flex-direction: column;
 
-  // @media (max-width: $desktop) {
-  //   padding-right: 84px;
-  // }
 
   @media (max-width: $tablet) {
-    // padding-right: 27px;
     min-height: 110px;
   }
 }

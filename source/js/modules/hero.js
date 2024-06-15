@@ -8,11 +8,12 @@ const sliderHero = document.querySelector('.hero__slider');
 const swiperHero = new Swiper(sliderHero, {
   modules: [Navigation, Pagination],
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-slide-active .swiper-pagination',
     type: 'bullets',
     clickable: true,
-    paginationUpdate: true,
   },
+  swiperElementNodeName: '.swiper-slide-active .swiper-pagination',
+  uniqueNavElements: true,
   loop: true,
   watchSlidesProgress: true,
   autoHeight: true,
@@ -23,26 +24,25 @@ const swiperHero = new Swiper(sliderHero, {
   },
 });
 
+swiperHero.on('slideChangeTransitionEnd', () => {
+  const slideActiveIndex = swiperHero.realIndex;
+  const slideActive = swiperHero.slides[slideActiveIndex];
+  const activeSlidePagination = slideActive.querySelector('.hero__pagination');
+  const slideActiveBullets = activeSlidePagination.querySelectorAll('.swiper-pagination-bullet');
+
+  slideActiveBullets.forEach((bullet) => {
+    bullet.addEventListener('click', () => {
+      const indexSlideTo = +bullet.dataset.index;
+      swiperHero.slideToLoop(indexSlideTo);
+    });
+  });
+});
+
 const addTabindexBullets = () => {
   const bullets = document.querySelectorAll('.swiper-pagination-bullet');
   bullets.forEach((bullet) => {
     bullet.setAttribute('tabindex', '0');
   });
 };
-
-// Вычисление нижнего отступа пагинации активного слайда в зависимости от высоты контейнера для текста
-
-const swiperPagination = sliderHero.querySelector('.hero__pagination');
-const slide = sliderHero.querySelector('.swiper-slide');
-const slideContainerHeight = sliderHero.querySelector('.hero__container').clientHeight;
-const slideStyle = window.getComputedStyle(slide, null);
-
-console.log(slideStyle.paddingBottom, slideContainerHeight);
-
-const slidePaddingBottom = parseFloat(slideStyle.paddingBottom);
-
-
-swiperPagination.style.marginBottom = `${slideContainerHeight + slidePaddingBottom - 8}px`;
-
 
 export {swiperHero, addTabindexBullets};

@@ -26,10 +26,18 @@
 .nav__toggle {
   @include btn-span($primary, $white);
 
-  padding: 3px 3px 3px 31px;
+  padding: 5px 4px 5px 20px;
+  width: 136px;
+  height: 56px;
   gap: 20px;
+  background-color: $white;
   transition: width, background-color 300ms ease-in-out;
 
+  @media (max-width: $tablet) {
+    padding: 4px 5px 4px 21px;
+    width: 136px;
+    height: 54px;
+  }
 
   &:focus:hover .nav__toggle-icon::before,
   &:hover .nav__toggle-icon::before,
